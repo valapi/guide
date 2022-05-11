@@ -1,0 +1,44 @@
+# Introduced
+
+-----------
+
+```typescript
+import { Client } from '@valapi/riot-api';
+```
+
+# Config
+
+-----------
+
+```typescript
+interface Config {
+    apiKey: string;
+    region: string;
+    axiosConfig?: AxiosRequestConfig;
+}
+```
+
+# Authentication
+
+-----------
+
+Create an **API Client**
+
+```typescript
+const ApiClient = new Client(config);
+```
+
+You Can Get Api Key From [developer.riotgames.com](https://developer.riotgames.com/)
+
+# Settings
+
+-----------
+
+| Setting | Function             |
+| ------- | -------------------- |
+| API Key | setApiKey *(apiKey)* |
+| Region  | setRegion *(region)* |
+
+```javascript
+    ApiClient.{Function}
+```
