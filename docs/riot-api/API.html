@@ -139,15 +139,15 @@
                         <h1 id="api"><a class="header" href="#api">API</a></h1>
 <hr />
 <p>Something is can't use, so I did't insert it.</p>
-<table><thead><tr><th>Service</th><th>Function</th></tr></thead><tbody>
-<tr><td><strong>AccountV1</strong></td><td>ByRiotId <em>(gameName, tagLine)</em></td></tr>
-<tr><td></td><td>ByPuuid <em>(puuid)</em></td></tr>
-<tr><td></td><td>ByGame <em>(puuid, game)</em></td></tr>
-<tr><td><strong>ContentV1</strong></td><td>Contents <em>(locale)</em></td></tr>
-<tr><td><strong>StatusV1</strong></td><td>PlatformData <em>(puuid)</em></td></tr>
+<table><thead><tr><th>Service</th><th>Function</th><th>...Args</th></tr></thead><tbody>
+<tr><td><strong>AccountV1</strong></td><td>ByRiotId</td><td>gameName, tagLine</td></tr>
+<tr><td></td><td>ByPuuid</td><td>puuid</td></tr>
+<tr><td></td><td>ByGame</td><td>puuid, game</td></tr>
+<tr><td><strong>ContentV1</strong></td><td>Contents</td><td>locale</td></tr>
+<tr><td><strong>StatusV1</strong></td><td>PlatformData</td><td></td></tr>
 </tbody></table>
 <h2 id="usage"><a class="header" href="#usage">Usage</a></h2>
-<pre><code class="language-javascript">    const _data = await ApiClient.{Service}.{Function}
+<pre><code class="language-typescript">    const _data = await ApiClient.{Service}.{Function(...Args)}
 </code></pre>
 
                     </main>

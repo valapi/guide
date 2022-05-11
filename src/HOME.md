@@ -30,3 +30,5 @@ Generate by [mdBook](https://github.com/rust-lang/mdBook)
 -----------
 
 list of the contributors who helped me improve this module.
+
+- teyd#8766

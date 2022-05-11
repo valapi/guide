@@ -138,17 +138,61 @@
                     <main>
                         <h1 id="api"><a class="header" href="#api">API</a></h1>
 <hr />
-<p>That's A Lot of API endpoints. </p>
-<p>Please Use Typescript Auto-Completion.</p>
-<p><em>( comming soon... )</em></p>
-<h2 id="service"><a class="header" href="#service">Service</a></h2>
-<ul>
-<li>Chat</li>
-<li>Main</li>
-<li>More</li>
-</ul>
+<table><thead><tr><th>Service</th><th>Function</th><th>...Args</th></tr></thead><tbody>
+<tr><td><strong>Chat</strong></td><td>All_Chat_History</td><td></td></tr>
+<tr><td></td><td>All_Chat_Info</td><td></td></tr>
+<tr><td></td><td>All_Chat_Participants</td><td></td></tr>
+<tr><td></td><td>Game_Chat_Info</td><td></td></tr>
+<tr><td></td><td>Party_Chat_Info</td><td></td></tr>
+<tr><td></td><td>Pregame_Chat_Info</td><td></td></tr>
+<tr><td></td><td>Specific_Chat_History</td><td>chatId</td></tr>
+<tr><td></td><td>TEXT_CHAT_RNet_FetchParticipants</td><td>chatId</td></tr>
+<tr><td></td><td>Send_Chat</td><td>chatId, message</td></tr>
+<tr><td></td><td>Send_Whisper</td><td>chatId, message</td></tr>
+<tr><td><strong>Main</strong></td><td>CHATFRIENDS_RNet_GET_ALL</td><td></td></tr>
+<tr><td></td><td>FRIENDS_RNet_FetchFriendRequests</td><td></td></tr>
+<tr><td></td><td>Local_Help</td><td></td></tr>
+<tr><td></td><td>PRESENCE_RNet_GET_ALL</td><td></td></tr>
+<tr><td></td><td>PlayerAlias_RNet_GetActiveAlias</td><td></td></tr>
+<tr><td></td><td>RSO_Auth_User_Info</td><td></td></tr>
+<tr><td></td><td>RSO_RNet_GetEntitlementsToken</td><td></td></tr>
+<tr><td></td><td>Riot_Client_Region</td><td></td></tr>
+<tr><td></td><td>RiotClientSession_FetchSessions</td><td></td></tr>
+<tr><td></td><td>RiotKV_RNet_GetSettings</td><td></td></tr>
+<tr><td></td><td>RiotKV_RNet_GetSettingsTEXT_CHAT_RNet_FetchSession</td><td></td></tr>
+<tr><td><strong>More</strong></td><td>ANTI_ADDICTION_RNet_FetchShutdownPolicyState</td><td></td></tr>
+<tr><td></td><td>ANTI_ADDICTION_RNet_FetchWarningMessagePolicyState</td><td></td></tr>
+<tr><td></td><td>CLIENTCONFIG_RNET_GET_ValorantClientConfig</td><td></td></tr>
+<tr><td></td><td>LEGAL_INFO_RNet_EULA</td><td></td></tr>
+<tr><td></td><td>LEGAL_INFO_RNet_Privacy</td><td></td></tr>
+<tr><td></td><td>LOCALE_RNet_FetchAvailableLocales</td><td></td></tr>
+<tr><td></td><td>LOCALE_RNet_FetchLocale</td><td></td></tr>
+<tr><td></td><td>Local_Swagger_Docs</td><td></td></tr>
+<tr><td></td><td>REPORTER_FEEDBACK_RNet_GetReporterFeedback</td><td></td></tr>
+<tr><td></td><td>RIOT_WARNING_RNet_GetRiotWarning</td><td></td></tr>
+<tr><td></td><td>RSO_RNet_FetchClientAuthorizations</td><td></td></tr>
+<tr><td></td><td>RSO_RNet_GetAccessToken</td><td></td></tr>
+<tr><td></td><td>RSO_RNet_GetUserInfoToken</td><td></td></tr>
+<tr><td></td><td>Riot_Client_Command_Line_Args</td><td></td></tr>
+<tr><td></td><td>RiotStatus_RNet_FetchStatus</td><td>region</td></tr>
+<tr><td></td><td>TEXT_CHAT_RNet_FetchSettings</td><td></td></tr>
+<tr><td></td><td>TEXT_CHAT_RNet_GetMUCInfos_coregame</td><td></td></tr>
+<tr><td></td><td>TEXT_CHAT_RNet_GetMUCInfos_parties</td><td></td></tr>
+<tr><td></td><td>TEXT_CHAT_RNet_GetMUCInfos_pregame</td><td></td></tr>
+<tr><td></td><td>TEXT_CHAT_RNet_GetMUCInfos_tournaments</td><td></td></tr>
+<tr><td></td><td>URNetClient_CheckPluginStatus</td><td></td></tr>
+<tr><td></td><td>URNetClient_CheckRMSSession</td><td></td></tr>
+<tr><td></td><td>URNetClient_GetProcessInfo</td><td></td></tr>
+<tr><td></td><td>VOICE_CHAT_RNet_FetchAudioProperties</td><td></td></tr>
+<tr><td></td><td>VOICE_CHAT_RNet_FetchCaptureDevices</td><td></td></tr>
+<tr><td></td><td>VOICE_CHAT_RNet_FetchPTTSettings</td><td></td></tr>
+<tr><td></td><td>VOICE_CHAT_RNet_FetchRenderDevices</td><td></td></tr>
+<tr><td></td><td>VOICE_CHAT_RNet_FetchSessions</td><td></td></tr>
+<tr><td></td><td>VOICE_CHAT_RNet_FetchSettings</td><td></td></tr>
+<tr><td></td><td>Valorant_Log_Path</td><td></td></tr>
+</tbody></table>
 <h2 id="usage"><a class="header" href="#usage">Usage</a></h2>
-<pre><code class="language-javascript">    const _data = await ApiClient.{Service}.{Function}
+<pre><code class="language-typescript">    const _data = await ApiClient.{Service}.{Function(...Args)}
 </code></pre>
 
                     </main>

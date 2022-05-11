@@ -64,6 +64,8 @@ Client.fromJSON(config, ApiClient.toJSON());
 | Client Platfrom | setClientPlatfrom *(clientPlatfrom)* |
 | Cookie          | setClientPlatfrom *(cookie)*         |
 
+## Usage
+
 ```javascript
     ApiClient.{Function}
 ```

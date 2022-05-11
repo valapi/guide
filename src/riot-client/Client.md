@@ -52,6 +52,8 @@ const ApiClient = new Client(config);
 |          | setLockfilePassword *(password)* |
 |          | setLockfileProtocol *(protocol)* |
 
+## Usage
+
 ```javascript
     ApiClient.{Function}
 ```

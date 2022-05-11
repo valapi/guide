@@ -139,72 +139,72 @@
                         <h1 id="api"><a class="header" href="#api">API</a></h1>
 <hr />
 <p><a href="https://github.com/techchrism/valorant-api-docs">https://github.com/techchrism/valorant-api-docs</a></p>
-<table><thead><tr><th>Service</th><th>Function</th></tr></thead><tbody>
-<tr><td><strong>Contract</strong></td><td>DefinitionsFetch <em>()</em></td></tr>
-<tr><td></td><td>FetchActiveStory <em>(puuid)</em></td></tr>
-<tr><td></td><td>Fetch <em>(puuid)</em></td></tr>
-<tr><td></td><td>Active <em>(puuid, contractId)</em></td></tr>
-<tr><td><strong>CurrentGame</strong></td><td>FetchAllChatMUCToken <em>()</em></td></tr>
-<tr><td></td><td>FetchMatch <em>(matchId)</em></td></tr>
-<tr><td></td><td>FetchMatchLoadouts <em>(matchId)</em></td></tr>
-<tr><td></td><td>FetchPlayer <em>(puuid)</em></td></tr>
-<tr><td></td><td>FetchTeamChatMUCToken <em>(matchId)</em></td></tr>
-<tr><td></td><td>DisassociatePlayer <em>(puuid, matchId)</em></td></tr>
-<tr><td><strong>Party</strong></td><td>RemovePlayer <em>(puuid)</em></td></tr>
-<tr><td></td><td>FetchCustomGameConfigs <em>()</em></td></tr>
-<tr><td></td><td>FetchMUCToken <em>(partyId)</em></td></tr>
-<tr><td></td><td>FetchParty <em>(partyId)</em></td></tr>
-<tr><td></td><td>FetchPlayer <em>(puuid)</em></td></tr>
-<tr><td></td><td>FetchVoiceToken <em>(partyId)</em></td></tr>
-<tr><td></td><td>ChangeQueue <em>(partyId, queue)</em></td></tr>
-<tr><td></td><td>DeclineRequest <em>(partyId, requestId)</em></td></tr>
-<tr><td></td><td>EnterMatchmakingQueue <em>(partyId)</em></td></tr>
-<tr><td></td><td>InviteToPartyByDisplayName <em>(partyId, gameName, tagLine)</em></td></tr>
-<tr><td></td><td>LeaveMatchmakingQueue <em>(partyId)</em></td></tr>
-<tr><td></td><td>RefreshCompetitiveTier <em>(puuid, partyId)</em></td></tr>
-<tr><td></td><td>RefreshPings <em>(puuid, partyId)</em></td></tr>
-<tr><td></td><td>RefreshPlayerIdentity <em>(puuid, partyId)</em></td></tr>
-<tr><td></td><td>SetAccessibility <em>(partyId, accessibility)</em></td></tr>
-<tr><td></td><td>SetCustomGameSettings <em>(partyId, settings)</em></td></tr>
-<tr><td></td><td>SetMemberReady <em>(partyId, puuid, isReady)</em></td></tr>
-<tr><td></td><td>StartCustomGame <em>(partyId)</em></td></tr>
-<tr><td></td><td>LeaveParty <em>(puuid, partyId)</em></td></tr>
-<tr><td></td><td>AutoBalance <em>(partyId)</em></td></tr>
-<tr><td></td><td>ChangeTeamInCustomGame <em>(partyId, team, puuid)</em></td></tr>
-<tr><td></td><td>StartSoloExperience <em>(partyId)</em></td></tr>
-<tr><td><strong>PreGame</strong></td><td>FetchChatToken <em>(matchId)</em></td></tr>
-<tr><td></td><td>FetchVoiceToken <em>(matchId)</em></td></tr>
-<tr><td></td><td>GetMatch <em>(matchId)</em></td></tr>
-<tr><td></td><td>GetMatchLoadouts <em>(matchId)</em></td></tr>
-<tr><td></td><td>GetPlayer <em>(puuid)</em></td></tr>
-<tr><td></td><td>LockCharacter <em>(matchId, agentId)</em></td></tr>
-<tr><td></td><td>QuitMatch <em>(matchId)</em></td></tr>
-<tr><td></td><td>SelectCharacter <em>(matchId, agentId)</em></td></tr>
-<tr><td><strong>Session</strong></td><td>Get <em>(puuid)</em></td></tr>
-<tr><td></td><td>ReConnect <em>(puuid)</em></td></tr>
-<tr><td><strong>Store</strong></td><td>GetEntitlements <em>(puuid, itemTypeId)</em></td></tr>
-<tr><td></td><td>GetOffers <em>()</em></td></tr>
-<tr><td></td><td>GetStorefront <em>(puuid)</em></td></tr>
-<tr><td></td><td>GetWallet <em>(puuid)</em></td></tr>
-<tr><td></td><td>RevealNightMarketOffers <em>(puuid)</em></td></tr>
-<tr><td><strong>Client</strong></td><td>FetchContent <em>()</em></td></tr>
-<tr><td></td><td>FetchConfig <em>()</em></td></tr>
-<tr><td><strong>Match</strong></td><td>FetchMatchDetails <em>(matchId)</em></td></tr>
-<tr><td></td><td>FetchMatchHistory <em>(puuid, queueId?, startIndex?, endIndex?)</em></td></tr>
-<tr><td><strong>MMR</strong></td><td>FetchCompetitiveUpdates <em>(puuid, queueId?, startIndex?, endIndex?)</em></td></tr>
-<tr><td></td><td>FetchLeaderboard <em>(puuid, startIndex?, size?, serachUsername?)</em></td></tr>
-<tr><td></td><td>FetchPlayer <em>(puuid)</em></td></tr>
-<tr><td></td><td>HideActRankBadge <em>(puuid)</em></td></tr>
-<tr><td><strong>Player</strong></td><td>GetUsername <em>(puuid)</em></td></tr>
-<tr><td></td><td>GetUserInfo <em>()</em></td></tr>
-<tr><td></td><td>AccountXP <em>(puuid)</em></td></tr>
-<tr><td></td><td>Loadout <em>(puuid)</em></td></tr>
-<tr><td></td><td>LoadoutUpdate <em>(puuid)</em></td></tr>
-<tr><td></td><td>FetchPlayerRestrictions <em>()</em></td></tr>
-<tr><td></td><td>MassRewards <em>(puuid)</em></td></tr>
+<table><thead><tr><th>Service</th><th>Function</th><th>...Args</th></tr></thead><tbody>
+<tr><td><strong>Contract</strong></td><td>DefinitionsFetch</td><td></td></tr>
+<tr><td></td><td>FetchActiveStory</td><td>puuid</td></tr>
+<tr><td></td><td>Fetch</td><td>puuid</td></tr>
+<tr><td></td><td>Active</td><td>puuid, contractId</td></tr>
+<tr><td><strong>CurrentGame</strong></td><td>FetchAllChatMUCToken</td><td></td></tr>
+<tr><td></td><td>FetchMatch</td><td>matchId</td></tr>
+<tr><td></td><td>FetchMatchLoadouts</td><td>matchId</td></tr>
+<tr><td></td><td>FetchPlayer</td><td>puuid</td></tr>
+<tr><td></td><td>FetchTeamChatMUCToken</td><td>matchId</td></tr>
+<tr><td></td><td>DisassociatePlayer</td><td>puuid, matchId</td></tr>
+<tr><td><strong>Party</strong></td><td>RemovePlayer</td><td>puuid</td></tr>
+<tr><td></td><td>FetchCustomGameConfigs</td><td></td></tr>
+<tr><td></td><td>FetchMUCToken</td><td>partyId</td></tr>
+<tr><td></td><td>FetchParty</td><td>partyId</td></tr>
+<tr><td></td><td>FetchPlayer</td><td>puuid</td></tr>
+<tr><td></td><td>FetchVoiceToken</td><td>partyId</td></tr>
+<tr><td></td><td>ChangeQueue</td><td>partyId, queue</td></tr>
+<tr><td></td><td>DeclineRequest</td><td>partyId, requestId</td></tr>
+<tr><td></td><td>EnterMatchmakingQueue</td><td>partyId</td></tr>
+<tr><td></td><td>InviteToPartyByDisplayName</td><td>partyId, gameName, tagLine</td></tr>
+<tr><td></td><td>LeaveMatchmakingQueue</td><td>partyId</td></tr>
+<tr><td></td><td>RefreshCompetitiveTier</td><td>puuid, partyId</td></tr>
+<tr><td></td><td>RefreshPings</td><td>puuid, partyId</td></tr>
+<tr><td></td><td>RefreshPlayerIdentity</td><td>puuid, partyId</td></tr>
+<tr><td></td><td>SetAccessibility</td><td>partyId, accessibility</td></tr>
+<tr><td></td><td>SetCustomGameSettings</td><td>partyId, settings</td></tr>
+<tr><td></td><td>SetMemberReady</td><td>partyId, puuid, isReady</td></tr>
+<tr><td></td><td>StartCustomGame</td><td>partyId</td></tr>
+<tr><td></td><td>LeaveParty</td><td>puuid, partyId</td></tr>
+<tr><td></td><td>AutoBalance</td><td>partyId</td></tr>
+<tr><td></td><td>ChangeTeamInCustomGame</td><td>partyId, team, puuid</td></tr>
+<tr><td></td><td>StartSoloExperience</td><td>partyId</td></tr>
+<tr><td><strong>PreGame</strong></td><td>FetchChatToken</td><td>matchId</td></tr>
+<tr><td></td><td>FetchVoiceToken</td><td>matchId</td></tr>
+<tr><td></td><td>GetMatch</td><td>matchId</td></tr>
+<tr><td></td><td>GetMatchLoadouts</td><td>matchId</td></tr>
+<tr><td></td><td>GetPlayer</td><td>puuid</td></tr>
+<tr><td></td><td>LockCharacter</td><td>matchId, agentId</td></tr>
+<tr><td></td><td>QuitMatch</td><td>matchId</td></tr>
+<tr><td></td><td>SelectCharacter</td><td>matchId, agentId</td></tr>
+<tr><td><strong>Session</strong></td><td>Get</td><td>puuid</td></tr>
+<tr><td></td><td>ReConnect</td><td>puuid</td></tr>
+<tr><td><strong>Store</strong></td><td>GetEntitlements</td><td>puuid, itemTypeId</td></tr>
+<tr><td></td><td>GetOffers</td><td></td></tr>
+<tr><td></td><td>GetStorefront</td><td>puuid</td></tr>
+<tr><td></td><td>GetWallet</td><td>puuid</td></tr>
+<tr><td></td><td>RevealNightMarketOffers</td><td>puuid</td></tr>
+<tr><td><strong>Client</strong></td><td>FetchContent</td><td></td></tr>
+<tr><td></td><td>FetchConfig</td><td></td></tr>
+<tr><td><strong>Match</strong></td><td>FetchMatchDetails</td><td>matchId</td></tr>
+<tr><td></td><td>FetchMatchHistory</td><td>puuid, queueId?, startIndex?, endIndex?</td></tr>
+<tr><td><strong>MMR</strong></td><td>FetchCompetitiveUpdates</td><td>puuid, queueId?, startIndex?, endIndex?</td></tr>
+<tr><td></td><td>FetchLeaderboard</td><td>puuid, startIndex?, size?, serachUsername?</td></tr>
+<tr><td></td><td>FetchPlayer</td><td>puuid</td></tr>
+<tr><td></td><td>HideActRankBadge</td><td>puuid</td></tr>
+<tr><td><strong>Player</strong></td><td>GetUsername</td><td>puuid</td></tr>
+<tr><td></td><td>GetUserInfo</td><td></td></tr>
+<tr><td></td><td>AccountXP</td><td>puuid</td></tr>
+<tr><td></td><td>Loadout</td><td>puuid</td></tr>
+<tr><td></td><td>LoadoutUpdate</td><td>puuid</td></tr>
+<tr><td></td><td>FetchPlayerRestrictions</td><td></td></tr>
+<tr><td></td><td>MassRewards</td><td>puuid</td></tr>
 </tbody></table>
 <h2 id="usage"><a class="header" href="#usage">Usage</a></h2>
-<pre><code class="language-javascript">    const _data = await ApiClient.{Service}.{Function}
+<pre><code class="language-typescript">    const _data = await ApiClient.{Service}.{Function(...Args)}
 </code></pre>
 
                     </main>

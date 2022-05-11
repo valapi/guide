@@ -139,26 +139,63 @@
                         <h1 id="api"><a class="header" href="#api">API</a></h1>
 <hr />
 <p>All API Base On <a href="https://dash.valorant-api.com/">dash.valorant-api.com</a></p>
-<p><em>( comming soon... )</em></p>
-<details>
-<summary>Example</summary>
-<blockquote>
-<pre><code class="language-typescript">//Returns data and assets of all weapon buddies
-await ApiClient.Buddies.get();
-
-//Returns data and assets of all weapon buddy levels
-await ApiClient.Buddies.getLevels();
-
-//Returns data and assets of the requested weapon buddy
-await ApiClient.Buddies.getByUuid('uuid');
-
-//Use the isPlayableCharacter=true filter to make sure you don't have a &quot;duplicate&quot; Sova.
-await ApiClient.Agents.get(true);
-</code></pre>
-</blockquote>
-</details>
+<table><thead><tr><th>Service</th><th>Function</th><th>...Args</th></tr></thead><tbody>
+<tr><td><strong>Agent</strong></td><td>get</td><td>isPlayableCharacter</td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td><strong>Buddies</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getLevels</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td></td><td>getLevelByUuid</td><td>uuid</td></tr>
+<tr><td><strong>Bundles</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td><strong>Bundles</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td><strong>Ceremonies</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td><strong>CompetitiveTiers</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td><strong>ContentTiers</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td><strong>Contracts</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td><strong>Currencies</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td><strong>Events</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td><strong>Gamemodes</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getEquippables</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td></td><td>getEquippableByUuid</td><td>uuid</td></tr>
+<tr><td><strong>Gear</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td><strong>Maps</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td><strong>PlayerCards</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td><strong>PlayerTitles</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td><strong>Seasons</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getCompetitiveSeasons</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td></td><td>getCompetitiveSeasonByUuid</td><td>uuid</td></tr>
+<tr><td><strong>Sprays</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getLevels</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td></td><td>getLevelByUuid</td><td>uuid</td></tr>
+<tr><td><strong>Themes</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td><strong>Versions</strong></td><td>get</td><td></td></tr>
+<tr><td><strong>Weapons</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getSkins</td><td></td></tr>
+<tr><td></td><td>getSkinChromas</td><td></td></tr>
+<tr><td></td><td>getSkinLevels</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td></td><td>getSkinByUuid</td><td>uuid</td></tr>
+<tr><td></td><td>getSkinChromaByUuid</td><td>uuid</td></tr>
+<tr><td></td><td>getSkinLevelByUuid</td><td>uuid</td></tr>
+</tbody></table>
 <h2 id="usage"><a class="header" href="#usage">Usage</a></h2>
-<pre><code class="language-typescript">const _data = await ApiClient.{Endpoints}.{Function}
+<pre><code class="language-typescript">    const _data = await ApiClient.{Service}.{Function(...Args)}
 </code></pre>
 
                     </main>

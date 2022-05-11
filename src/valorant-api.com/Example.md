@@ -18,7 +18,7 @@ const ApiClient = new Client({
 ## API
 
 ```typescript
-const _data = await ApiClient.AccountV1.ByRiotId('PRX f0rsakeN', 'Huh');
+const _data = await ApiClient.Events.get();
 
 console.log(_data.data);
 ```

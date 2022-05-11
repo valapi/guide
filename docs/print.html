@@ -179,6 +179,9 @@
 <h2 id="contributors"><a class="header" href="#contributors">Contributors</a></h2>
 <hr />
 <p>list of the contributors who helped me improve this module.</p>
+<ul>
+<li>teyd#8766</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="install"><a class="header" href="#install">Install</a></h1>
 <hr />
 <pre><code class="language-bash">npm install @valapi/lib @valapi/api-wrapper @valapi/riot-api @valapi/riot-client @valapi/valorant-api.com
@@ -321,6 +324,7 @@ from '@valapi/lib';
 <tr><td>Client Platfrom</td><td>setClientPlatfrom <em>(clientPlatfrom)</em></td></tr>
 <tr><td>Cookie</td><td>setClientPlatfrom <em>(cookie)</em></td></tr>
 </tbody></table>
+<h2 id="usage"><a class="header" href="#usage">Usage</a></h2>
 <pre><code class="language-javascript">    ApiClient.{Function}
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="authentication-1"><a class="header" href="#authentication-1">Authentication</a></h1>
@@ -350,72 +354,72 @@ await ApiClient.verify(123456);
 <div style="break-before: page; page-break-before: always;"></div><h1 id="api"><a class="header" href="#api">API</a></h1>
 <hr />
 <p><a href="https://github.com/techchrism/valorant-api-docs">https://github.com/techchrism/valorant-api-docs</a></p>
-<table><thead><tr><th>Service</th><th>Function</th></tr></thead><tbody>
-<tr><td><strong>Contract</strong></td><td>DefinitionsFetch <em>()</em></td></tr>
-<tr><td></td><td>FetchActiveStory <em>(puuid)</em></td></tr>
-<tr><td></td><td>Fetch <em>(puuid)</em></td></tr>
-<tr><td></td><td>Active <em>(puuid, contractId)</em></td></tr>
-<tr><td><strong>CurrentGame</strong></td><td>FetchAllChatMUCToken <em>()</em></td></tr>
-<tr><td></td><td>FetchMatch <em>(matchId)</em></td></tr>
-<tr><td></td><td>FetchMatchLoadouts <em>(matchId)</em></td></tr>
-<tr><td></td><td>FetchPlayer <em>(puuid)</em></td></tr>
-<tr><td></td><td>FetchTeamChatMUCToken <em>(matchId)</em></td></tr>
-<tr><td></td><td>DisassociatePlayer <em>(puuid, matchId)</em></td></tr>
-<tr><td><strong>Party</strong></td><td>RemovePlayer <em>(puuid)</em></td></tr>
-<tr><td></td><td>FetchCustomGameConfigs <em>()</em></td></tr>
-<tr><td></td><td>FetchMUCToken <em>(partyId)</em></td></tr>
-<tr><td></td><td>FetchParty <em>(partyId)</em></td></tr>
-<tr><td></td><td>FetchPlayer <em>(puuid)</em></td></tr>
-<tr><td></td><td>FetchVoiceToken <em>(partyId)</em></td></tr>
-<tr><td></td><td>ChangeQueue <em>(partyId, queue)</em></td></tr>
-<tr><td></td><td>DeclineRequest <em>(partyId, requestId)</em></td></tr>
-<tr><td></td><td>EnterMatchmakingQueue <em>(partyId)</em></td></tr>
-<tr><td></td><td>InviteToPartyByDisplayName <em>(partyId, gameName, tagLine)</em></td></tr>
-<tr><td></td><td>LeaveMatchmakingQueue <em>(partyId)</em></td></tr>
-<tr><td></td><td>RefreshCompetitiveTier <em>(puuid, partyId)</em></td></tr>
-<tr><td></td><td>RefreshPings <em>(puuid, partyId)</em></td></tr>
-<tr><td></td><td>RefreshPlayerIdentity <em>(puuid, partyId)</em></td></tr>
-<tr><td></td><td>SetAccessibility <em>(partyId, accessibility)</em></td></tr>
-<tr><td></td><td>SetCustomGameSettings <em>(partyId, settings)</em></td></tr>
-<tr><td></td><td>SetMemberReady <em>(partyId, puuid, isReady)</em></td></tr>
-<tr><td></td><td>StartCustomGame <em>(partyId)</em></td></tr>
-<tr><td></td><td>LeaveParty <em>(puuid, partyId)</em></td></tr>
-<tr><td></td><td>AutoBalance <em>(partyId)</em></td></tr>
-<tr><td></td><td>ChangeTeamInCustomGame <em>(partyId, team, puuid)</em></td></tr>
-<tr><td></td><td>StartSoloExperience <em>(partyId)</em></td></tr>
-<tr><td><strong>PreGame</strong></td><td>FetchChatToken <em>(matchId)</em></td></tr>
-<tr><td></td><td>FetchVoiceToken <em>(matchId)</em></td></tr>
-<tr><td></td><td>GetMatch <em>(matchId)</em></td></tr>
-<tr><td></td><td>GetMatchLoadouts <em>(matchId)</em></td></tr>
-<tr><td></td><td>GetPlayer <em>(puuid)</em></td></tr>
-<tr><td></td><td>LockCharacter <em>(matchId, agentId)</em></td></tr>
-<tr><td></td><td>QuitMatch <em>(matchId)</em></td></tr>
-<tr><td></td><td>SelectCharacter <em>(matchId, agentId)</em></td></tr>
-<tr><td><strong>Session</strong></td><td>Get <em>(puuid)</em></td></tr>
-<tr><td></td><td>ReConnect <em>(puuid)</em></td></tr>
-<tr><td><strong>Store</strong></td><td>GetEntitlements <em>(puuid, itemTypeId)</em></td></tr>
-<tr><td></td><td>GetOffers <em>()</em></td></tr>
-<tr><td></td><td>GetStorefront <em>(puuid)</em></td></tr>
-<tr><td></td><td>GetWallet <em>(puuid)</em></td></tr>
-<tr><td></td><td>RevealNightMarketOffers <em>(puuid)</em></td></tr>
-<tr><td><strong>Client</strong></td><td>FetchContent <em>()</em></td></tr>
-<tr><td></td><td>FetchConfig <em>()</em></td></tr>
-<tr><td><strong>Match</strong></td><td>FetchMatchDetails <em>(matchId)</em></td></tr>
-<tr><td></td><td>FetchMatchHistory <em>(puuid, queueId?, startIndex?, endIndex?)</em></td></tr>
-<tr><td><strong>MMR</strong></td><td>FetchCompetitiveUpdates <em>(puuid, queueId?, startIndex?, endIndex?)</em></td></tr>
-<tr><td></td><td>FetchLeaderboard <em>(puuid, startIndex?, size?, serachUsername?)</em></td></tr>
-<tr><td></td><td>FetchPlayer <em>(puuid)</em></td></tr>
-<tr><td></td><td>HideActRankBadge <em>(puuid)</em></td></tr>
-<tr><td><strong>Player</strong></td><td>GetUsername <em>(puuid)</em></td></tr>
-<tr><td></td><td>GetUserInfo <em>()</em></td></tr>
-<tr><td></td><td>AccountXP <em>(puuid)</em></td></tr>
-<tr><td></td><td>Loadout <em>(puuid)</em></td></tr>
-<tr><td></td><td>LoadoutUpdate <em>(puuid)</em></td></tr>
-<tr><td></td><td>FetchPlayerRestrictions <em>()</em></td></tr>
-<tr><td></td><td>MassRewards <em>(puuid)</em></td></tr>
+<table><thead><tr><th>Service</th><th>Function</th><th>...Args</th></tr></thead><tbody>
+<tr><td><strong>Contract</strong></td><td>DefinitionsFetch</td><td></td></tr>
+<tr><td></td><td>FetchActiveStory</td><td>puuid</td></tr>
+<tr><td></td><td>Fetch</td><td>puuid</td></tr>
+<tr><td></td><td>Active</td><td>puuid, contractId</td></tr>
+<tr><td><strong>CurrentGame</strong></td><td>FetchAllChatMUCToken</td><td></td></tr>
+<tr><td></td><td>FetchMatch</td><td>matchId</td></tr>
+<tr><td></td><td>FetchMatchLoadouts</td><td>matchId</td></tr>
+<tr><td></td><td>FetchPlayer</td><td>puuid</td></tr>
+<tr><td></td><td>FetchTeamChatMUCToken</td><td>matchId</td></tr>
+<tr><td></td><td>DisassociatePlayer</td><td>puuid, matchId</td></tr>
+<tr><td><strong>Party</strong></td><td>RemovePlayer</td><td>puuid</td></tr>
+<tr><td></td><td>FetchCustomGameConfigs</td><td></td></tr>
+<tr><td></td><td>FetchMUCToken</td><td>partyId</td></tr>
+<tr><td></td><td>FetchParty</td><td>partyId</td></tr>
+<tr><td></td><td>FetchPlayer</td><td>puuid</td></tr>
+<tr><td></td><td>FetchVoiceToken</td><td>partyId</td></tr>
+<tr><td></td><td>ChangeQueue</td><td>partyId, queue</td></tr>
+<tr><td></td><td>DeclineRequest</td><td>partyId, requestId</td></tr>
+<tr><td></td><td>EnterMatchmakingQueue</td><td>partyId</td></tr>
+<tr><td></td><td>InviteToPartyByDisplayName</td><td>partyId, gameName, tagLine</td></tr>
+<tr><td></td><td>LeaveMatchmakingQueue</td><td>partyId</td></tr>
+<tr><td></td><td>RefreshCompetitiveTier</td><td>puuid, partyId</td></tr>
+<tr><td></td><td>RefreshPings</td><td>puuid, partyId</td></tr>
+<tr><td></td><td>RefreshPlayerIdentity</td><td>puuid, partyId</td></tr>
+<tr><td></td><td>SetAccessibility</td><td>partyId, accessibility</td></tr>
+<tr><td></td><td>SetCustomGameSettings</td><td>partyId, settings</td></tr>
+<tr><td></td><td>SetMemberReady</td><td>partyId, puuid, isReady</td></tr>
+<tr><td></td><td>StartCustomGame</td><td>partyId</td></tr>
+<tr><td></td><td>LeaveParty</td><td>puuid, partyId</td></tr>
+<tr><td></td><td>AutoBalance</td><td>partyId</td></tr>
+<tr><td></td><td>ChangeTeamInCustomGame</td><td>partyId, team, puuid</td></tr>
+<tr><td></td><td>StartSoloExperience</td><td>partyId</td></tr>
+<tr><td><strong>PreGame</strong></td><td>FetchChatToken</td><td>matchId</td></tr>
+<tr><td></td><td>FetchVoiceToken</td><td>matchId</td></tr>
+<tr><td></td><td>GetMatch</td><td>matchId</td></tr>
+<tr><td></td><td>GetMatchLoadouts</td><td>matchId</td></tr>
+<tr><td></td><td>GetPlayer</td><td>puuid</td></tr>
+<tr><td></td><td>LockCharacter</td><td>matchId, agentId</td></tr>
+<tr><td></td><td>QuitMatch</td><td>matchId</td></tr>
+<tr><td></td><td>SelectCharacter</td><td>matchId, agentId</td></tr>
+<tr><td><strong>Session</strong></td><td>Get</td><td>puuid</td></tr>
+<tr><td></td><td>ReConnect</td><td>puuid</td></tr>
+<tr><td><strong>Store</strong></td><td>GetEntitlements</td><td>puuid, itemTypeId</td></tr>
+<tr><td></td><td>GetOffers</td><td></td></tr>
+<tr><td></td><td>GetStorefront</td><td>puuid</td></tr>
+<tr><td></td><td>GetWallet</td><td>puuid</td></tr>
+<tr><td></td><td>RevealNightMarketOffers</td><td>puuid</td></tr>
+<tr><td><strong>Client</strong></td><td>FetchContent</td><td></td></tr>
+<tr><td></td><td>FetchConfig</td><td></td></tr>
+<tr><td><strong>Match</strong></td><td>FetchMatchDetails</td><td>matchId</td></tr>
+<tr><td></td><td>FetchMatchHistory</td><td>puuid, queueId?, startIndex?, endIndex?</td></tr>
+<tr><td><strong>MMR</strong></td><td>FetchCompetitiveUpdates</td><td>puuid, queueId?, startIndex?, endIndex?</td></tr>
+<tr><td></td><td>FetchLeaderboard</td><td>puuid, startIndex?, size?, serachUsername?</td></tr>
+<tr><td></td><td>FetchPlayer</td><td>puuid</td></tr>
+<tr><td></td><td>HideActRankBadge</td><td>puuid</td></tr>
+<tr><td><strong>Player</strong></td><td>GetUsername</td><td>puuid</td></tr>
+<tr><td></td><td>GetUserInfo</td><td></td></tr>
+<tr><td></td><td>AccountXP</td><td>puuid</td></tr>
+<tr><td></td><td>Loadout</td><td>puuid</td></tr>
+<tr><td></td><td>LoadoutUpdate</td><td>puuid</td></tr>
+<tr><td></td><td>FetchPlayerRestrictions</td><td></td></tr>
+<tr><td></td><td>MassRewards</td><td>puuid</td></tr>
 </tbody></table>
-<h2 id="usage"><a class="header" href="#usage">Usage</a></h2>
-<pre><code class="language-javascript">    const _data = await ApiClient.{Service}.{Function}
+<h2 id="usage-1"><a class="header" href="#usage-1">Usage</a></h2>
+<pre><code class="language-typescript">    const _data = await ApiClient.{Service}.{Function(...Args)}
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="example-1"><a class="header" href="#example-1">Example</a></h1>
 <hr />
@@ -500,20 +504,21 @@ console.log(_data.data);
 <tr><td>API Key</td><td>setApiKey <em>(apiKey)</em></td></tr>
 <tr><td>Region</td><td>setRegion <em>(region)</em></td></tr>
 </tbody></table>
+<h2 id="usage-2"><a class="header" href="#usage-2">Usage</a></h2>
 <pre><code class="language-javascript">    ApiClient.{Function}
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="api-2"><a class="header" href="#api-2">API</a></h1>
 <hr />
 <p>Something is can't use, so I did't insert it.</p>
-<table><thead><tr><th>Service</th><th>Function</th></tr></thead><tbody>
-<tr><td><strong>AccountV1</strong></td><td>ByRiotId <em>(gameName, tagLine)</em></td></tr>
-<tr><td></td><td>ByPuuid <em>(puuid)</em></td></tr>
-<tr><td></td><td>ByGame <em>(puuid, game)</em></td></tr>
-<tr><td><strong>ContentV1</strong></td><td>Contents <em>(locale)</em></td></tr>
-<tr><td><strong>StatusV1</strong></td><td>PlatformData <em>(puuid)</em></td></tr>
+<table><thead><tr><th>Service</th><th>Function</th><th>...Args</th></tr></thead><tbody>
+<tr><td><strong>AccountV1</strong></td><td>ByRiotId</td><td>gameName, tagLine</td></tr>
+<tr><td></td><td>ByPuuid</td><td>puuid</td></tr>
+<tr><td></td><td>ByGame</td><td>puuid, game</td></tr>
+<tr><td><strong>ContentV1</strong></td><td>Contents</td><td>locale</td></tr>
+<tr><td><strong>StatusV1</strong></td><td>PlatformData</td><td></td></tr>
 </tbody></table>
-<h2 id="usage-1"><a class="header" href="#usage-1">Usage</a></h2>
-<pre><code class="language-javascript">    const _data = await ApiClient.{Service}.{Function}
+<h2 id="usage-3"><a class="header" href="#usage-3">Usage</a></h2>
+<pre><code class="language-typescript">    const _data = await ApiClient.{Service}.{Function(...Args)}
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="example-2"><a class="header" href="#example-2">Example</a></h1>
 <hr />
@@ -603,6 +608,7 @@ console.log(_data.data);
 <tr><td></td><td>setLockfilePassword <em>(password)</em></td></tr>
 <tr><td></td><td>setLockfileProtocol <em>(protocol)</em></td></tr>
 </tbody></table>
+<h2 id="usage-4"><a class="header" href="#usage-4">Usage</a></h2>
 <pre><code class="language-javascript">    ApiClient.{Function}
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="authentication-4"><a class="header" href="#authentication-4">Authentication</a></h1>
@@ -614,17 +620,61 @@ console.log(_data.data);
 <h2 id="more---"><a class="header" href="#more---">More . . .</a></h2>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="api-4"><a class="header" href="#api-4">API</a></h1>
 <hr />
-<p>That's A Lot of API endpoints. </p>
-<p>Please Use Typescript Auto-Completion.</p>
-<p><em>( comming soon... )</em></p>
-<h2 id="service"><a class="header" href="#service">Service</a></h2>
-<ul>
-<li>Chat</li>
-<li>Main</li>
-<li>More</li>
-</ul>
-<h2 id="usage-2"><a class="header" href="#usage-2">Usage</a></h2>
-<pre><code class="language-javascript">    const _data = await ApiClient.{Service}.{Function}
+<table><thead><tr><th>Service</th><th>Function</th><th>...Args</th></tr></thead><tbody>
+<tr><td><strong>Chat</strong></td><td>All_Chat_History</td><td></td></tr>
+<tr><td></td><td>All_Chat_Info</td><td></td></tr>
+<tr><td></td><td>All_Chat_Participants</td><td></td></tr>
+<tr><td></td><td>Game_Chat_Info</td><td></td></tr>
+<tr><td></td><td>Party_Chat_Info</td><td></td></tr>
+<tr><td></td><td>Pregame_Chat_Info</td><td></td></tr>
+<tr><td></td><td>Specific_Chat_History</td><td>chatId</td></tr>
+<tr><td></td><td>TEXT_CHAT_RNet_FetchParticipants</td><td>chatId</td></tr>
+<tr><td></td><td>Send_Chat</td><td>chatId, message</td></tr>
+<tr><td></td><td>Send_Whisper</td><td>chatId, message</td></tr>
+<tr><td><strong>Main</strong></td><td>CHATFRIENDS_RNet_GET_ALL</td><td></td></tr>
+<tr><td></td><td>FRIENDS_RNet_FetchFriendRequests</td><td></td></tr>
+<tr><td></td><td>Local_Help</td><td></td></tr>
+<tr><td></td><td>PRESENCE_RNet_GET_ALL</td><td></td></tr>
+<tr><td></td><td>PlayerAlias_RNet_GetActiveAlias</td><td></td></tr>
+<tr><td></td><td>RSO_Auth_User_Info</td><td></td></tr>
+<tr><td></td><td>RSO_RNet_GetEntitlementsToken</td><td></td></tr>
+<tr><td></td><td>Riot_Client_Region</td><td></td></tr>
+<tr><td></td><td>RiotClientSession_FetchSessions</td><td></td></tr>
+<tr><td></td><td>RiotKV_RNet_GetSettings</td><td></td></tr>
+<tr><td></td><td>RiotKV_RNet_GetSettingsTEXT_CHAT_RNet_FetchSession</td><td></td></tr>
+<tr><td><strong>More</strong></td><td>ANTI_ADDICTION_RNet_FetchShutdownPolicyState</td><td></td></tr>
+<tr><td></td><td>ANTI_ADDICTION_RNet_FetchWarningMessagePolicyState</td><td></td></tr>
+<tr><td></td><td>CLIENTCONFIG_RNET_GET_ValorantClientConfig</td><td></td></tr>
+<tr><td></td><td>LEGAL_INFO_RNet_EULA</td><td></td></tr>
+<tr><td></td><td>LEGAL_INFO_RNet_Privacy</td><td></td></tr>
+<tr><td></td><td>LOCALE_RNet_FetchAvailableLocales</td><td></td></tr>
+<tr><td></td><td>LOCALE_RNet_FetchLocale</td><td></td></tr>
+<tr><td></td><td>Local_Swagger_Docs</td><td></td></tr>
+<tr><td></td><td>REPORTER_FEEDBACK_RNet_GetReporterFeedback</td><td></td></tr>
+<tr><td></td><td>RIOT_WARNING_RNet_GetRiotWarning</td><td></td></tr>
+<tr><td></td><td>RSO_RNet_FetchClientAuthorizations</td><td></td></tr>
+<tr><td></td><td>RSO_RNet_GetAccessToken</td><td></td></tr>
+<tr><td></td><td>RSO_RNet_GetUserInfoToken</td><td></td></tr>
+<tr><td></td><td>Riot_Client_Command_Line_Args</td><td></td></tr>
+<tr><td></td><td>RiotStatus_RNet_FetchStatus</td><td>region</td></tr>
+<tr><td></td><td>TEXT_CHAT_RNet_FetchSettings</td><td></td></tr>
+<tr><td></td><td>TEXT_CHAT_RNet_GetMUCInfos_coregame</td><td></td></tr>
+<tr><td></td><td>TEXT_CHAT_RNet_GetMUCInfos_parties</td><td></td></tr>
+<tr><td></td><td>TEXT_CHAT_RNet_GetMUCInfos_pregame</td><td></td></tr>
+<tr><td></td><td>TEXT_CHAT_RNet_GetMUCInfos_tournaments</td><td></td></tr>
+<tr><td></td><td>URNetClient_CheckPluginStatus</td><td></td></tr>
+<tr><td></td><td>URNetClient_CheckRMSSession</td><td></td></tr>
+<tr><td></td><td>URNetClient_GetProcessInfo</td><td></td></tr>
+<tr><td></td><td>VOICE_CHAT_RNet_FetchAudioProperties</td><td></td></tr>
+<tr><td></td><td>VOICE_CHAT_RNet_FetchCaptureDevices</td><td></td></tr>
+<tr><td></td><td>VOICE_CHAT_RNet_FetchPTTSettings</td><td></td></tr>
+<tr><td></td><td>VOICE_CHAT_RNet_FetchRenderDevices</td><td></td></tr>
+<tr><td></td><td>VOICE_CHAT_RNet_FetchSessions</td><td></td></tr>
+<tr><td></td><td>VOICE_CHAT_RNet_FetchSettings</td><td></td></tr>
+<tr><td></td><td>Valorant_Log_Path</td><td></td></tr>
+</tbody></table>
+<h2 id="usage-5"><a class="header" href="#usage-5">Usage</a></h2>
+<pre><code class="language-typescript">    const _data = await ApiClient.{Service}.{Function(...Args)}
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="example-3"><a class="header" href="#example-3">Example</a></h1>
 <hr />
@@ -702,32 +752,69 @@ console.log(_data.data);
 <table><thead><tr><th>Setting</th><th>Function</th></tr></thead><tbody>
 <tr><td>Language</td><td>setLanguage <em>(language)</em></td></tr>
 </tbody></table>
-<h2 id="usage-3"><a class="header" href="#usage-3">Usage</a></h2>
+<h2 id="usage-6"><a class="header" href="#usage-6">Usage</a></h2>
 <pre><code class="language-javascript">    ApiClient.{Function}
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="api-6"><a class="header" href="#api-6">API</a></h1>
 <hr />
 <p>All API Base On <a href="https://dash.valorant-api.com/">dash.valorant-api.com</a></p>
-<p><em>( comming soon... )</em></p>
-<details>
-<summary>Example</summary>
-<blockquote>
-<pre><code class="language-typescript">//Returns data and assets of all weapon buddies
-await ApiClient.Buddies.get();
-
-//Returns data and assets of all weapon buddy levels
-await ApiClient.Buddies.getLevels();
-
-//Returns data and assets of the requested weapon buddy
-await ApiClient.Buddies.getByUuid('uuid');
-
-//Use the isPlayableCharacter=true filter to make sure you don't have a &quot;duplicate&quot; Sova.
-await ApiClient.Agents.get(true);
-</code></pre>
-</blockquote>
-</details>
-<h2 id="usage-4"><a class="header" href="#usage-4">Usage</a></h2>
-<pre><code class="language-typescript">const _data = await ApiClient.{Endpoints}.{Function}
+<table><thead><tr><th>Service</th><th>Function</th><th>...Args</th></tr></thead><tbody>
+<tr><td><strong>Agent</strong></td><td>get</td><td>isPlayableCharacter</td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td><strong>Buddies</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getLevels</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td></td><td>getLevelByUuid</td><td>uuid</td></tr>
+<tr><td><strong>Bundles</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td><strong>Bundles</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td><strong>Ceremonies</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td><strong>CompetitiveTiers</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td><strong>ContentTiers</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td><strong>Contracts</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td><strong>Currencies</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td><strong>Events</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td><strong>Gamemodes</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getEquippables</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td></td><td>getEquippableByUuid</td><td>uuid</td></tr>
+<tr><td><strong>Gear</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td><strong>Maps</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td><strong>PlayerCards</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td><strong>PlayerTitles</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td><strong>Seasons</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getCompetitiveSeasons</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td></td><td>getCompetitiveSeasonByUuid</td><td>uuid</td></tr>
+<tr><td><strong>Sprays</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getLevels</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td></td><td>getLevelByUuid</td><td>uuid</td></tr>
+<tr><td><strong>Themes</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td><strong>Versions</strong></td><td>get</td><td></td></tr>
+<tr><td><strong>Weapons</strong></td><td>get</td><td></td></tr>
+<tr><td></td><td>getSkins</td><td></td></tr>
+<tr><td></td><td>getSkinChromas</td><td></td></tr>
+<tr><td></td><td>getSkinLevels</td><td></td></tr>
+<tr><td></td><td>getByUuid</td><td>uuid</td></tr>
+<tr><td></td><td>getSkinByUuid</td><td>uuid</td></tr>
+<tr><td></td><td>getSkinChromaByUuid</td><td>uuid</td></tr>
+<tr><td></td><td>getSkinLevelByUuid</td><td>uuid</td></tr>
+</tbody></table>
+<h2 id="usage-7"><a class="header" href="#usage-7">Usage</a></h2>
+<pre><code class="language-typescript">    const _data = await ApiClient.{Service}.{Function(...Args)}
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="example-4"><a class="header" href="#example-4">Example</a></h1>
 <hr />
@@ -740,7 +827,7 @@ await ApiClient.Agents.get(true);
 
 </code></pre>
 <h2 id="api-7"><a class="header" href="#api-7">API</a></h2>
-<pre><code class="language-typescript">const _data = await ApiClient.AccountV1.ByRiotId('PRX f0rsakeN', 'Huh');
+<pre><code class="language-typescript">const _data = await ApiClient.Events.get();
 
 console.log(_data.data);
 </code></pre>

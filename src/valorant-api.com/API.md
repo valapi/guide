@@ -4,31 +4,64 @@
 
 All API Base On [dash.valorant-api.com](https://dash.valorant-api.com/)
 
-*( comming soon... )*
-
-<details>
-<summary>Example</summary>
-<blockquote>
-
-```typescript
-//Returns data and assets of all weapon buddies
-await ApiClient.Buddies.get();
-
-//Returns data and assets of all weapon buddy levels
-await ApiClient.Buddies.getLevels();
-
-//Returns data and assets of the requested weapon buddy
-await ApiClient.Buddies.getByUuid('uuid');
-
-//Use the isPlayableCharacter=true filter to make sure you don't have a "duplicate" Sova.
-await ApiClient.Agents.get(true);
-```
-
-</blockquote>
-</details>
+| Service              | Function                   | ...Args             |
+| -------------------- | -------------------------- | ------------------- |
+| **Agent**            | get                        | isPlayableCharacter |
+|                      | getByUuid                  | uuid                |
+| **Buddies**          | get                        |                     |
+|                      | getLevels                  |                     |
+|                      | getByUuid                  | uuid                |
+|                      | getLevelByUuid             | uuid                |
+| **Bundles**          | get                        |                     |
+|                      | getByUuid                  | uuid                |
+| **Bundles**          | get                        |                     |
+|                      | getByUuid                  | uuid                |
+| **Ceremonies**       | get                        |                     |
+|                      | getByUuid                  | uuid                |
+| **CompetitiveTiers** | get                        |                     |
+|                      | getByUuid                  | uuid                |
+| **ContentTiers**     | get                        |                     |
+|                      | getByUuid                  | uuid                |
+| **Contracts**        | get                        |                     |
+|                      | getByUuid                  | uuid                |
+| **Currencies**       | get                        |                     |
+|                      | getByUuid                  | uuid                |
+| **Events**           | get                        |                     |
+|                      | getByUuid                  | uuid                |
+| **Gamemodes**        | get                        |                     |
+|                      | getEquippables             |                     |
+|                      | getByUuid                  | uuid                |
+|                      | getEquippableByUuid        | uuid                |
+| **Gear**             | get                        |                     |
+|                      | getByUuid                  | uuid                |
+| **Maps**             | get                        |                     |
+|                      | getByUuid                  | uuid                |
+| **PlayerCards**      | get                        |                     |
+|                      | getByUuid                  | uuid                |
+| **PlayerTitles**     | get                        |                     |
+|                      | getByUuid                  | uuid                |
+| **Seasons**          | get                        |                     |
+|                      | getCompetitiveSeasons      |                     |
+|                      | getByUuid                  | uuid                |
+|                      | getCompetitiveSeasonByUuid | uuid                |
+| **Sprays**           | get                        |                     |
+|                      | getLevels                  |                     |
+|                      | getByUuid                  | uuid                |
+|                      | getLevelByUuid             | uuid                |
+| **Themes**           | get                        |                     |
+|                      | getByUuid                  | uuid                |
+| **Versions**         | get                        |                     |
+| **Weapons**          | get                        |                     |
+|                      | getSkins                   |                     |
+|                      | getSkinChromas             |                     |
+|                      | getSkinLevels              |                     |
+|                      | getByUuid                  | uuid                |
+|                      | getSkinByUuid              | uuid                |
+|                      | getSkinChromaByUuid        | uuid                |
+|                      | getSkinLevelByUuid         | uuid                |
 
 ## Usage
 
 ```typescript
-const _data = await ApiClient.{Endpoints}.{Function}
+    const _data = await ApiClient.{Service}.{Function(...Args)}
 ```

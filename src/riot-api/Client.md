@@ -39,6 +39,8 @@ You Can Get Api Key From [developer.riotgames.com](https://developer.riotgames.c
 | API Key | setApiKey *(apiKey)* |
 | Region  | setRegion *(region)* |
 
+## Usage
+
 ```javascript
     ApiClient.{Function}
 ```
