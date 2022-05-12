@@ -31,12 +31,12 @@ const ApiClient = new Client(config);
 
 -----------
 
-| Setting  | Function                 |
-| -------- | ------------------------ |
-| Language | setLanguage *(language)* |
+| Setting  | Function    | ...Args  |
+| -------- | ----------- | -------- |
+| Language | setLanguage | language |
 
 ## Usage
 
 ```javascript
-    ApiClient.{Function}
+    ApiClient.{Function(...Args)}
 ```

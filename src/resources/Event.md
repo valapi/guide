@@ -7,6 +7,7 @@ ApiClient.on('EVENT_NAME', callback())
 ```
 
 - **ready**
+- **request** => `any`
 - **changeSettings** => `{ name:string, data:any }`
 - **error** => `Error`
 
@@ -31,14 +32,6 @@ interface Error {
 ```typescript
 ApiClient.on('ready', (() => {
     console.log('Client is ready!');
-}));
-```
-
-*changeSettings*
-
-```typescript
-ApiClient.on('changeSettings', ((data: { name:string, data:any }) => {
-    console.log(data);
 }));
 ```
 

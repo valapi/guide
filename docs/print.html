@@ -218,6 +218,7 @@ from '@valapi/lib';
 </code></pre>
 <ul>
 <li><strong>ready</strong></li>
+<li><strong>request</strong> =&gt; <code>any</code></li>
 <li><strong>changeSettings</strong> =&gt; <code>{ name:string, data:any }</code></li>
 <li><strong>error</strong> =&gt; <code>Error</code></li>
 </ul>
@@ -234,11 +235,6 @@ from '@valapi/lib';
 <p><em>Ready</em></p>
 <pre><code class="language-typescript">ApiClient.on('ready', (() =&gt; {
     console.log('Client is ready!');
-}));
-</code></pre>
-<p><em>changeSettings</em></p>
-<pre><code class="language-typescript">ApiClient.on('changeSettings', ((data: { name:string, data:any }) =&gt; {
-    console.log(data);
 }));
 </code></pre>
 <p><em>Error</em></p>
@@ -318,14 +314,14 @@ from '@valapi/lib';
 </code></pre>
 <h1 id="settings"><a class="header" href="#settings">Settings</a></h1>
 <hr />
-<table><thead><tr><th>Setting</th><th>Function</th></tr></thead><tbody>
-<tr><td>Region</td><td>setRegion <em>(region)</em></td></tr>
-<tr><td>Client Version</td><td>setClientVersion <em>(clientVersion)</em></td></tr>
-<tr><td>Client Platfrom</td><td>setClientPlatfrom <em>(clientPlatfrom)</em></td></tr>
-<tr><td>Cookie</td><td>setClientPlatfrom <em>(cookie)</em></td></tr>
+<table><thead><tr><th>Setting</th><th>Function</th><th>...Args</th></tr></thead><tbody>
+<tr><td>Region</td><td>setRegion</td><td>region</td></tr>
+<tr><td>Client Version</td><td>setClientVersion</td><td>clientVersion</td></tr>
+<tr><td>Client Platfrom</td><td>setClientPlatfrom</td><td>clientPlatfrom</td></tr>
+<tr><td>Cookie</td><td>setClientPlatfrom</td><td>cookie</td></tr>
 </tbody></table>
 <h2 id="usage"><a class="header" href="#usage">Usage</a></h2>
-<pre><code class="language-javascript">    ApiClient.{Function}
+<pre><code class="language-javascript">    ApiClient.{Function(...Args)}
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="authentication-1"><a class="header" href="#authentication-1">Authentication</a></h1>
 <hr />
@@ -500,12 +496,12 @@ console.log(_data.data);
 <p>You Can Get Api Key From <a href="https://developer.riotgames.com/">developer.riotgames.com</a></p>
 <h1 id="settings-1"><a class="header" href="#settings-1">Settings</a></h1>
 <hr />
-<table><thead><tr><th>Setting</th><th>Function</th></tr></thead><tbody>
-<tr><td>API Key</td><td>setApiKey <em>(apiKey)</em></td></tr>
-<tr><td>Region</td><td>setRegion <em>(region)</em></td></tr>
+<table><thead><tr><th>Setting</th><th>Function</th><th>...Args</th></tr></thead><tbody>
+<tr><td>API Key</td><td>setApiKey</td><td>apiKey</td></tr>
+<tr><td>Region</td><td>setRegion</td><td>region</td></tr>
 </tbody></table>
 <h2 id="usage-2"><a class="header" href="#usage-2">Usage</a></h2>
-<pre><code class="language-javascript">    ApiClient.{Function}
+<pre><code class="language-javascript">    ApiClient.{Function(...Args)}
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="api-2"><a class="header" href="#api-2">API</a></h1>
 <hr />
@@ -599,17 +595,13 @@ console.log(_data.data);
 </code></pre>
 <h1 id="settings-2"><a class="header" href="#settings-2">Settings</a></h1>
 <hr />
-<table><thead><tr><th>Setting</th><th>Function</th></tr></thead><tbody>
-<tr><td>IP</td><td>setIp <em>(ip)</em></td></tr>
-<tr><td>Username</td><td>setUsername <em>(username)</em></td></tr>
-<tr><td>Lockfile</td><td>setLockfileName <em>(name)</em></td></tr>
-<tr><td></td><td>setLockfilePid <em>(pid)</em></td></tr>
-<tr><td></td><td>setLockfilePort <em>(port)</em></td></tr>
-<tr><td></td><td>setLockfilePassword <em>(password)</em></td></tr>
-<tr><td></td><td>setLockfileProtocol <em>(protocol)</em></td></tr>
+<table><thead><tr><th>Setting</th><th>Function</th><th>...Args</th></tr></thead><tbody>
+<tr><td>IP</td><td>setIp</td><td>ip</td></tr>
+<tr><td>Username</td><td>setUsername</td><td>username</td></tr>
+<tr><td>Lockfile</td><td>setLockfile</td><td>name</td></tr>
 </tbody></table>
 <h2 id="usage-4"><a class="header" href="#usage-4">Usage</a></h2>
-<pre><code class="language-javascript">    ApiClient.{Function}
+<pre><code class="language-javascript">    ApiClient.{Function(...Args)}
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="authentication-4"><a class="header" href="#authentication-4">Authentication</a></h1>
 <hr />
@@ -749,11 +741,11 @@ console.log(_data.data);
 </code></pre>
 <h1 id="settings-3"><a class="header" href="#settings-3">Settings</a></h1>
 <hr />
-<table><thead><tr><th>Setting</th><th>Function</th></tr></thead><tbody>
-<tr><td>Language</td><td>setLanguage <em>(language)</em></td></tr>
+<table><thead><tr><th>Setting</th><th>Function</th><th>...Args</th></tr></thead><tbody>
+<tr><td>Language</td><td>setLanguage</td><td>language</td></tr>
 </tbody></table>
 <h2 id="usage-6"><a class="header" href="#usage-6">Usage</a></h2>
-<pre><code class="language-javascript">    ApiClient.{Function}
+<pre><code class="language-javascript">    ApiClient.{Function(...Args)}
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="api-6"><a class="header" href="#api-6">API</a></h1>
 <hr />

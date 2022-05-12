@@ -34,13 +34,13 @@ You Can Get Api Key From [developer.riotgames.com](https://developer.riotgames.c
 
 -----------
 
-| Setting | Function             |
-| ------- | -------------------- |
-| API Key | setApiKey *(apiKey)* |
-| Region  | setRegion *(region)* |
+| Setting | Function  | ...Args |
+| ------- | --------- | ------- |
+| API Key | setApiKey | apiKey  |
+| Region  | setRegion | region  |
 
 ## Usage
 
 ```javascript
-    ApiClient.{Function}
+    ApiClient.{Function(...Args)}
 ```

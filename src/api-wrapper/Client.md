@@ -57,15 +57,15 @@ Client.fromJSON(config, ApiClient.toJSON());
 
 -----------
 
-| Setting         | Function                             |
-| --------------- | ------------------------------------ |
-| Region          | setRegion *(region)*                 |
-| Client Version  | setClientVersion *(clientVersion)*   |
-| Client Platfrom | setClientPlatfrom *(clientPlatfrom)* |
-| Cookie          | setClientPlatfrom *(cookie)*         |
+| Setting         | Function          | ...Args        |
+| --------------- | ----------------- | -------------- |
+| Region          | setRegion         | region         |
+| Client Version  | setClientVersion  | clientVersion  |
+| Client Platfrom | setClientPlatfrom | clientPlatfrom |
+| Cookie          | setClientPlatfrom | cookie         |
 
 ## Usage
 
 ```javascript
-    ApiClient.{Function}
+    ApiClient.{Function(...Args)}
 ```

@@ -142,6 +142,7 @@
 </code></pre>
 <ul>
 <li><strong>ready</strong></li>
+<li><strong>request</strong> =&gt; <code>any</code></li>
 <li><strong>changeSettings</strong> =&gt; <code>{ name:string, data:any }</code></li>
 <li><strong>error</strong> =&gt; <code>Error</code></li>
 </ul>
@@ -158,11 +159,6 @@
 <p><em>Ready</em></p>
 <pre><code class="language-typescript">ApiClient.on('ready', (() =&gt; {
     console.log('Client is ready!');
-}));
-</code></pre>
-<p><em>changeSettings</em></p>
-<pre><code class="language-typescript">ApiClient.on('changeSettings', ((data: { name:string, data:any }) =&gt; {
-    console.log(data);
 }));
 </code></pre>
 <p><em>Error</em></p>

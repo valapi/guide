@@ -42,18 +42,14 @@ const ApiClient = new Client(config);
 
 -----------
 
-| Setting  | Function                         |
-| -------- | -------------------------------- |
-| IP       | setIp *(ip)*                     |
-| Username | setUsername *(username)*         |
-| Lockfile | setLockfileName *(name)*         |
-|          | setLockfilePid *(pid)*           |
-|          | setLockfilePort *(port)*         |
-|          | setLockfilePassword *(password)* |
-|          | setLockfileProtocol *(protocol)* |
+| Setting  | Function    | ...Args  |
+| -------- | ----------- | -------- |
+| IP       | setIp       | ip       |
+| Username | setUsername | username |
+| Lockfile | setLockfile | name     |
 
 ## Usage
 
 ```javascript
-    ApiClient.{Function}
+    ApiClient.{Function(...Args)}
 ```
