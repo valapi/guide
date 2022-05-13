@@ -31,3 +31,8 @@ yarn add @ing3kth/val-api
 ```bash
 npm install @ing3kth/val-api
 ```
+
+## Requirements
+
+- [Node.js](https://nodejs.org/) (we recommend lastest version for best performance)
+- [.npmrc](https://github.com/KTNG-3/valorant-api/issues/4#issuecomment-1126206682)
