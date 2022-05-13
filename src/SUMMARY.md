@@ -1,11 +1,16 @@
-[HOME](./HOME.md)
+[HOME](./index.md)
+[Contributors](./Contributors.md)
+
+# Main
 
 -----------
 
 <!-- MAIN -->
 - [Introduced](./resources/Intro.md)
-  - [Region](./resources/Region.md)
+  - [Resources](./resources/Resources.md)
   - [Event](./resources/Event.md)
+
+# API
 
 -----------
 
@@ -16,15 +21,11 @@
   - [Endpoints](./api-wrapper/API.md)
   - [Example](./api-wrapper/Example.md)
 
------------
-
 <!-- Riot API -->
 - [Riot API](./riot-api/Intro.md)
   - [Client](./riot-api/Client.md)
   - [Endpoints](./riot-api/API.md)
   - [Example](./riot-api/Example.md)
-
------------
 
 <!-- Riot Client -->
 - [Riot Client](./riot-client/Intro.md)
@@ -32,8 +33,6 @@
   - [Auth](./riot-client/Auth.md)
   - [Endpoints](./riot-client/API.md)
   - [Example](./riot-client/Example.md)
-
------------
 
 <!-- valorant-api.com -->
 - [valorant-api.com](./valorant-api.com/Intro.md)

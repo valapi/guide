@@ -1,26 +1,33 @@
+# About
+
+-----------
+
+`@ing3kth/valapi` is a NodeJS package that make more easier to use Valorant API
+
+- All-in-one package
+- Support Multi-factor Authentication (2FA)
+- 5 Packages:
+  - lib 
+  - api-wrapper
+  - riot-api
+  - riot-client
+  - valorant-api.com
+
 # Install
 
 -----------
 
+**PNPM:**
 ```bash
-npm install @valapi/lib @valapi/api-wrapper @valapi/riot-api @valapi/riot-client @valapi/valorant-api.com
+pnpm add @ing3kth/val-api
 ```
 
-# Resources
+**Yarn:**
+```bash
+yarn add @ing3kth/val-api
+```
 
------------
-
-```typescript
-import {
-
-    ItemTypeId,
-
-    Locale,
-
-    QueueId,
-
-    Region,
-
-}
-from '@valapi/lib';
+**NPM:**
+```bash
+npm install @ing3kth/val-api
 ```

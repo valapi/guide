@@ -6,7 +6,7 @@
 ApiClient.on('EVENT_NAME', callback()) 
 ```
 
-- **ready**
+- **ready** => `void`
 - **request** => `any`
 - **changeSettings** => `{ name:string, data:any }`
 - **error** => `Error`
