@@ -3,7 +3,7 @@ authors = ["KT_NG3"]
 language = "en"
 multilingual = false
 src = "src"
-title = "@valapi - Documentation"
+title = "@valapi Documentation"
 description = "Valorant API wrapper for nodejs"
 
 [build]

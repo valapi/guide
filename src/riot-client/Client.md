@@ -15,16 +15,9 @@ import { Client } from '@valapi/riot-client';
 ```typescript
 interface Config {
     ip?: string;
-    lockfile?: {
-        name: string;
-        pid: number;
-        port: number;
-        password: string;
-        protocol: string;
-    };
     path?:string;
     username?: string;
-    timeout?: number;
+    axiosConfig? : AxiosRequestConfig;
 }
 ```
 

@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>@valapi - Documentation</title>
+        <title>@valapi Documentation</title>
         <meta name="robots" content="noindex" />
         <!-- Custom HTML head -->
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -104,7 +104,7 @@
                         </button>
                     </div>
 
-                    <h1 class="menu-title">@valapi - Documentation</h1>
+                    <h1 class="menu-title">@valapi Documentation</h1>
 
                     <div class="right-buttons">
                         <a href="print.html" title="Print this book" aria-label="Print this book">
@@ -182,17 +182,19 @@
 <!--Make It Readable // Make It Readable // Make It Readable //-->
 <h2 id="developers-team"><a class="header" href="#developers-team">Developers Team</a></h2>
 <ul>
-<li><strong>INg3_#9509</strong> (Discord)</li>
+<li>INg3_#9509</li>
 </ul>
 <!--Make It Readable // Make It Readable // Make It Readable //-->
 <h2 id="helpers"><a class="header" href="#helpers">Helpers</a></h2>
 <ul>
-<li><strong>DDZ#2806</strong> (Discord)</li>
+<li>DDZ#2806</li>
 </ul>
 <!--Make It Readable // Make It Readable // Make It Readable //-->
 <h2 id="report-bugs"><a class="header" href="#report-bugs">Report Bugs</a></h2>
 <ul>
-<li><strong>teyd#8766</strong> (Discord)</li>
+<li><a href="https://github.com/SpatzlHD">SpatzlHD</a></li>
+<li>teyd#8766</li>
+<li><a href="https://github.com/Drysque">Drysque</a></li>
 </ul>
 <!--Make It Readable // Make It Readable // Make It Readable //--><div style="break-before: page; page-break-before: always;"></div><h1 id="about"><a class="header" href="#about">About</a></h1>
 <hr />
@@ -335,7 +337,7 @@ from '@valapi/lib';
             &quot;platformChipset&quot;: string;
         };
     };
-    timeout?: number;
+    axiosConfig?: AxiosRequestConfig,
 }
 </code></pre>
 <h1 id="authentication"><a class="header" href="#authentication">Authentication</a></h1>
@@ -373,7 +375,7 @@ from '@valapi/lib';
 <details>
 <summary>Example</summary>
 <blockquote>
-<pre><code class="language-typescript">const ApiClient = Client.fromJSON(config, old_ApiClient.toJSON());
+<pre><code class="language-typescript">const ApiClient = Client.fromJSONAuth(config, old_ApiClient.toJSONAuth());
 await ApiClient.verify(123456);
 </code></pre>
 </blockquote>
@@ -476,7 +478,7 @@ if(ApiClient.multifactor === true) {
 }
 </code></pre>
 <h2 id="api-1"><a class="header" href="#api-1">API</a></h2>
-<pre><code class="language-typescript">const _data = await ApiClient.PreGame.GetMatch('MATCH_ID');
+<pre><code class="language-typescript">const _data = await ApiClient.PreGame.GetMatch('MATCH-ID-1234567890');
 
 console.log(_data.data);
 </code></pre>
@@ -615,16 +617,9 @@ console.log(_data.data);
 <hr />
 <pre><code class="language-typescript">interface Config {
     ip?: string;
-    lockfile?: {
-        name: string;
-        pid: number;
-        port: number;
-        password: string;
-        protocol: string;
-    };
     path?:string;
     username?: string;
-    timeout?: number;
+    axiosConfig? : AxiosRequestConfig;
 }
 </code></pre>
 <h1 id="authentication-3"><a class="header" href="#authentication-3">Authentication</a></h1>

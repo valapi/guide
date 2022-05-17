@@ -19,7 +19,7 @@ await ApiClient.login('Username', 'Password');
 <blockquote>
 
 ```typescript
-const ApiClient = Client.fromJSON(config, old_ApiClient.toJSON());
+const ApiClient = Client.fromJSONAuth(config, old_ApiClient.toJSONAuth());
 await ApiClient.verify(123456);
 ```
 

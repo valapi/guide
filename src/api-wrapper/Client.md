@@ -23,7 +23,7 @@ interface Config {
             "platformChipset": string;
         };
     };
-    timeout?: number;
+    axiosConfig?: AxiosRequestConfig,
 }
 ```
 

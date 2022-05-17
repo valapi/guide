@@ -30,7 +30,7 @@ if(ApiClient.multifactor === true) {
 ## API
 
 ```typescript
-const _data = await ApiClient.PreGame.GetMatch('MATCH_ID');
+const _data = await ApiClient.PreGame.GetMatch('MATCH-ID-1234567890');
 
 console.log(_data.data);
 ```
