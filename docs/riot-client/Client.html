@@ -141,8 +141,7 @@
 <p>This API changes when <strong>Riot Client</strong> restart and is not the same on any devices.</p>
 <pre><code class="language-typescript">import { Client } from '@valapi/riot-client';
 </code></pre>
-<h1 id="config"><a class="header" href="#config">Config</a></h1>
-<hr />
+<h2 id="config"><a class="header" href="#config">Config</a></h2>
 <pre><code class="language-typescript">interface Config {
     ip?: string;
     path?:string;
@@ -150,9 +149,7 @@
     axiosConfig? : AxiosRequestConfig;
 }
 </code></pre>
-<h1 id="authentication"><a class="header" href="#authentication">Authentication</a></h1>
-<hr />
-<p>Create an <strong>API Client</strong></p>
+<h2 id="client"><a class="header" href="#client">Client</a></h2>
 <pre><code class="language-typescript">const ApiClient = new Client(config);
 </code></pre>
 <h1 id="settings"><a class="header" href="#settings">Settings</a></h1>
@@ -163,7 +160,7 @@
 <tr><td>Lockfile</td><td>setLockfile</td><td>name</td></tr>
 </tbody></table>
 <h2 id="usage"><a class="header" href="#usage">Usage</a></h2>
-<pre><code class="language-javascript">    ApiClient.{Function(...Args)}
+<pre><code class="language-javascript">    ApiClient.{Function(...Args)};
 </code></pre>
 
                     </main>

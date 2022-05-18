@@ -8,9 +8,7 @@ This API changes when **Riot Client** restart and is not the same on any devices
 import { Client } from '@valapi/riot-client';
 ```
 
-# Config
-
------------
+## Config
 
 ```typescript
 interface Config {
@@ -21,11 +19,7 @@ interface Config {
 }
 ```
 
-# Authentication
-
------------
-
-Create an **API Client**
+## Client
 
 ```typescript
 const ApiClient = new Client(config);
@@ -44,5 +38,5 @@ const ApiClient = new Client(config);
 ## Usage
 
 ```javascript
-    ApiClient.{Function(...Args)}
+    ApiClient.{Function(...Args)};
 ```

@@ -137,7 +137,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="valapi---documentation"><a class="header" href="#valapi---documentation">@valapi - Documentation</a></h1>
+                        <h1 id="valapi-documentation"><a class="header" href="#valapi-documentation">@valapi Documentation</a></h1>
 <p><a href="https://nodei.co/npm/@ing3kth%2Fval-api"><img src="https://nodei.co/npm/@ing3kth%2Fval-api.png" alt="NPM" /></a></p>
 <hr />
 <p>Generate by <a href="https://github.com/rust-lang/mdBook">mdBook</a></p>
@@ -204,7 +204,7 @@
 <li>Support Multi-factor Authentication (2FA)</li>
 <li>5 Packages:
 <ul>
-<li>lib </li>
+<li>lib</li>
 <li>api-wrapper</li>
 <li>riot-api</li>
 <li>riot-client</li>
@@ -212,7 +212,7 @@
 </ul>
 </li>
 </ul>
-<h1 id="install"><a class="header" href="#install">Install</a></h1>
+<h2 id="install"><a class="header" href="#install">Install</a></h2>
 <hr />
 <p><strong>PNPM:</strong></p>
 <pre><code class="language-bash">pnpm add @ing3kth/val-api
@@ -242,8 +242,7 @@
 }
 from '@valapi/lib';
 </code></pre>
-<h1 id="region"><a class="header" href="#region">Region</a></h1>
-<hr />
+<h2 id="region"><a class="header" href="#region">Region</a></h2>
 <table><thead><tr><th>Region</th><th>Full Name</th></tr></thead><tbody>
 <tr><td>na</td><td>North_America</td></tr>
 <tr><td>latam</td><td>Latin_America</td></tr>
@@ -264,14 +263,13 @@ from '@valapi/lib';
 <li><strong>error</strong> =&gt; <code>Error</code></li>
 </ul>
 <h2 id="error"><a class="header" href="#error">Error</a></h2>
-<hr />
 <pre><code class="language-typescript">interface Error {
     errorCode: string,
     message: string,
     data: any,
 }
 </code></pre>
-<h2 id="example"><a class="header" href="#example">Example</a></h2>
+<h1 id="example"><a class="header" href="#example">Example</a></h1>
 <hr />
 <p><em>Ready</em></p>
 <pre><code class="language-typescript">ApiClient.on('ready', (() =&gt; {
@@ -281,11 +279,11 @@ from '@valapi/lib';
 <p><em>Error</em></p>
 <pre><code class="language-typescript">ApiClient.on('error', ((data: Error) =&gt; {
     console.log(data);
-}))
+}));
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="introduced"><a class="header" href="#introduced">Introduced</a></h1>
-<p>API Wrappers from webclient</p>
-<h1 id="install-1"><a class="header" href="#install-1">Install</a></h1>
+<p>API Wrappers from Webclient</p>
+<h2 id="install-1"><a class="header" href="#install-1">Install</a></h2>
 <pre><code class="language-bash">npm install @valapi/api-wrapper
 </code></pre>
 <hr />
@@ -323,8 +321,7 @@ from '@valapi/lib';
 <hr />
 <pre><code class="language-typescript">import { Client } from '@valapi/api-wrapper';
 </code></pre>
-<h1 id="config"><a class="header" href="#config">Config</a></h1>
-<hr />
+<h2 id="config"><a class="header" href="#config">Config</a></h2>
 <pre><code class="language-typescript">interface Config {
     userAgent?: string;
     region?: string;
@@ -340,9 +337,7 @@ from '@valapi/lib';
     axiosConfig?: AxiosRequestConfig,
 }
 </code></pre>
-<h1 id="authentication"><a class="header" href="#authentication">Authentication</a></h1>
-<hr />
-<p>Create an <strong>API Client</strong></p>
+<h2 id="client"><a class="header" href="#client">Client</a></h2>
 <pre><code class="language-typescript">const ApiClient = new Client(config);
 </code></pre>
 <h1 id="save"><a class="header" href="#save">Save</a></h1>
@@ -350,8 +345,12 @@ from '@valapi/lib';
 <h2 id="client----save"><a class="header" href="#client----save">Client --&gt; Save</a></h2>
 <pre><code class="language-typescript">ApiClient.toJSON();
 </code></pre>
+<pre><code class="language-typescript">ApiClient.toJSONAuth(); //more data (recommended for auth)
+</code></pre>
 <h2 id="save----client"><a class="header" href="#save----client">Save --&gt; Client</a></h2>
-<pre><code class="language-typescript">Client.fromJSON(config, ApiClient.toJSON());
+<pre><code class="language-typescript">Client.fromJSON(config, ApiClient.toJSON()); //you can use {.toJSONAuth} as a option
+</code></pre>
+<pre><code class="language-typescript">Client.fromJSONAuth(config, ApiClient.toJSONAuth());
 </code></pre>
 <h1 id="settings"><a class="header" href="#settings">Settings</a></h1>
 <hr />
@@ -362,9 +361,9 @@ from '@valapi/lib';
 <tr><td>Cookie</td><td>setClientPlatfrom</td><td>cookie</td></tr>
 </tbody></table>
 <h2 id="usage"><a class="header" href="#usage">Usage</a></h2>
-<pre><code class="language-javascript">    ApiClient.{Function(...Args)}
+<pre><code class="language-javascript">    ApiClient.{Function(...Args)};
 </code></pre>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="authentication-1"><a class="header" href="#authentication-1">Authentication</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="authentication"><a class="header" href="#authentication">Authentication</a></h1>
 <hr />
 <h2 id="login"><a class="header" href="#login">Login</a></h2>
 <p>First We Need To <strong>Login</strong> To <code>Valorant Account</code></p>
@@ -456,13 +455,13 @@ await ApiClient.verify(123456);
 <tr><td></td><td>MassRewards</td><td>puuid</td></tr>
 </tbody></table>
 <h2 id="usage-1"><a class="header" href="#usage-1">Usage</a></h2>
-<pre><code class="language-typescript">    const _data = await ApiClient.{Service}.{Function(...Args)}
+<pre><code class="language-typescript">    const _data = await ApiClient.{Service}.{Function(...Args)};
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="example-1"><a class="header" href="#example-1">Example</a></h1>
 <hr />
 <pre><code class="language-typescript">import { Client } from '@valapi/api-wrapper';
 </code></pre>
-<h2 id="client"><a class="header" href="#client">Client</a></h2>
+<h2 id="client-1"><a class="header" href="#client-1">Client</a></h2>
 <pre><code class="language-typescript">const ApiClient = new Client({
     region: 'ap',
 });
@@ -484,7 +483,7 @@ console.log(_data.data);
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="introduced-2"><a class="header" href="#introduced-2">Introduced</a></h1>
 <p>Official Api From Riot Games</p>
-<h1 id="install-2"><a class="header" href="#install-2">Install</a></h1>
+<h2 id="install-2"><a class="header" href="#install-2">Install</a></h2>
 <pre><code class="language-bash">npm install @valapi/riot-api
 </code></pre>
 <hr />
@@ -521,17 +520,14 @@ console.log(_data.data);
 <hr />
 <pre><code class="language-typescript">import { Client } from '@valapi/riot-api';
 </code></pre>
-<h1 id="config-1"><a class="header" href="#config-1">Config</a></h1>
-<hr />
+<h2 id="config-1"><a class="header" href="#config-1">Config</a></h2>
 <pre><code class="language-typescript">interface Config {
     apiKey: string;
     region: string;
     axiosConfig?: AxiosRequestConfig;
 }
 </code></pre>
-<h1 id="authentication-2"><a class="header" href="#authentication-2">Authentication</a></h1>
-<hr />
-<p>Create an <strong>API Client</strong></p>
+<h2 id="client-2"><a class="header" href="#client-2">Client</a></h2>
 <pre><code class="language-typescript">const ApiClient = new Client(config);
 </code></pre>
 <p>You Can Get Api Key From <a href="https://developer.riotgames.com/">developer.riotgames.com</a></p>
@@ -542,7 +538,7 @@ console.log(_data.data);
 <tr><td>Region</td><td>setRegion</td><td>region</td></tr>
 </tbody></table>
 <h2 id="usage-2"><a class="header" href="#usage-2">Usage</a></h2>
-<pre><code class="language-javascript">    ApiClient.{Function(...Args)}
+<pre><code class="language-javascript">    ApiClient.{Function(...Args)};
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="api-2"><a class="header" href="#api-2">API</a></h1>
 <hr />
@@ -561,7 +557,7 @@ console.log(_data.data);
 <hr />
 <pre><code class="language-typescript">import { Client } from '@valapi/riot-api';
 </code></pre>
-<h2 id="client-1"><a class="header" href="#client-1">Client</a></h2>
+<h2 id="client-3"><a class="header" href="#client-3">Client</a></h2>
 <pre><code class="language-typescript">const ApiClient = new Client({
     apiKey: 'LoooooongApiKey_123456789',
     region: 'ap',
@@ -575,7 +571,7 @@ console.log(_data.data);
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="introduced-4"><a class="header" href="#introduced-4">Introduced</a></h1>
 <p>API from Riot Client</p>
-<h1 id="install-3"><a class="header" href="#install-3">Install</a></h1>
+<h2 id="install-3"><a class="header" href="#install-3">Install</a></h2>
 <pre><code class="language-bash">npm install @valapi/riot-client
 </code></pre>
 <hr />
@@ -613,8 +609,7 @@ console.log(_data.data);
 <p>This API changes when <strong>Riot Client</strong> restart and is not the same on any devices.</p>
 <pre><code class="language-typescript">import { Client } from '@valapi/riot-client';
 </code></pre>
-<h1 id="config-2"><a class="header" href="#config-2">Config</a></h1>
-<hr />
+<h2 id="config-2"><a class="header" href="#config-2">Config</a></h2>
 <pre><code class="language-typescript">interface Config {
     ip?: string;
     path?:string;
@@ -622,9 +617,7 @@ console.log(_data.data);
     axiosConfig? : AxiosRequestConfig;
 }
 </code></pre>
-<h1 id="authentication-3"><a class="header" href="#authentication-3">Authentication</a></h1>
-<hr />
-<p>Create an <strong>API Client</strong></p>
+<h2 id="client-4"><a class="header" href="#client-4">Client</a></h2>
 <pre><code class="language-typescript">const ApiClient = new Client(config);
 </code></pre>
 <h1 id="settings-2"><a class="header" href="#settings-2">Settings</a></h1>
@@ -635,9 +628,9 @@ console.log(_data.data);
 <tr><td>Lockfile</td><td>setLockfile</td><td>name</td></tr>
 </tbody></table>
 <h2 id="usage-4"><a class="header" href="#usage-4">Usage</a></h2>
-<pre><code class="language-javascript">    ApiClient.{Function(...Args)}
+<pre><code class="language-javascript">    ApiClient.{Function(...Args)};
 </code></pre>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="authentication-4"><a class="header" href="#authentication-4">Authentication</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="authentication-1"><a class="header" href="#authentication-1">Authentication</a></h1>
 <hr />
 <p>We will add more authentication methods later.</p>
 <h2 id="get-from-lockfile"><a class="header" href="#get-from-lockfile">Get From Lockfile</a></h2>
@@ -700,13 +693,13 @@ console.log(_data.data);
 <tr><td></td><td>Valorant_Log_Path</td><td></td></tr>
 </tbody></table>
 <h2 id="usage-5"><a class="header" href="#usage-5">Usage</a></h2>
-<pre><code class="language-typescript">    const _data = await ApiClient.{Service}.{Function(...Args)}
+<pre><code class="language-typescript">    const _data = await ApiClient.{Service}.{Function(...Args)};
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="example-3"><a class="header" href="#example-3">Example</a></h1>
 <hr />
 <pre><code class="language-typescript">import { Client } from '@valapi/riot-client';
 </code></pre>
-<h2 id="client-2"><a class="header" href="#client-2">Client</a></h2>
+<h2 id="client-5"><a class="header" href="#client-5">Client</a></h2>
 <pre><code class="language-typescript">const ApiClient = new Client({
     ip: '127.0.0.1',
     path: 'C:/Users/Windows10/AppData/Local/Riot Games/Riot Client/Config/lockfile',
@@ -722,8 +715,8 @@ console.log(_data.data);
 console.log(_data.data);
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="introduced-6"><a class="header" href="#introduced-6">Introduced</a></h1>
-<p><a href="https://valorant-api.com">valorant-api.com</a> by Officer</p>
-<h1 id="install-4"><a class="header" href="#install-4">Install</a></h1>
+<p><strong>Third party API</strong> by Officer</p>
+<h2 id="install-4"><a class="header" href="#install-4">Install</a></h2>
 <pre><code class="language-bash">npm install @valapi/valorant-api.com
 </code></pre>
 <hr />
@@ -761,16 +754,13 @@ console.log(_data.data);
 <hr />
 <pre><code class="language-typescript">import { Client } from '@valapi/riot-api';
 </code></pre>
-<h1 id="config-3"><a class="header" href="#config-3">Config</a></h1>
-<hr />
+<h2 id="config-3"><a class="header" href="#config-3">Config</a></h2>
 <pre><code class="language-typescript">interface Config {
     language?: string; //can use 'all' language but not supported yet
     axiosConfig?: AxiosRequestConfig;
 }
 </code></pre>
-<h1 id="authentication-5"><a class="header" href="#authentication-5">Authentication</a></h1>
-<hr />
-<p>Create an <strong>API Client</strong></p>
+<h2 id="client-6"><a class="header" href="#client-6">Client</a></h2>
 <pre><code class="language-typescript">const ApiClient = new Client(config);
 </code></pre>
 <h1 id="settings-3"><a class="header" href="#settings-3">Settings</a></h1>
@@ -779,7 +769,7 @@ console.log(_data.data);
 <tr><td>Language</td><td>setLanguage</td><td>language</td></tr>
 </tbody></table>
 <h2 id="usage-6"><a class="header" href="#usage-6">Usage</a></h2>
-<pre><code class="language-javascript">    ApiClient.{Function(...Args)}
+<pre><code class="language-javascript">    ApiClient.{Function(...Args)};
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="api-6"><a class="header" href="#api-6">API</a></h1>
 <hr />
@@ -840,13 +830,13 @@ console.log(_data.data);
 <tr><td></td><td>getSkinLevelByUuid</td><td>uuid</td></tr>
 </tbody></table>
 <h2 id="usage-7"><a class="header" href="#usage-7">Usage</a></h2>
-<pre><code class="language-typescript">    const _data = await ApiClient.{Service}.{Function(...Args)}
+<pre><code class="language-typescript">    const _data = await ApiClient.{Service}.{Function(...Args)};
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="example-4"><a class="header" href="#example-4">Example</a></h1>
 <hr />
 <pre><code class="language-typescript">import { Client } from '@valapi/riot-api';
 </code></pre>
-<h2 id="client-3"><a class="header" href="#client-3">Client</a></h2>
+<h2 id="client-7"><a class="header" href="#client-7">Client</a></h2>
 <pre><code class="language-typescript">const ApiClient = new Client({
     language: 'en-US',
 });

@@ -59,5 +59,5 @@
 ## Usage
 
 ```typescript
-    const _data = await ApiClient.{Service}.{Function(...Args)}
+    const _data = await ApiClient.{Service}.{Function(...Args)};
 ```

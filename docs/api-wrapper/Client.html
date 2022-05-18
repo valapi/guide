@@ -140,8 +140,7 @@
 <hr />
 <pre><code class="language-typescript">import { Client } from '@valapi/api-wrapper';
 </code></pre>
-<h1 id="config"><a class="header" href="#config">Config</a></h1>
-<hr />
+<h2 id="config"><a class="header" href="#config">Config</a></h2>
 <pre><code class="language-typescript">interface Config {
     userAgent?: string;
     region?: string;
@@ -157,9 +156,7 @@
     axiosConfig?: AxiosRequestConfig,
 }
 </code></pre>
-<h1 id="authentication"><a class="header" href="#authentication">Authentication</a></h1>
-<hr />
-<p>Create an <strong>API Client</strong></p>
+<h2 id="client"><a class="header" href="#client">Client</a></h2>
 <pre><code class="language-typescript">const ApiClient = new Client(config);
 </code></pre>
 <h1 id="save"><a class="header" href="#save">Save</a></h1>
@@ -167,8 +164,12 @@
 <h2 id="client----save"><a class="header" href="#client----save">Client --&gt; Save</a></h2>
 <pre><code class="language-typescript">ApiClient.toJSON();
 </code></pre>
+<pre><code class="language-typescript">ApiClient.toJSONAuth(); //more data (recommended for auth)
+</code></pre>
 <h2 id="save----client"><a class="header" href="#save----client">Save --&gt; Client</a></h2>
-<pre><code class="language-typescript">Client.fromJSON(config, ApiClient.toJSON());
+<pre><code class="language-typescript">Client.fromJSON(config, ApiClient.toJSON()); //you can use {.toJSONAuth} as a option
+</code></pre>
+<pre><code class="language-typescript">Client.fromJSONAuth(config, ApiClient.toJSONAuth());
 </code></pre>
 <h1 id="settings"><a class="header" href="#settings">Settings</a></h1>
 <hr />
@@ -179,7 +180,7 @@
 <tr><td>Cookie</td><td>setClientPlatfrom</td><td>cookie</td></tr>
 </tbody></table>
 <h2 id="usage"><a class="header" href="#usage">Usage</a></h2>
-<pre><code class="language-javascript">    ApiClient.{Function(...Args)}
+<pre><code class="language-javascript">    ApiClient.{Function(...Args)};
 </code></pre>
 
                     </main>

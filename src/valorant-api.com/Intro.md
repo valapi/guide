@@ -1,8 +1,8 @@
 # Introduced
 
-[valorant-api.com](https://valorant-api.com) by Officer
+**Third party API** by Officer
 
-# Install
+## Install
 
 ```bash
 npm install @valapi/valorant-api.com

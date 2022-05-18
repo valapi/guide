@@ -13,8 +13,6 @@ ApiClient.on('EVENT_NAME', callback())
 
 ## Error
 
------------
-
 ```typescript
 interface Error {
     errorCode: string,
@@ -23,7 +21,7 @@ interface Error {
 }
 ```
 
-## Example
+# Example
 
 -----------
 
@@ -40,5 +38,5 @@ ApiClient.on('ready', (() => {
 ```typescript
 ApiClient.on('error', ((data: Error) => {
     console.log(data);
-}))
+}));
 ```

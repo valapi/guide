@@ -63,5 +63,5 @@ All API Base On [dash.valorant-api.com](https://dash.valorant-api.com/)
 ## Usage
 
 ```typescript
-    const _data = await ApiClient.{Service}.{Function(...Args)}
+    const _data = await ApiClient.{Service}.{Function(...Args)};
 ```

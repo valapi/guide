@@ -147,14 +147,13 @@
 <li><strong>error</strong> =&gt; <code>Error</code></li>
 </ul>
 <h2 id="error"><a class="header" href="#error">Error</a></h2>
-<hr />
 <pre><code class="language-typescript">interface Error {
     errorCode: string,
     message: string,
     data: any,
 }
 </code></pre>
-<h2 id="example"><a class="header" href="#example">Example</a></h2>
+<h1 id="example"><a class="header" href="#example">Example</a></h1>
 <hr />
 <p><em>Ready</em></p>
 <pre><code class="language-typescript">ApiClient.on('ready', (() =&gt; {
@@ -164,7 +163,7 @@
 <p><em>Error</em></p>
 <pre><code class="language-typescript">ApiClient.on('error', ((data: Error) =&gt; {
     console.log(data);
-}))
+}));
 </code></pre>
 
                     </main>

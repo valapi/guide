@@ -1,4 +1,4 @@
-# @valapi - Documentation
+# @valapi Documentation
 
 [![NPM](https://nodei.co/npm/@ing3kth%2Fval-api.png)](https://nodei.co/npm/@ing3kth%2Fval-api)
 

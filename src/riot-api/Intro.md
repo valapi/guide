@@ -2,7 +2,7 @@
 
 Official Api From Riot Games
 
-# Install
+## Install
 
 ```bash
 npm install @valapi/riot-api

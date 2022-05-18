@@ -17,9 +17,7 @@ import {
 from '@valapi/lib';
 ```
 
-# Region
-
------------
+## Region
 
 | Region | Full Name               |
 | ------ | ----------------------- |

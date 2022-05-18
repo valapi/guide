@@ -6,9 +6,7 @@
 import { Client } from '@valapi/riot-api';
 ```
 
-# Config
-
------------
+## Config
 
 ```typescript
 interface Config {
@@ -18,11 +16,7 @@ interface Config {
 }
 ```
 
-# Authentication
-
------------
-
-Create an **API Client**
+## Client
 
 ```typescript
 const ApiClient = new Client(config);
@@ -42,5 +36,5 @@ You Can Get Api Key From [developer.riotgames.com](https://developer.riotgames.c
 ## Usage
 
 ```javascript
-    ApiClient.{Function(...Args)}
+    ApiClient.{Function(...Args)};
 ```

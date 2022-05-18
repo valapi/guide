@@ -2,7 +2,7 @@
 
 API from Riot Client
 
-# Install
+## Install
 
 ```bash
 npm install @valapi/riot-client

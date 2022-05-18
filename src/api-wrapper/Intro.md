@@ -1,8 +1,8 @@
 # Introduced
 
-API Wrappers from webclient
+API Wrappers from Webclient
 
-# Install
+## Install
 
 ```bash
 npm install @valapi/api-wrapper

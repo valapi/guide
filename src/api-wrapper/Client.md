@@ -6,9 +6,7 @@
 import { Client } from '@valapi/api-wrapper';
 ```
 
-# Config
-
------------
+## Config
 
 ```typescript
 interface Config {
@@ -27,11 +25,7 @@ interface Config {
 }
 ```
 
-# Authentication
-
------------
-
-Create an **API Client**
+## Client
 
 ```typescript
 const ApiClient = new Client(config);
@@ -47,10 +41,18 @@ const ApiClient = new Client(config);
 ApiClient.toJSON();
 ```
 
+```typescript
+ApiClient.toJSONAuth(); //more data (recommended for auth)
+```
+
 ## Save --> Client
 
 ```typescript
-Client.fromJSON(config, ApiClient.toJSON());
+Client.fromJSON(config, ApiClient.toJSON()); //you can use {.toJSONAuth} as a option
+```
+
+```typescript
+Client.fromJSONAuth(config, ApiClient.toJSONAuth());
 ```
 
 # Settings
@@ -67,5 +69,5 @@ Client.fromJSON(config, ApiClient.toJSON());
 ## Usage
 
 ```javascript
-    ApiClient.{Function(...Args)}
+    ApiClient.{Function(...Args)};
 ```
