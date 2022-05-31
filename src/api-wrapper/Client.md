@@ -10,18 +10,44 @@ import { Client } from '@valapi/api-wrapper';
 
 ```typescript
 interface Config {
+    // UserAgent use when authentication
     userAgent?: string;
+
+    // Region of the Account
     region?: string;
+
+    // Client Settings
     client?: {
-        version?: string;
+        version?: string,
         platform?: {
-            "platformType": string;
-            "platformOS": string;
-            "platformOSVersion": string;
-            "platformChipset": string;
-        };
+            "platformType": string,
+            "platformOS": string,
+            "platformOSVersion": string,
+            "platformChipset": string,
+        },
     };
-    axiosConfig?: AxiosRequestConfig,
+
+    // No throw error if the authentication is failed.
+    forceAuth?: boolean;
+
+    // Config for RequestClient (Axios)
+    axiosConfig?: AxiosRequestConfig;
+
+    // The time in milliseconds that data will be refreshed.
+    expiresIn?: {
+        cookie: number,
+        token?: number,
+    };
+
+    // When Token is expired, it will be refreshed.
+    autoReconnect?: boolean;
+
+    // When Cookie is expired, it will be refreshed.
+    // * Not Support Multi-Factor Authentication.
+    autoAuthentication?: {
+        username: string,
+        password: string,
+    };
 }
 ```
 

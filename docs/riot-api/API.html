@@ -140,10 +140,14 @@
 <hr />
 <p>Something is can't use, so I did't insert it.</p>
 <table><thead><tr><th>Service</th><th>Function</th><th>...Args</th></tr></thead><tbody>
-<tr><td><strong>AccountV1</strong></td><td>ByRiotId</td><td>gameName, tagLine</td></tr>
-<tr><td></td><td>ByPuuid</td><td>puuid</td></tr>
-<tr><td></td><td>ByGame</td><td>puuid, game</td></tr>
-<tr><td><strong>ContentV1</strong></td><td>Contents</td><td>locale</td></tr>
+<tr><td><strong>AccountV1</strong></td><td>ByPuuid</td><td>puuid</td></tr>
+<tr><td></td><td>ByRiotId</td><td>gameName, tagLine</td></tr>
+<tr><td></td><td>ActiveShardsByGameAndPuuid</td><td>puuid, game?</td></tr>
+<tr><td><strong>ContentV1</strong></td><td>Contents</td><td>locale?</td></tr>
+<tr><td><strong>MatchV1</strong></td><td>ByMatchId</td><td>matchId</td></tr>
+<tr><td></td><td>ListByPuuid</td><td>puuid</td></tr>
+<tr><td></td><td>RecentByQueue</td><td>queueId</td></tr>
+<tr><td><strong>RankedV1</strong></td><td>LeaderboardsByAct</td><td>actId, size?, startIndex?</td></tr>
 <tr><td><strong>StatusV1</strong></td><td>PlatformData</td><td></td></tr>
 </tbody></table>
 <h2 id="usage"><a class="header" href="#usage">Usage</a></h2>

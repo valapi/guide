@@ -7,7 +7,7 @@ ApiClient.on('EVENT_NAME', callback())
 ```
 
 - **ready** => `void`
-- **request** => `any`
+- **request** => `{ method: ValorantApiRequestMethod, url: string, body?: Object, config: AxiosRequestConfig }`
 - **changeSettings** => `{ name:string, data:any }`
 - **error** => `Error`
 

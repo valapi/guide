@@ -142,18 +142,44 @@
 </code></pre>
 <h2 id="config"><a class="header" href="#config">Config</a></h2>
 <pre><code class="language-typescript">interface Config {
+    // UserAgent use when authentication
     userAgent?: string;
+
+    // Region of the Account
     region?: string;
+
+    // Client Settings
     client?: {
-        version?: string;
+        version?: string,
         platform?: {
-            &quot;platformType&quot;: string;
-            &quot;platformOS&quot;: string;
-            &quot;platformOSVersion&quot;: string;
-            &quot;platformChipset&quot;: string;
-        };
+            &quot;platformType&quot;: string,
+            &quot;platformOS&quot;: string,
+            &quot;platformOSVersion&quot;: string,
+            &quot;platformChipset&quot;: string,
+        },
     };
-    axiosConfig?: AxiosRequestConfig,
+
+    // No throw error if the authentication is failed.
+    forceAuth?: boolean;
+
+    // Config for RequestClient (Axios)
+    axiosConfig?: AxiosRequestConfig;
+
+    // The time in milliseconds that data will be refreshed.
+    expiresIn?: {
+        cookie: number,
+        token?: number,
+    };
+
+    // When Token is expired, it will be refreshed.
+    autoReconnect?: boolean;
+
+    // When Cookie is expired, it will be refreshed.
+    // * Not Support Multi-Factor Authentication.
+    autoAuthentication?: {
+        username: string,
+        password: string,
+    };
 }
 </code></pre>
 <h2 id="client"><a class="header" href="#client">Client</a></h2>

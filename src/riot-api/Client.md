@@ -12,6 +12,7 @@ import { Client } from '@valapi/riot-api';
 interface Config {
     apiKey: string;
     region: string;
+    expiresIn?: number;
     axiosConfig?: AxiosRequestConfig;
 }
 ```

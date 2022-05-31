@@ -182,12 +182,7 @@
 <!--Make It Readable // Make It Readable // Make It Readable //-->
 <h2 id="developers-team"><a class="header" href="#developers-team">Developers Team</a></h2>
 <ul>
-<li>INg3_#9509</li>
-</ul>
-<!--Make It Readable // Make It Readable // Make It Readable //-->
-<h2 id="helpers"><a class="header" href="#helpers">Helpers</a></h2>
-<ul>
-<li>DDZ#2806</li>
+<li><a href="https://github.com/KTNG-3">ING3_</a> (INg3_#9509)</li>
 </ul>
 <!--Make It Readable // Make It Readable // Make It Readable //-->
 <h2 id="report-bugs"><a class="header" href="#report-bugs">Report Bugs</a></h2>
@@ -195,6 +190,7 @@
 <li><a href="https://github.com/SpatzlHD">SpatzlHD</a></li>
 <li>teyd#8766</li>
 <li><a href="https://github.com/Drysque">Drysque</a></li>
+<li>Lunac#1111</li>
 </ul>
 <!--Make It Readable // Make It Readable // Make It Readable //--><div style="break-before: page; page-break-before: always;"></div><h1 id="about"><a class="header" href="#about">About</a></h1>
 <hr />
@@ -258,7 +254,7 @@ from '@valapi/lib';
 </code></pre>
 <ul>
 <li><strong>ready</strong> =&gt; <code>void</code></li>
-<li><strong>request</strong> =&gt; <code>any</code></li>
+<li><strong>request</strong> =&gt; <code>{ method: ValorantApiRequestMethod, url: string, body?: Object, config: AxiosRequestConfig }</code></li>
 <li><strong>changeSettings</strong> =&gt; <code>{ name:string, data:any }</code></li>
 <li><strong>error</strong> =&gt; <code>Error</code></li>
 </ul>
@@ -323,18 +319,44 @@ from '@valapi/lib';
 </code></pre>
 <h2 id="config"><a class="header" href="#config">Config</a></h2>
 <pre><code class="language-typescript">interface Config {
+    // UserAgent use when authentication
     userAgent?: string;
+
+    // Region of the Account
     region?: string;
+
+    // Client Settings
     client?: {
-        version?: string;
+        version?: string,
         platform?: {
-            &quot;platformType&quot;: string;
-            &quot;platformOS&quot;: string;
-            &quot;platformOSVersion&quot;: string;
-            &quot;platformChipset&quot;: string;
-        };
+            &quot;platformType&quot;: string,
+            &quot;platformOS&quot;: string,
+            &quot;platformOSVersion&quot;: string,
+            &quot;platformChipset&quot;: string,
+        },
     };
-    axiosConfig?: AxiosRequestConfig,
+
+    // No throw error if the authentication is failed.
+    forceAuth?: boolean;
+
+    // Config for RequestClient (Axios)
+    axiosConfig?: AxiosRequestConfig;
+
+    // The time in milliseconds that data will be refreshed.
+    expiresIn?: {
+        cookie: number,
+        token?: number,
+    };
+
+    // When Token is expired, it will be refreshed.
+    autoReconnect?: boolean;
+
+    // When Cookie is expired, it will be refreshed.
+    // * Not Support Multi-Factor Authentication.
+    autoAuthentication?: {
+        username: string,
+        password: string,
+    };
 }
 </code></pre>
 <h2 id="client"><a class="header" href="#client">Client</a></h2>
@@ -464,6 +486,7 @@ await ApiClient.verify(123456);
 <h2 id="client-1"><a class="header" href="#client-1">Client</a></h2>
 <pre><code class="language-typescript">const ApiClient = new Client({
     region: 'ap',
+    autoReconnect: true,
 });
 
 </code></pre>
@@ -524,6 +547,7 @@ console.log(_data.data);
 <pre><code class="language-typescript">interface Config {
     apiKey: string;
     region: string;
+    expiresIn?: number;
     axiosConfig?: AxiosRequestConfig;
 }
 </code></pre>
@@ -544,10 +568,14 @@ console.log(_data.data);
 <hr />
 <p>Something is can't use, so I did't insert it.</p>
 <table><thead><tr><th>Service</th><th>Function</th><th>...Args</th></tr></thead><tbody>
-<tr><td><strong>AccountV1</strong></td><td>ByRiotId</td><td>gameName, tagLine</td></tr>
-<tr><td></td><td>ByPuuid</td><td>puuid</td></tr>
-<tr><td></td><td>ByGame</td><td>puuid, game</td></tr>
-<tr><td><strong>ContentV1</strong></td><td>Contents</td><td>locale</td></tr>
+<tr><td><strong>AccountV1</strong></td><td>ByPuuid</td><td>puuid</td></tr>
+<tr><td></td><td>ByRiotId</td><td>gameName, tagLine</td></tr>
+<tr><td></td><td>ActiveShardsByGameAndPuuid</td><td>puuid, game?</td></tr>
+<tr><td><strong>ContentV1</strong></td><td>Contents</td><td>locale?</td></tr>
+<tr><td><strong>MatchV1</strong></td><td>ByMatchId</td><td>matchId</td></tr>
+<tr><td></td><td>ListByPuuid</td><td>puuid</td></tr>
+<tr><td></td><td>RecentByQueue</td><td>queueId</td></tr>
+<tr><td><strong>RankedV1</strong></td><td>LeaderboardsByAct</td><td>actId, size?, startIndex?</td></tr>
 <tr><td><strong>StatusV1</strong></td><td>PlatformData</td><td></td></tr>
 </tbody></table>
 <h2 id="usage-3"><a class="header" href="#usage-3">Usage</a></h2>
