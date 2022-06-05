@@ -3,11 +3,11 @@
 -----------
 
 ```typescript
-ApiClient.on('EVENT_NAME', callback()) 
+ApiClient.on('EVENT_NAME', callback());
 ```
 
 - **ready** => `void`
-- **request** => `{ method: ValorantApiRequestMethod, url: string, body?: Object, config: AxiosRequestConfig }`
+- **request** => `{ method: string, url: string, body?: Object, config: AxiosRequestConfig }`
 - **changeSettings** => `{ name:string, data:any }`
 - **error** => `Error`
 

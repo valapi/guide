@@ -19,5 +19,5 @@ Something is can't use, so I did't insert it.
 ## Usage
 
 ```typescript
-    const _data = await ApiClient.{Service}.{Function(...Args)}
+    const _data = await ApiClient.{Service}.{Function(...Args)};
 ```

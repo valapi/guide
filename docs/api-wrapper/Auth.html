@@ -136,7 +136,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="authentication"><a class="header" href="#authentication">Authentication</a></h1>
+                        <h1 id="basic-authentication"><a class="header" href="#basic-authentication">Basic Authentication</a></h1>
 <hr />
 <h2 id="login"><a class="header" href="#login">Login</a></h2>
 <p>First We Need To <strong>Login</strong> To <code>Valorant Account</code></p>
@@ -156,9 +156,15 @@ await ApiClient.verify(123456);
 <p>After Login The <strong>Verify Code</strong> Will Send To Mail</p>
 <pre><code class="language-typescript">await ApiClient.verify(Number);
 </code></pre>
-<h2 id="cookie"><a class="header" href="#cookie">Cookie</a></h2>
+<h1 id="advanced-authentication"><a class="header" href="#advanced-authentication">Advanced Authentication</a></h1>
+<hr />
 <p><em>Beta</em></p>
-<pre><code class="language-typescript">await Client.fromCookie(config, old_ApiClient.toJSON());
+<h2 id="cookie"><a class="header" href="#cookie">Cookie</a></h2>
+<pre><code class="language-typescript">await ApiClient.fromCookie(cookie?);
+</code></pre>
+<h2 id="reconnection"><a class="header" href="#reconnection">Reconnection</a></h2>
+<p>its will reconnection if the token or cookie is expired</p>
+<pre><code class="language-typescript">await ApiClient.reconnect(isForce?);
 </code></pre>
 
                     </main>

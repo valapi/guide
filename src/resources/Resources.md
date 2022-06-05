@@ -28,3 +28,17 @@ from '@valapi/lib';
 | eu     | Europe                  |
 | kr     | Korea                   |
 | ap     | Asia_Pacific            |
+
+# Usage
+
+-----------
+
+```typescript
+
+[Resources].from. // string
+[Resources].to. // readable
+
+[Resources].toString('North_America'); // change readable to string
+[Resources].fromString('na'); // change string to readable
+
+```

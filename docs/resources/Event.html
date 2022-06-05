@@ -138,11 +138,11 @@
                     <main>
                         <h1 id="event"><a class="header" href="#event">Event</a></h1>
 <hr />
-<pre><code class="language-typescript">ApiClient.on('EVENT_NAME', callback()) 
+<pre><code class="language-typescript">ApiClient.on('EVENT_NAME', callback());
 </code></pre>
 <ul>
 <li><strong>ready</strong> =&gt; <code>void</code></li>
-<li><strong>request</strong> =&gt; <code>{ method: ValorantApiRequestMethod, url: string, body?: Object, config: AxiosRequestConfig }</code></li>
+<li><strong>request</strong> =&gt; <code>{ method: string, url: string, body?: Object, config: AxiosRequestConfig }</code></li>
 <li><strong>changeSettings</strong> =&gt; <code>{ name:string, data:any }</code></li>
 <li><strong>error</strong> =&gt; <code>Error</code></li>
 </ul>

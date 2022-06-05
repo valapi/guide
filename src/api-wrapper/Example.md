@@ -11,8 +11,8 @@ import { Client } from '@valapi/api-wrapper';
 ```typescript
 const ApiClient = new Client({
     region: 'ap',
-    autoReconnect: true,
 });
+await ApiClient.reconnect();
 
 ```
 

@@ -39,14 +39,11 @@ interface Config {
         token?: number,
     };
 
-    // When Token is expired, it will be refreshed.
-    autoReconnect?: boolean;
-
     // When Cookie is expired, it will be refreshed.
-    // * Not Support Multi-Factor Authentication.
-    autoAuthentication?: {
-        username: string,
-        password: string,
+    selfAuthentication?: {
+        username: string | Function,
+        password: string | Function,
+        verifyCode?: string | number | Function,
     };
 }
 ```
@@ -68,13 +65,13 @@ ApiClient.toJSON();
 ```
 
 ```typescript
-ApiClient.toJSONAuth(); //more data (recommended for auth)
+ApiClient.toJSONAuth(); // recommended for authentication
 ```
 
 ## Save --> Client
 
 ```typescript
-Client.fromJSON(config, ApiClient.toJSON()); //you can use {.toJSONAuth} as a option
+Client.fromJSON(config, ApiClient.toJSON()); // long live
 ```
 
 ```typescript

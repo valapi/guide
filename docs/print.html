@@ -248,13 +248,23 @@ from '@valapi/lib';
 <tr><td>kr</td><td>Korea</td></tr>
 <tr><td>ap</td><td>Asia_Pacific</td></tr>
 </tbody></table>
+<h1 id="usage"><a class="header" href="#usage">Usage</a></h1>
+<hr />
+<pre><code class="language-typescript">
+[Resources].from. // string
+[Resources].to. // readable
+
+[Resources].toString('North_America'); // change readable to string
+[Resources].fromString('na'); // change string to readable
+
+</code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="event"><a class="header" href="#event">Event</a></h1>
 <hr />
-<pre><code class="language-typescript">ApiClient.on('EVENT_NAME', callback()) 
+<pre><code class="language-typescript">ApiClient.on('EVENT_NAME', callback());
 </code></pre>
 <ul>
 <li><strong>ready</strong> =&gt; <code>void</code></li>
-<li><strong>request</strong> =&gt; <code>{ method: ValorantApiRequestMethod, url: string, body?: Object, config: AxiosRequestConfig }</code></li>
+<li><strong>request</strong> =&gt; <code>{ method: string, url: string, body?: Object, config: AxiosRequestConfig }</code></li>
 <li><strong>changeSettings</strong> =&gt; <code>{ name:string, data:any }</code></li>
 <li><strong>error</strong> =&gt; <code>Error</code></li>
 </ul>
@@ -348,14 +358,11 @@ from '@valapi/lib';
         token?: number,
     };
 
-    // When Token is expired, it will be refreshed.
-    autoReconnect?: boolean;
-
     // When Cookie is expired, it will be refreshed.
-    // * Not Support Multi-Factor Authentication.
-    autoAuthentication?: {
-        username: string,
-        password: string,
+    selfAuthentication?: {
+        username: string | Function,
+        password: string | Function,
+        verifyCode?: string | number | Function,
     };
 }
 </code></pre>
@@ -367,10 +374,10 @@ from '@valapi/lib';
 <h2 id="client----save"><a class="header" href="#client----save">Client --&gt; Save</a></h2>
 <pre><code class="language-typescript">ApiClient.toJSON();
 </code></pre>
-<pre><code class="language-typescript">ApiClient.toJSONAuth(); //more data (recommended for auth)
+<pre><code class="language-typescript">ApiClient.toJSONAuth(); // recommended for authentication
 </code></pre>
 <h2 id="save----client"><a class="header" href="#save----client">Save --&gt; Client</a></h2>
-<pre><code class="language-typescript">Client.fromJSON(config, ApiClient.toJSON()); //you can use {.toJSONAuth} as a option
+<pre><code class="language-typescript">Client.fromJSON(config, ApiClient.toJSON()); // long live
 </code></pre>
 <pre><code class="language-typescript">Client.fromJSONAuth(config, ApiClient.toJSONAuth());
 </code></pre>
@@ -382,10 +389,10 @@ from '@valapi/lib';
 <tr><td>Client Platfrom</td><td>setClientPlatfrom</td><td>clientPlatfrom</td></tr>
 <tr><td>Cookie</td><td>setClientPlatfrom</td><td>cookie</td></tr>
 </tbody></table>
-<h2 id="usage"><a class="header" href="#usage">Usage</a></h2>
+<h2 id="usage-1"><a class="header" href="#usage-1">Usage</a></h2>
 <pre><code class="language-javascript">    ApiClient.{Function(...Args)};
 </code></pre>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="authentication"><a class="header" href="#authentication">Authentication</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="basic-authentication"><a class="header" href="#basic-authentication">Basic Authentication</a></h1>
 <hr />
 <h2 id="login"><a class="header" href="#login">Login</a></h2>
 <p>First We Need To <strong>Login</strong> To <code>Valorant Account</code></p>
@@ -405,9 +412,15 @@ await ApiClient.verify(123456);
 <p>After Login The <strong>Verify Code</strong> Will Send To Mail</p>
 <pre><code class="language-typescript">await ApiClient.verify(Number);
 </code></pre>
-<h2 id="cookie"><a class="header" href="#cookie">Cookie</a></h2>
+<h1 id="advanced-authentication"><a class="header" href="#advanced-authentication">Advanced Authentication</a></h1>
+<hr />
 <p><em>Beta</em></p>
-<pre><code class="language-typescript">await Client.fromCookie(config, old_ApiClient.toJSON());
+<h2 id="cookie"><a class="header" href="#cookie">Cookie</a></h2>
+<pre><code class="language-typescript">await ApiClient.fromCookie(cookie?);
+</code></pre>
+<h2 id="reconnection"><a class="header" href="#reconnection">Reconnection</a></h2>
+<p>its will reconnection if the token or cookie is expired</p>
+<pre><code class="language-typescript">await ApiClient.reconnect(isForce?);
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="api"><a class="header" href="#api">API</a></h1>
 <hr />
@@ -476,7 +489,7 @@ await ApiClient.verify(123456);
 <tr><td></td><td>FetchPlayerRestrictions</td><td></td></tr>
 <tr><td></td><td>MassRewards</td><td>puuid</td></tr>
 </tbody></table>
-<h2 id="usage-1"><a class="header" href="#usage-1">Usage</a></h2>
+<h2 id="usage-2"><a class="header" href="#usage-2">Usage</a></h2>
 <pre><code class="language-typescript">    const _data = await ApiClient.{Service}.{Function(...Args)};
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="example-1"><a class="header" href="#example-1">Example</a></h1>
@@ -486,8 +499,8 @@ await ApiClient.verify(123456);
 <h2 id="client-1"><a class="header" href="#client-1">Client</a></h2>
 <pre><code class="language-typescript">const ApiClient = new Client({
     region: 'ap',
-    autoReconnect: true,
 });
+await ApiClient.reconnect();
 
 </code></pre>
 <h2 id="auth"><a class="header" href="#auth">Auth</a></h2>
@@ -561,7 +574,7 @@ console.log(_data.data);
 <tr><td>API Key</td><td>setApiKey</td><td>apiKey</td></tr>
 <tr><td>Region</td><td>setRegion</td><td>region</td></tr>
 </tbody></table>
-<h2 id="usage-2"><a class="header" href="#usage-2">Usage</a></h2>
+<h2 id="usage-3"><a class="header" href="#usage-3">Usage</a></h2>
 <pre><code class="language-javascript">    ApiClient.{Function(...Args)};
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="api-2"><a class="header" href="#api-2">API</a></h1>
@@ -578,8 +591,8 @@ console.log(_data.data);
 <tr><td><strong>RankedV1</strong></td><td>LeaderboardsByAct</td><td>actId, size?, startIndex?</td></tr>
 <tr><td><strong>StatusV1</strong></td><td>PlatformData</td><td></td></tr>
 </tbody></table>
-<h2 id="usage-3"><a class="header" href="#usage-3">Usage</a></h2>
-<pre><code class="language-typescript">    const _data = await ApiClient.{Service}.{Function(...Args)}
+<h2 id="usage-4"><a class="header" href="#usage-4">Usage</a></h2>
+<pre><code class="language-typescript">    const _data = await ApiClient.{Service}.{Function(...Args)};
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="example-2"><a class="header" href="#example-2">Example</a></h1>
 <hr />
@@ -655,10 +668,10 @@ console.log(_data.data);
 <tr><td>Username</td><td>setUsername</td><td>username</td></tr>
 <tr><td>Lockfile</td><td>setLockfile</td><td>name</td></tr>
 </tbody></table>
-<h2 id="usage-4"><a class="header" href="#usage-4">Usage</a></h2>
+<h2 id="usage-5"><a class="header" href="#usage-5">Usage</a></h2>
 <pre><code class="language-javascript">    ApiClient.{Function(...Args)};
 </code></pre>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="authentication-1"><a class="header" href="#authentication-1">Authentication</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="authentication"><a class="header" href="#authentication">Authentication</a></h1>
 <hr />
 <p>We will add more authentication methods later.</p>
 <h2 id="get-from-lockfile"><a class="header" href="#get-from-lockfile">Get From Lockfile</a></h2>
@@ -720,7 +733,7 @@ console.log(_data.data);
 <tr><td></td><td>VOICE_CHAT_RNet_FetchSettings</td><td></td></tr>
 <tr><td></td><td>Valorant_Log_Path</td><td></td></tr>
 </tbody></table>
-<h2 id="usage-5"><a class="header" href="#usage-5">Usage</a></h2>
+<h2 id="usage-6"><a class="header" href="#usage-6">Usage</a></h2>
 <pre><code class="language-typescript">    const _data = await ApiClient.{Service}.{Function(...Args)};
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="example-3"><a class="header" href="#example-3">Example</a></h1>
@@ -796,7 +809,7 @@ console.log(_data.data);
 <table><thead><tr><th>Setting</th><th>Function</th><th>...Args</th></tr></thead><tbody>
 <tr><td>Language</td><td>setLanguage</td><td>language</td></tr>
 </tbody></table>
-<h2 id="usage-6"><a class="header" href="#usage-6">Usage</a></h2>
+<h2 id="usage-7"><a class="header" href="#usage-7">Usage</a></h2>
 <pre><code class="language-javascript">    ApiClient.{Function(...Args)};
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="api-6"><a class="header" href="#api-6">API</a></h1>
@@ -857,7 +870,7 @@ console.log(_data.data);
 <tr><td></td><td>getSkinChromaByUuid</td><td>uuid</td></tr>
 <tr><td></td><td>getSkinLevelByUuid</td><td>uuid</td></tr>
 </tbody></table>
-<h2 id="usage-7"><a class="header" href="#usage-7">Usage</a></h2>
+<h2 id="usage-8"><a class="header" href="#usage-8">Usage</a></h2>
 <pre><code class="language-typescript">    const _data = await ApiClient.{Service}.{Function(...Args)};
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="example-4"><a class="header" href="#example-4">Example</a></h1>

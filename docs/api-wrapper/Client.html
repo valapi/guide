@@ -171,14 +171,11 @@
         token?: number,
     };
 
-    // When Token is expired, it will be refreshed.
-    autoReconnect?: boolean;
-
     // When Cookie is expired, it will be refreshed.
-    // * Not Support Multi-Factor Authentication.
-    autoAuthentication?: {
-        username: string,
-        password: string,
+    selfAuthentication?: {
+        username: string | Function,
+        password: string | Function,
+        verifyCode?: string | number | Function,
     };
 }
 </code></pre>
@@ -190,10 +187,10 @@
 <h2 id="client----save"><a class="header" href="#client----save">Client --&gt; Save</a></h2>
 <pre><code class="language-typescript">ApiClient.toJSON();
 </code></pre>
-<pre><code class="language-typescript">ApiClient.toJSONAuth(); //more data (recommended for auth)
+<pre><code class="language-typescript">ApiClient.toJSONAuth(); // recommended for authentication
 </code></pre>
 <h2 id="save----client"><a class="header" href="#save----client">Save --&gt; Client</a></h2>
-<pre><code class="language-typescript">Client.fromJSON(config, ApiClient.toJSON()); //you can use {.toJSONAuth} as a option
+<pre><code class="language-typescript">Client.fromJSON(config, ApiClient.toJSON()); // long live
 </code></pre>
 <pre><code class="language-typescript">Client.fromJSONAuth(config, ApiClient.toJSONAuth());
 </code></pre>

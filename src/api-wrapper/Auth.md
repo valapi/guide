@@ -1,4 +1,4 @@
-# Authentication
+# Basic Authentication
 
 -----------
 
@@ -34,10 +34,22 @@ After Login The **Verify Code** Will Send To Mail
 await ApiClient.verify(Number);
 ```
 
-## Cookie
+# Advanced Authentication
+
+-----------
 
 *Beta*
 
+## Cookie
+
 ```typescript
-await Client.fromCookie(config, old_ApiClient.toJSON());
+await ApiClient.fromCookie(cookie?);
+```
+
+## Reconnection
+
+its will reconnection if the token or cookie is expired
+
+```typescript
+await ApiClient.reconnect(isForce?);
 ```
