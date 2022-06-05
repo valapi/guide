@@ -2,7 +2,7 @@
 
 -----------
 
-`@ing3kth/valapi` is a NodeJS package that make more easier to use Valorant API
+`valorant.ts` is a NodeJS package that make more easier to use Valorant API
 
 - All-in-one package
 - Support Multi-factor Authentication (2FA)
@@ -19,17 +19,17 @@
 
 **PNPM:**
 ```bash
-pnpm add @ing3kth/val-api
+pnpm add valorant.ts
 ```
 
 **Yarn:**
 ```bash
-yarn add @ing3kth/val-api
+yarn add valorant.ts
 ```
 
 **NPM:**
 ```bash
-npm install @ing3kth/val-api
+npm install valorant.ts
 ```
 
 ## Requirements

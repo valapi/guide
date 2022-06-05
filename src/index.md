@@ -1,6 +1,6 @@
 # @valapi Documentation
 
-[![NPM](https://nodei.co/npm/@ing3kth%2Fval-api.png)](https://nodei.co/npm/@ing3kth%2Fval-api)
+[![NPM](https://nodei.co/npm/valorant.ts.png)](https://nodei.co/npm/valorant.ts)
 
 -----------
 
