@@ -6,7 +6,7 @@
 import { Client } from '@valapi/riot-client';
 ```
 
-## Client
+## [Client](./Client.md#config)
 
 ```typescript
 const ApiClient = new Client({
@@ -16,13 +16,13 @@ const ApiClient = new Client({
 
 ```
 
-## Auth
+## [Auth](./Auth.md#get-from-lockfile)
 
 ```typescript
 ApiClient.LockfileAuth();
 ```
 
-## API
+## [API](./API.md#usage)
 
 ```typescript
 const _data = await ApiClient.Chat.All_Chat_History();

@@ -6,7 +6,7 @@
 import { Client } from '@valapi/riot-api';
 ```
 
-## Client
+## [Client](./Client.md#config)
 
 ```typescript
 const ApiClient = new Client({
@@ -15,7 +15,7 @@ const ApiClient = new Client({
 
 ```
 
-## API
+## [API](./API.md#usage)
 
 ```typescript
 const _data = await ApiClient.Events.get();

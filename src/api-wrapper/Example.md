@@ -6,29 +6,29 @@
 import { Client } from '@valapi/api-wrapper';
 ```
 
-## Client
+## [Client](./Client.md#client)
 
 ```typescript
 const ApiClient = new Client({
     region: 'ap',
 });
-await ApiClient.reconnect();
-
 ```
 
-## Auth
+## [Auth](./Auth.md#basic-authentication)
 
 ```typescript
 await ApiClient.login('BestUsername', 'SuperSecretPassword');
+```
 
+```typescript
 if(ApiClient.multifactor === true) {
 
-    //multifactor
-    await ApiClient.verify(428793);
+    await ApiClient.verify(428793 /* <--- Verify Code */);
+    
 }
 ```
 
-## API
+## [API](./API.md#usage)
 
 ```typescript
 const _data = await ApiClient.PreGame.GetMatch('MATCH-ID-1234567890');

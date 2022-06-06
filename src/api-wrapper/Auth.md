@@ -14,18 +14,6 @@ await ApiClient.login('Username', 'Password');
  
 ## Multi-Factor
 
-<details>
-<summary>Example</summary>
-<blockquote>
-
-```typescript
-const ApiClient = Client.fromJSONAuth(config, old_ApiClient.toJSONAuth());
-await ApiClient.verify(123456);
-```
-
-</blockquote>
-</details>
-
 When The Account Have **Multifactor** You Can't Use Normal Method
 
 After Login The **Verify Code** Will Send To Mail

@@ -7,17 +7,28 @@ ApiClient.on('EVENT_NAME', callback());
 ```
 
 - **ready** => `void`
-- **request** => `{ method: string, url: string, body?: Object, config: AxiosRequestConfig }`
+- **request** => [`Request`](#request)
 - **changeSettings** => `{ name:string, data:any }`
-- **error** => `Error`
+- **error** => [`Error`](#error)
+
+## Request
+
+```typescript
+interface Error {
+    method: string;
+    url: string;
+    body?: Object;
+    config: AxiosRequestConfig;
+}
+```
 
 ## Error
 
 ```typescript
 interface Error {
-    errorCode: string,
-    message: string,
-    data: any,
+    errorCode: string;
+    message: string;
+    data: any;
 }
 ```
 

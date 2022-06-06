@@ -71,7 +71,7 @@ ApiClient.toJSONAuth(); // recommended for authentication
 ## Save --> Client
 
 ```typescript
-Client.fromJSON(config, ApiClient.toJSON()); // long live
+Client.fromJSON(config, ApiClient.toJSON());
 ```
 
 ```typescript

@@ -11,4 +11,8 @@ build-dir = "docs"
 create-missing = false
 
 [output.html]
+default-theme = "ayu"
+preferred-dark-theme = "coal"
 git-repository-url = "https://github.com/valapi"
+edit-url-template = "https://github.com/valapi/valapi.github.io/edit/main/{path}"
+site-url = "/docs/"

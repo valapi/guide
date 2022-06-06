@@ -2,8 +2,6 @@
 
 -----------
 
-Something is can't use, so I did't insert it.
-
 | Service       | Function                   | ...Args                   |
 | ------------- | -------------------------- | ------------------------- |
 | **AccountV1** | ByPuuid                    | puuid                     |
