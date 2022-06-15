@@ -7,6 +7,7 @@
 
 <!-- MAIN -->
 - [Introduced](./resources/Intro.md)
+  - [Legal](./resources/Legal.md)
   - [Resources](./resources/Resources.md)
   - [Event](./resources/Event.md)
 
