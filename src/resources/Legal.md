@@ -74,7 +74,7 @@ You can do it or not but it's for safety.
 
 ## Third-Party
 
-- [Valorant-API](https://valorant-api.com) (Third-Party)
+- [Valorant-API](https://valorant-api.com)
 
 ## Special Thanks
 
