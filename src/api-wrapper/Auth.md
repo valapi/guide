@@ -39,5 +39,5 @@ await ApiClient.fromCookie(cookie?);
 its will reconnection if the token or cookie is expired
 
 ```typescript
-await ApiClient.reconnect(isForce?);
+await ApiClient.reconnect(isForce?); // isForce = only reconnect token;
 ```

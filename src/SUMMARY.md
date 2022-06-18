@@ -38,5 +38,6 @@
 <!-- valorant-api.com -->
 - [valorant-api.com](./valorant-api.com/Intro.md)
   - [Client](./valorant-api.com/Client.md)
+    - [Language](./valorant-api.com/Language.md)
   - [Endpoints](./valorant-api.com/API.md)
   - [Example](./valorant-api.com/Example.md)
