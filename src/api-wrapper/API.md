@@ -38,6 +38,7 @@
 |                 | AutoBalance                | partyId                                    |
 |                 | ChangeTeamInCustomGame     | partyId, team, puuid                       |
 |                 | StartSoloExperience        | partyId                                    |
+|                 | TransferOwner              | puuid, partyId                             |
 | **PreGame**     | FetchChatToken             | matchId                                    |
 |                 | FetchVoiceToken            | matchId                                    |
 |                 | GetMatch                   | matchId                                    |
