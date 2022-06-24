@@ -14,13 +14,14 @@
 # API
 
 -----------
-
 <!-- API Wrapper -->
+<!--- BANNED
 - [API Wrapper](./api-wrapper/Intro.md)
   - [Client](./api-wrapper/Client.md)
   - [Auth](./api-wrapper/Auth.md)
   - [Endpoints](./api-wrapper/API.md)
   - [Example](./api-wrapper/Example.md)
+-->
 
 <!-- Riot API -->
 - [Riot API](./riot-api/Intro.md)
@@ -29,11 +30,13 @@
   - [Example](./riot-api/Example.md)
 
 <!-- Riot Client -->
+<!--- BANNED
 - [Riot Client](./riot-client/Intro.md)
   - [Client](./riot-client/Client.md)
   - [Auth](./riot-client/Auth.md)
   - [Endpoints](./riot-client/API.md)
   - [Example](./riot-client/Example.md)
+-->
 
 <!-- valorant-api.com -->
 - [valorant-api.com](./valorant-api.com/Intro.md)

@@ -66,11 +66,13 @@ You can do it or not but it's for safety.
 - [Valorant](https://playvalorant.com)
 - [Riot Developer Portal](https://developer.riotgames.com/apis)
 - [Valorant Community Developer Discord](https://discord.gg/sCgvpXJfEE)
+<!--- BANNED
 - [techchrism/valorant-api-docs](https://github.com/techchrism/valorant-api-docs)
 - [HeyM1ke/ValorantClientAPI](https://github.com/HeyM1ke/ValorantClientAPI)
 - [soup061222/VALORANT-EXAMPLE](https://github.com/soup061222/VALORANT-EXAMPLE)
 - [ev3nvy/valorant-reauth-script](https://github.com/ev3nvy/valorant-reauth-script)
 - [Kavan72/endpoints.txt](https://gist.github.com/Kavan72/b6e0bfdf21d610148f64df878b8a2cc5)
+-->
 
 ## Third-Party
 
