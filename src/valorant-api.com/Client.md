@@ -18,7 +18,7 @@ interface Config {
 ## Client
 
 ```typescript
-const ApiClient = new Client(config);
+const ApiClient = new Client(config?);
 ```
 
 # Settings

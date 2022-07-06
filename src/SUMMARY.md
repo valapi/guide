@@ -11,6 +11,11 @@
   - [Resources](./resources/Resources.md)
   - [Event](./resources/Event.md)
 
+- [Authentication](./auth/Intro.md)
+  - [Client](./auth/Client.md)
+  - [Auth](./Auth/Auth.md)
+  - [Example](./auth/Example.md)
+
 # API
 
 -----------

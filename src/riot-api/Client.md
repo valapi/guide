@@ -20,7 +20,7 @@ interface Config {
 ## Client
 
 ```typescript
-const ApiClient = new Client(config);
+const ApiClient = new Client(config?);
 ```
 
 You Can Get Api Key From [developer.riotgames.com](https://developer.riotgames.com/)
