@@ -13,7 +13,7 @@
 
 - [Authentication](./auth/Intro.md)
   - [Client](./auth/Client.md)
-  - [Auth](./Auth/Auth.md)
+  - [Auth](./auth/Auth.md)
   - [Example](./auth/Example.md)
 
 # API

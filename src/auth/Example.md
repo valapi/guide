@@ -3,13 +3,13 @@
 -----------
 
 ```typescript
-import { ValRso } from '@valapi/auth';
+import Client from '@valapi/auth';
 ```
 
 ## [Client](./Client.md#client)
 
 ```typescript
-const AuthClient = new ValRso();
+const AuthClient = new Client();
 ```
 
 ## [Auth](./Auth.md#basic-authentication)
@@ -29,5 +29,5 @@ if(AuthClient.multifactor === true) {
 ```typescript
 const _data = AuthClient.toJSON();
 
-const AuthClient = await ValRso.fromCookie(_data.cookie.ssid);
+const AuthClient = await Client.fromCookie(_data.cookie.ssid);
 ```
