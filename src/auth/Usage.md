@@ -1,4 +1,4 @@
-# Example
+# Usage
 
 -----------
 
@@ -19,15 +19,15 @@ await AuthClient.login('BestUsername', 'SuperSecretPassword');
 ```
 
 ```typescript
-if(AuthClient.multifactor === true) {
+if (AuthClient.multifactor === true) {
 
     await AuthClient.verify(428793 /* <--- Verify Code */);
     
 }
 ```
 
-```typescript
-const _data = AuthClient.toJSON();
+## PlayerUUID (puuid)
 
-const AuthClient = await Client.fromCookie(_data.cookie.ssid);
+```typescript
+const puuid = AuthClient.parsePlayerUuid();
 ```

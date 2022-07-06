@@ -30,12 +30,16 @@ await AuthClient.verify(SixDigitNumber);
 
 its will reconnection if the token is expired
 
+**we recommend running this after creating *AuthClient***
+
 ```typescript
 await AuthClient.reload(isForce?);
 ```
 
 ## Cookie
 
+you can save only SSID cookie for ~30 days.
+
 ```typescript
-const AuthClient = await ValRso.fromCookie(cookie);
+const AuthClient = await ValRso.fromCookie(cookie.ssid);
 ```

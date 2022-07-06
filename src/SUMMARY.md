@@ -14,7 +14,7 @@
 - [Authentication](./auth/Intro.md)
   - [Client](./auth/Client.md)
   - [Auth](./auth/Auth.md)
-  - [Example](./auth/Example.md)
+  - [Usage](./auth/Usage.md)
 
 # API
 
