@@ -1,22 +1,25 @@
-# @valapi Documentation
+# Introduced
 
-[![NPM](https://nodei.co/npm/valorant.ts.png)](https://nodei.co/npm/valorant.ts)
+Valorant Authentication
+
+## Install
+
+```bash
+npm install @valapi/auth
+```
+
+## Contents
+
+- [Client](./Client.md)
+- [Auth](./Auth.md)
+- [Usage](./Usage.md)
 
 -----------
-
-Generate by [mdBook](https://github.com/rust-lang/mdBook)
-
-[![LICENSE](https://badgen.net/badge/license/MIT/blue)](https://github.com/valapi/.github/blob/main/LICENSE)
-[![Github](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com/KTNG-3/valorant-api)
-[![Discord](https://badgen.net/badge/icon/discord?icon=discord&label)](https://discord.gg/pbyWbUYjyt)
 
 - *Report Bug*
   - [Discord](https://discord.gg/pbyWbUYjyt)
     - INg3_#9509
 - *Special Thanks*
-  - [Techdoodle](https://github.com/techchrism/valorant-api-docs) (API Docs)
-  - [M1ke](https://github.com/HeyM1ke/ValorantClientAPI) (API Docs)
-  - [Officer](https://valorant-api.com/) (valorant-api.com)
   - [Valorant Community Developer Discord](https://discord.gg/sCgvpXJfEE)
   - [Play Valorant](https://playvalorant.com/) (VALORANT)
   - [developer.riotgames.com](https://developer.riotgames.com/) (Official Api From Riot Games)

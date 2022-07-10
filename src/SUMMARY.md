@@ -5,47 +5,54 @@
 
 -----------
 
-<!-- MAIN -->
-- [Introduced](./resources/Intro.md)
-  - [Legal](./resources/Legal.md)
-  - [Resources](./resources/Resources.md)
-  - [Event](./resources/Event.md)
+- [Introduced](./MAIN/Intro.md)
+  - [Legal](./MAIN/Legal.md)
+  - [Resources](./MAIN/Resources.md)
+  - [Event](./MAIN/Event.md)
 
-- [Authentication](./auth/Intro.md)
-  - [Client](./auth/Client.md)
-  - [Auth](./auth/Auth.md)
-  - [Usage](./auth/Usage.md)
+# Packages
+
+-----------
+
+- [Built-In](./PACKAGE/build-in/Intro.md)
+  - [Region](./PACKAGE/build-in/Region.md)
+  - [Crosshair](./PACKAGE/build-in/Crosshair.md)
+
+- [Authentication](./PACKAGE/auth/Intro.md)
+  - [Client](./PACKAGE/auth/Client.md)
+  - [Auth](./PACKAGE/auth/Auth.md)
+  - [Usage](./PACKAGE/auth/Usage.md)
 
 # API
 
 -----------
 <!-- API Wrapper -->
 <!--- BANNED
-- [API Wrapper](./api-wrapper/Intro.md)
-  - [Client](./api-wrapper/Client.md)
-  - [Auth](./api-wrapper/Auth.md)
-  - [Endpoints](./api-wrapper/API.md)
-  - [Example](./api-wrapper/Example.md)
+- [API Wrapper](./API/api-wrapper/Intro.md)
+  - [Client](./API/api-wrapper/Client.md)
+  - [Auth](./API/api-wrapper/Auth.md)
+  - [Endpoints](./API/api-wrapper/API.md)
+  - [Example](./API/api-wrapper/Example.md)
 -->
 
 <!-- Riot API -->
-- [Riot API](./riot-api/Intro.md)
-  - [Client](./riot-api/Client.md)
-  - [Endpoints](./riot-api/API.md)
-  - [Example](./riot-api/Example.md)
+- [Riot API](./API/riot-api/Intro.md)
+  - [Client](./API/riot-api/Client.md)
+  - [Endpoints](./API/riot-api/API.md)
+  - [Example](./API/riot-api/Example.md)
 
 <!-- Riot Client -->
 <!--- BANNED
-- [Riot Client](./riot-client/Intro.md)
-  - [Client](./riot-client/Client.md)
-  - [Auth](./riot-client/Auth.md)
-  - [Endpoints](./riot-client/API.md)
-  - [Example](./riot-client/Example.md)
+- [Riot Client](./API/riot-client/Intro.md)
+  - [Client](./API/riot-client/Client.md)
+  - [Auth](./API/riot-client/Auth.md)
+  - [Endpoints](./API/riot-client/API.md)
+  - [Example](./API/riot-client/Example.md)
 -->
 
 <!-- valorant-api.com -->
-- [valorant-api.com](./valorant-api.com/Intro.md)
-  - [Client](./valorant-api.com/Client.md)
-    - [Language](./valorant-api.com/Language.md)
-  - [Endpoints](./valorant-api.com/API.md)
-  - [Example](./valorant-api.com/Example.md)
+- [valorant-api.com](./API/valorant-api.com/Intro.md)
+  - [Client](./API/valorant-api.com/Client.md)
+  - [Endpoints](./API/valorant-api.com/API.md)
+    - [Language](./API/valorant-api.com/Language.md)
+  - [Example](./API/valorant-api.com/Example.md)
