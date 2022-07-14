@@ -34,6 +34,8 @@ All API base on [dash.valorant-api.com](https://dash.valorant-api.com/)
 |                      | getEquippableByUuid        | uuid                |
 | **Gear**             | get                        |                     |
 |                      | getByUuid                  | uuid                |
+| **LevelBorders**     | get                        |                     |
+|                      | getByUuid                  | uuid                |
 | **Maps**             | get                        |                     |
 |                      | getByUuid                  | uuid                |
 | **PlayerCards**      | get                        |                     |

@@ -9,6 +9,7 @@
   - [Legal](./MAIN/Legal.md)
   - [Resources](./MAIN/Resources.md)
   - [Event](./MAIN/Event.md)
+  - [Default Import](./MAIN/Default.md)
 
 # Packages
 
@@ -27,8 +28,8 @@
 
 -----------
 <!-- API Wrapper -->
+- [API Wrapper]() <!-- (./API/api-wrapper/Intro.md) -->
 <!--- BANNED
-- [API Wrapper](./API/api-wrapper/Intro.md)
   - [Client](./API/api-wrapper/Client.md)
   - [Auth](./API/api-wrapper/Auth.md)
   - [Endpoints](./API/api-wrapper/API.md)
@@ -42,8 +43,8 @@
   - [Example](./API/riot-api/Example.md)
 
 <!-- Riot Client -->
+- [Riot Client]() <!-- (./API/riot-client/Intro.md) -->
 <!--- BANNED
-- [Riot Client](./API/riot-client/Intro.md)
   - [Client](./API/riot-client/Client.md)
   - [Auth](./API/riot-client/Auth.md)
   - [Endpoints](./API/riot-client/API.md)

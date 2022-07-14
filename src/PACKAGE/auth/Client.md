@@ -3,7 +3,7 @@
 -----------
 
 ```typescript
-import { ValRso } from '@valapi/auth';
+import { Client } from '@valapi/auth';
 ```
 
 ## Config
@@ -35,7 +35,7 @@ interface Config {
 ## Client
 
 ```typescript
-const AuthClient = new ValRso( config? );
+const AuthClient = new Client( config? );
 ```
 
 # Save
@@ -51,5 +51,5 @@ AuthClient.toJSON();
 ## Save --> Client
 
 ```typescript
-ValRso.fromJSON(config, AuthClient.toJSON());
+Client.fromJSON(config, AuthClient.toJSON());
 ```

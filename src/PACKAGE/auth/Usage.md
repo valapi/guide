@@ -3,7 +3,7 @@
 -----------
 
 ```typescript
-import Client from '@valapi/auth';
+import { Client } from '@valapi/auth';
 ```
 
 ## [Client](./Client.md#client)

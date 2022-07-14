@@ -17,6 +17,6 @@ list of the contributors who helped me improve this module.
 - [SpatzlHD](https://github.com/SpatzlHD)
 - teyd#8766
 - [Drysque](https://github.com/Drysque)
-- Lunac#1111
+- [Lunac](https://github.com/Lunac-dev)
 
 <!--Make It Readable // Make It Readable // Make It Readable //-->
