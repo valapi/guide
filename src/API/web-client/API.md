@@ -10,7 +10,7 @@
 |                 | FetchActiveStory           | puuid                                      |
 |                 | Fetch                      | puuid                                      |
 |                 | Active                     | puuid, contractId                          |
-| **CurrentGame** | FetchAllChatMUCToken       |                                            |
+| **CurrentGame** | FetchAllChatMUCToken       | matchId                                    |
 |                 | FetchMatch                 | matchId                                    |
 |                 | FetchMatchLoadouts         | matchId                                    |
 |                 | FetchPlayer                | puuid                                      |
@@ -59,7 +59,7 @@
 | **Match**       | FetchMatchDetails          | matchId                                    |
 |                 | FetchMatchHistory          | puuid, queueId?, startIndex?, endIndex?    |
 | **MMR**         | FetchCompetitiveUpdates    | puuid, queueId?, startIndex?, endIndex?    |
-|                 | FetchLeaderboard           | puuid, startIndex?, size?, serachUsername? |
+|                 | FetchLeaderboard           | seasonId, startIndex?, size?, serachUsername? |
 |                 | FetchPlayer                | puuid                                      |
 |                 | HideActRankBadge           | puuid                                      |
 | **Player**      | GetUsername                | puuid                                      |

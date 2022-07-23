@@ -14,7 +14,7 @@ const ApiClient = new Client({
 });
 ```
 
-## [Auth](./Auth.md#basic-authentication)
+## [Auth](../../PACKAGE/auth/Auth.md)
 
 ```typescript
 await ApiClient.login('BestUsername', 'SuperSecretPassword');

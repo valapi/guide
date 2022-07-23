@@ -37,11 +37,17 @@ pnpm add valorant.ts
 
 - [Node.js](https://nodejs.org/) (we recommend lastest version for best performance)
 
-## Get Started
+## Getting Started
 
 -----------
 
-- [valorant.ts](../PACKAGE/build-in/Intro.md#contents)
-- [@valapi/auth](../PACKAGE/auth/Intro.md#contents)
-- [@valapi/riot-api](../API/riot-api/Intro.md#contents)
-- [@valapi/valorant-api.com](../API/valorant-api.com/Intro.md#contents)
+### Packages
+
+- [Built-In](../PACKAGE/build-in/Intro.md)
+- [Authentication](../PACKAGE/auth/Intro.md)
+
+### API
+
+- [Web Client](../API/web-client/Intro.md)
+- [Riot API](../API/riot-api/Intro.md)
+- [valorant-api.com](../API/valorant-api.com/Intro.md)

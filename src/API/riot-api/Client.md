@@ -29,7 +29,7 @@ You Can Get Api Key From [developer.riotgames.com](https://developer.riotgames.c
 
 -----------
 
-| Setting | Function  | ...Args |
+| Set     | Function  | ...Args |
 | ------- | --------- | ------- |
 | API Key | setApiKey | apiKey  |
 | Region  | setRegion | region  |

@@ -27,29 +27,17 @@
 # API
 
 -----------
-<!-- API Wrapper -->
-- [API Wrapper]() <!-- (./API/api-wrapper/Intro.md) -->
-<!--- BANNED
-  - [Client](./API/api-wrapper/Client.md)
-  - [Auth](./API/api-wrapper/Auth.md)
-  - [Endpoints](./API/api-wrapper/API.md)
-  - [Example](./API/api-wrapper/Example.md)
--->
+<!-- Web Client -->
+- [Web Client](./API/web-client/Intro.md)
+  - [Client](./API/web-client/Client.md)
+  - [Endpoints](./API/web-client/API.md)
+  - [Example](./API/web-client/Example.md)
 
 <!-- Riot API -->
 - [Riot API](./API/riot-api/Intro.md)
   - [Client](./API/riot-api/Client.md)
   - [Endpoints](./API/riot-api/API.md)
   - [Example](./API/riot-api/Example.md)
-
-<!-- Riot Client -->
-- [Riot Client]() <!-- (./API/riot-client/Intro.md) -->
-<!--- BANNED
-  - [Client](./API/riot-client/Client.md)
-  - [Auth](./API/riot-client/Auth.md)
-  - [Endpoints](./API/riot-client/API.md)
-  - [Example](./API/riot-client/Example.md)
--->
 
 <!-- valorant-api.com -->
 - [valorant-api.com](./API/valorant-api.com/Intro.md)

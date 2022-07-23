@@ -9,13 +9,21 @@ because javascript cannot use type definition then we can only use client
 ## Import
 
 ```javascript
-const { Auth, RiotAPI, ValorantApiCom } = require('valorant.ts').default
+const { Auth, WebClient, RiotAPI, ValorantApiCom } = require('valorant.ts').default
 ```
 
 ## Usage
 
+Packages
+
 ```javascript
 const AuthClient = new Auth( config? );
+```
+
+API
+
+```javascript
+const ApiClient = new WebClient( config? );
 ```
 
 ```javascript

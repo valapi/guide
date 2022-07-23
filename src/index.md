@@ -13,3 +13,13 @@ Generate by [mdBook](https://github.com/rust-lang/mdBook)
 > - **@valapi** isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.
 > - **@valapi** was created under [Riot Games' "Legal Jibber Jabber"](https://www.riotgames.com/en/legal)
 > - [MIT License](https://github.com/valapi/.github/blob/main/LICENSE)
+
+# Getting Started
+
+-----------
+
+- [valorant.ts](./PACKAGE/build-in/Intro.md#contents)
+- [@valapi/auth](./PACKAGE/auth/Intro.md#contents)
+- [@valapi/web-client](./API/web-client/Intro.md#contents)
+- [@valapi/riot-api](./API/riot-api/Intro.md#contents)
+- [@valapi/valorant-api.com](./API/valorant-api.com/Intro.md#contents)

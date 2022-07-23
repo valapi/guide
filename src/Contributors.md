@@ -2,15 +2,11 @@
 
 -----------
 
-list of the contributors who helped me improve this module.
-
-<!--Make It Readable // Make It Readable // Make It Readable //-->
+list of the contributors who helped me improve this module
 
 ## Developers Team
 
 - [ING3_](https://github.com/KTNG-3) (INg3_#9509)
-
-<!--Make It Readable // Make It Readable // Make It Readable //-->
 
 ## Report Bugs
 
@@ -19,4 +15,9 @@ list of the contributors who helped me improve this module.
 - [Drysque](https://github.com/Drysque)
 - [Lunac](https://github.com/Lunac-dev)
 
-<!--Make It Readable // Make It Readable // Make It Readable //-->
+## Special Thanks
+
+- [ev3nvy](https://github.com/ev3nvy)
+- [Officer](https://github.com/NotOfficer)
+- [M1ke](https://github.com/HeyM1ke)
+- [Techdoodle](https://github.com/techchrism)

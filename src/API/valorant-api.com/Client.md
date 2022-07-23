@@ -25,7 +25,7 @@ const ApiClient = new Client( config? );
 
 -----------
 
-| Setting  | Function    | ...Args  |
+| Set      | Function    | ...Args  |
 | -------- | ----------- | -------- |
 | Language | setLanguage | language |
 

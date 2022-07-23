@@ -1,16 +1,15 @@
 # Introduced
 
-API from Riot Client
+API from Web Client
 
 ## Install
 
 ```bash
-npm install @valapi/riot-client
+npm install @valapi/web-client
 ```
 
 ## Contents
 
 - [Client](./Client.md)
-- [Auth](./Auth.md)
 - [Endpoints](./API.md)
 - [Example](./Example.md)
