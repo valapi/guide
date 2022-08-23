@@ -187,14 +187,13 @@
 <ul>
 <li>All-in-one package</li>
 <li>Support Multi-factor Authentication (2FA)</li>
-<li>6 Packages:
+<li>5 Packages:
 <ul>
-<li>lib</li>
-<li>api-wrapper <em>(disable)</em></li>
-<li>riot-api</li>
-<li>riot-client <em>(disable)</em></li>
-<li>valorant-api.com</li>
 <li>auth</li>
+<li>lib</li>
+<li>riot-api</li>
+<li>valorant-api.com</li>
+<li>web-client</li>
 </ul>
 </li>
 </ul>
@@ -327,7 +326,7 @@
 from '@valapi/lib';
 </code></pre>
 <h2 id="region"><a class="header" href="#region">Region</a></h2>
-<table><thead><tr><th>Region</th><th>Full Name</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Region</th><th>Full Name</th></tr></thead><tbody>
 <tr><td>na</td><td>North_America</td></tr>
 <tr><td>latam</td><td>Latin_America</td></tr>
 <tr><td>br</td><td>Brazil</td></tr>
@@ -336,6 +335,7 @@ from '@valapi/lib';
 <tr><td>kr</td><td>Korea</td></tr>
 <tr><td>ap</td><td>Asia_Pacific</td></tr>
 </tbody></table>
+</div>
 <h1 id="usage"><a class="header" href="#usage">Usage</a></h1>
 <hr />
 <pre><code class="language-typescript">
@@ -594,7 +594,7 @@ Region.Asia_Pacific             // return &quot;ap&quot;
 </code></pre>
 <h2 id="cookie"><a class="header" href="#cookie">Cookie</a></h2>
 <p>you can save only SSID cookie for ~30 days.</p>
-<pre><code class="language-typescript">const AuthClient = await ValRso.fromCookie(cookie.ssid);
+<pre><code class="language-typescript">const AuthClient = await ValAuth.fromCookie(cookie.ssid);
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="usage-4"><a class="header" href="#usage-4">Usage</a></h1>
 <hr />
@@ -606,14 +606,14 @@ Region.Asia_Pacific             // return &quot;ap&quot;
 <h2 id="auth"><a class="header" href="#auth"><a href="PACKAGE/auth/./Auth.html#basic-authentication">Auth</a></a></h2>
 <pre><code class="language-typescript">await AuthClient.login('BestUsername', 'SuperSecretPassword');
 </code></pre>
-<pre><code class="language-typescript">if (AuthClient.multifactor === true) {
+<pre><code class="language-typescript">if (AuthClient.isMultifactor === true) {
 
     await AuthClient.verify(428793 /* &lt;--- Verify Code */);
     
 }
 </code></pre>
 <h2 id="playeruuid-puuid"><a class="header" href="#playeruuid-puuid">PlayerUUID (puuid)</a></h2>
-<pre><code class="language-typescript">const puuid = AuthClient.parsePlayerUuid();
+<pre><code class="language-typescript">const puuid = AuthClient.parseToken();
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="introduced-3"><a class="header" href="#introduced-3">Introduced</a></h1>
 <p>API from Web Client</p>
@@ -669,18 +669,19 @@ Region.Asia_Pacific             // return &quot;ap&quot;
 </code></pre>
 <h1 id="settings-1"><a class="header" href="#settings-1">Settings</a></h1>
 <hr />
-<table><thead><tr><th>Set</th><th>Function</th><th>...Args</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Set</th><th>Function</th><th>...Args</th></tr></thead><tbody>
 <tr><td>Region</td><td>setRegion</td><td>region</td></tr>
 <tr><td>Client Version</td><td>setClientVersion</td><td>clientVersion</td></tr>
 <tr><td>Client Platfrom</td><td>setClientPlatfrom</td><td>clientPlatfrom</td></tr>
 </tbody></table>
+</div>
 <h2 id="usage-5"><a class="header" href="#usage-5">Usage</a></h2>
 <pre><code class="language-javascript">    ApiClient.{Function(...Args)};
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="api-1"><a class="header" href="#api-1">API</a></h1>
 <hr />
 <p><a href="https://github.com/techchrism/valorant-api-docs">https://github.com/techchrism/valorant-api-docs</a></p>
-<table><thead><tr><th>Service</th><th>Function</th><th>...Args</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Service</th><th>Function</th><th>...Args</th></tr></thead><tbody>
 <tr><td><strong>Contract</strong></td><td>DefinitionsFetch</td><td></td></tr>
 <tr><td></td><td>FetchActiveStory</td><td>puuid</td></tr>
 <tr><td></td><td>Fetch</td><td>puuid</td></tr>
@@ -745,6 +746,7 @@ Region.Asia_Pacific             // return &quot;ap&quot;
 <tr><td></td><td>FetchPlayerRestrictions</td><td></td></tr>
 <tr><td></td><td>MassRewards</td><td>puuid</td></tr>
 </tbody></table>
+</div>
 <h2 id="usage-6"><a class="header" href="#usage-6">Usage</a></h2>
 <pre><code class="language-typescript">    const _data = await ApiClient.{Service}.{Function(...Args)};
 </code></pre>
@@ -760,7 +762,7 @@ Region.Asia_Pacific             // return &quot;ap&quot;
 <h2 id="auth-1"><a class="header" href="#auth-1"><a href="API/web-client/../../PACKAGE/auth/Auth.html">Auth</a></a></h2>
 <pre><code class="language-typescript">await ApiClient.login('BestUsername', 'SuperSecretPassword');
 </code></pre>
-<pre><code class="language-typescript">if(ApiClient.multifactor === true) {
+<pre><code class="language-typescript">if(ApiClient.isMultifactor === true) {
 
     await ApiClient.verify(428793 /* &lt;--- Verify Code */);
     
@@ -800,16 +802,17 @@ console.log(_data.data);
 <p>You Can Get Api Key From <a href="https://developer.riotgames.com/">developer.riotgames.com</a></p>
 <h1 id="settings-2"><a class="header" href="#settings-2">Settings</a></h1>
 <hr />
-<table><thead><tr><th>Set</th><th>Function</th><th>...Args</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Set</th><th>Function</th><th>...Args</th></tr></thead><tbody>
 <tr><td>API Key</td><td>setApiKey</td><td>apiKey</td></tr>
 <tr><td>Region</td><td>setRegion</td><td>region</td></tr>
 </tbody></table>
+</div>
 <h2 id="usage-7"><a class="header" href="#usage-7">Usage</a></h2>
 <pre><code class="language-javascript">    ApiClient.{Function(...Args)};
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="api-3"><a class="header" href="#api-3">API</a></h1>
 <hr />
-<table><thead><tr><th>Service</th><th>Function</th><th>...Args</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Service</th><th>Function</th><th>...Args</th></tr></thead><tbody>
 <tr><td><strong>AccountV1</strong></td><td>ByPuuid</td><td>puuid</td></tr>
 <tr><td></td><td>ByRiotId</td><td>gameName, tagLine</td></tr>
 <tr><td></td><td>ActiveShardsByGameAndPuuid</td><td>puuid, game?</td></tr>
@@ -820,6 +823,7 @@ console.log(_data.data);
 <tr><td><strong>RankedV1</strong></td><td>LeaderboardsByAct</td><td>actId, size?, startIndex?</td></tr>
 <tr><td><strong>StatusV1</strong></td><td>PlatformData</td><td></td></tr>
 </tbody></table>
+</div>
 <h2 id="usage-8"><a class="header" href="#usage-8">Usage</a></h2>
 <pre><code class="language-typescript">    const _data = await ApiClient.{Service}.{Function(...Args)};
 </code></pre>
@@ -869,16 +873,17 @@ console.log(_data.data);
 </code></pre>
 <h1 id="settings-3"><a class="header" href="#settings-3">Settings</a></h1>
 <hr />
-<table><thead><tr><th>Set</th><th>Function</th><th>...Args</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Set</th><th>Function</th><th>...Args</th></tr></thead><tbody>
 <tr><td>Language</td><td>setLanguage</td><td>language</td></tr>
 </tbody></table>
+</div>
 <h2 id="usage-9"><a class="header" href="#usage-9">Usage</a></h2>
 <pre><code class="language-javascript">    ApiClient.{Function(...Args)};
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="api-5"><a class="header" href="#api-5">API</a></h1>
 <hr />
 <p>All API base on <a href="https://dash.valorant-api.com/">dash.valorant-api.com</a></p>
-<table><thead><tr><th>Service</th><th>Function</th><th>...Args</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Service</th><th>Function</th><th>...Args</th></tr></thead><tbody>
 <tr><td><strong>Agent</strong></td><td>get</td><td>isPlayableCharacter</td></tr>
 <tr><td></td><td>getByUuid</td><td>uuid</td></tr>
 <tr><td><strong>Buddies</strong></td><td>get</td><td></td></tr>
@@ -935,6 +940,7 @@ console.log(_data.data);
 <tr><td></td><td>getSkinChromaByUuid</td><td>uuid</td></tr>
 <tr><td></td><td>getSkinLevelByUuid</td><td>uuid</td></tr>
 </tbody></table>
+</div>
 <h2 id="usage-10"><a class="header" href="#usage-10">Usage</a></h2>
 <pre><code class="language-typescript">    const _data = await ApiClient.{Service}.{Function(...Args)};
 </code></pre>

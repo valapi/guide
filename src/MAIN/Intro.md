@@ -6,13 +6,12 @@
 
 - All-in-one package
 - Support Multi-factor Authentication (2FA)
-- 6 Packages:
-  - lib
-  - api-wrapper *(disable)*
-  - riot-api
-  - riot-client *(disable)*
-  - valorant-api.com
+- 5 Packages:
   - auth
+  - lib
+  - riot-api
+  - valorant-api.com
+  - web-client
 
 ## Install
 

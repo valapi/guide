@@ -19,7 +19,7 @@ await AuthClient.login('BestUsername', 'SuperSecretPassword');
 ```
 
 ```typescript
-if (AuthClient.multifactor === true) {
+if (AuthClient.isMultifactor === true) {
 
     await AuthClient.verify(428793 /* <--- Verify Code */);
     
@@ -29,5 +29,5 @@ if (AuthClient.multifactor === true) {
 ## PlayerUUID (puuid)
 
 ```typescript
-const puuid = AuthClient.parsePlayerUuid();
+const puuid = AuthClient.parseToken();
 ```

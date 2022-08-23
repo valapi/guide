@@ -21,7 +21,7 @@ await ApiClient.login('BestUsername', 'SuperSecretPassword');
 ```
 
 ```typescript
-if(ApiClient.multifactor === true) {
+if(ApiClient.isMultifactor === true) {
 
     await ApiClient.verify(428793 /* <--- Verify Code */);
     

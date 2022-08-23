@@ -142,7 +142,7 @@
                         <h1 id="api"><a class="header" href="#api">API</a></h1>
 <hr />
 <p><a href="https://github.com/techchrism/valorant-api-docs">https://github.com/techchrism/valorant-api-docs</a></p>
-<table><thead><tr><th>Service</th><th>Function</th><th>...Args</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Service</th><th>Function</th><th>...Args</th></tr></thead><tbody>
 <tr><td><strong>Contract</strong></td><td>DefinitionsFetch</td><td></td></tr>
 <tr><td></td><td>FetchActiveStory</td><td>puuid</td></tr>
 <tr><td></td><td>Fetch</td><td>puuid</td></tr>
@@ -207,6 +207,7 @@
 <tr><td></td><td>FetchPlayerRestrictions</td><td></td></tr>
 <tr><td></td><td>MassRewards</td><td>puuid</td></tr>
 </tbody></table>
+</div>
 <h2 id="usage"><a class="header" href="#usage">Usage</a></h2>
 <pre><code class="language-typescript">    const _data = await ApiClient.{Service}.{Function(...Args)};
 </code></pre>

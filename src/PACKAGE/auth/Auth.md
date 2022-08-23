@@ -41,5 +41,5 @@ await AuthClient.refresh(isForce?);
 you can save only SSID cookie for ~30 days.
 
 ```typescript
-const AuthClient = await ValRso.fromCookie(cookie.ssid);
+const AuthClient = await ValAuth.fromCookie(cookie.ssid);
 ```

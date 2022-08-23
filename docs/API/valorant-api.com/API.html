@@ -142,7 +142,7 @@
                         <h1 id="api"><a class="header" href="#api">API</a></h1>
 <hr />
 <p>All API base on <a href="https://dash.valorant-api.com/">dash.valorant-api.com</a></p>
-<table><thead><tr><th>Service</th><th>Function</th><th>...Args</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Service</th><th>Function</th><th>...Args</th></tr></thead><tbody>
 <tr><td><strong>Agent</strong></td><td>get</td><td>isPlayableCharacter</td></tr>
 <tr><td></td><td>getByUuid</td><td>uuid</td></tr>
 <tr><td><strong>Buddies</strong></td><td>get</td><td></td></tr>
@@ -199,6 +199,7 @@
 <tr><td></td><td>getSkinChromaByUuid</td><td>uuid</td></tr>
 <tr><td></td><td>getSkinLevelByUuid</td><td>uuid</td></tr>
 </tbody></table>
+</div>
 <h2 id="usage"><a class="header" href="#usage">Usage</a></h2>
 <pre><code class="language-typescript">    const _data = await ApiClient.{Service}.{Function(...Args)};
 </code></pre>

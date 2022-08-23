@@ -149,14 +149,14 @@
 <h2 id="auth"><a class="header" href="#auth"><a href="./Auth.html#basic-authentication">Auth</a></a></h2>
 <pre><code class="language-typescript">await AuthClient.login('BestUsername', 'SuperSecretPassword');
 </code></pre>
-<pre><code class="language-typescript">if (AuthClient.multifactor === true) {
+<pre><code class="language-typescript">if (AuthClient.isMultifactor === true) {
 
     await AuthClient.verify(428793 /* &lt;--- Verify Code */);
     
 }
 </code></pre>
 <h2 id="playeruuid-puuid"><a class="header" href="#playeruuid-puuid">PlayerUUID (puuid)</a></h2>
-<pre><code class="language-typescript">const puuid = AuthClient.parsePlayerUuid();
+<pre><code class="language-typescript">const puuid = AuthClient.parseToken();
 </code></pre>
 
                     </main>

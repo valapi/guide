@@ -151,7 +151,7 @@
 <h2 id="auth"><a class="header" href="#auth"><a href="../../PACKAGE/auth/Auth.html">Auth</a></a></h2>
 <pre><code class="language-typescript">await ApiClient.login('BestUsername', 'SuperSecretPassword');
 </code></pre>
-<pre><code class="language-typescript">if(ApiClient.multifactor === true) {
+<pre><code class="language-typescript">if(ApiClient.isMultifactor === true) {
 
     await ApiClient.verify(428793 /* &lt;--- Verify Code */);
     
