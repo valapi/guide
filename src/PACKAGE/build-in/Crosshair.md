@@ -31,21 +31,25 @@ MyCrosshair.toString(); // crosshair code
 All settings are based on in-game
 
 ```typescript
-interface CrosshairLinesError {
-    isEnable: Boolean; // Not in Valorant settings
+interface LinesError {
+    isEnable: boolean;
     Multiplier: number;
 }
 ```
 
 ```typescript
-interface CrosshairLines {
-    isEnable: Boolean, // Not in Valorant settings
+interface Lines {
+    isEnable: boolean,
     Opacity: number;
-    Length: number;
+    Length: { // base on valorant settings
+        Value: number;
+        isChain: boolean;
+        SecondValue: number;
+    };
     Thickness: number;
     Offset: number;
-    MovementError: CrosshairLinesError;
-    FiringError: CrosshairLinesError;
+    MovementError: Crosshair.LinesError;
+    FiringError: Crosshair.LinesError;
 }
 ```
 
@@ -53,56 +57,59 @@ interface CrosshairLines {
 interface Crosshair {
     Primary: {
         Crosshair: {
-            CrosshairColor: number,
+            isHexCrosshairColor: boolean,
+            CrosshairColor: string,
             OutLine: {
-                isEnable: Boolean, // Not in Valorant settings
+                isEnable: boolean,
                 Opacity: number,
                 Thickness: number,
             },
             CenterDot: {
-                isEnable: Boolean, // Not in Valorant settings
+                isEnable: boolean,
                 Opacity: number,
                 Thickness: number,
             },
-            OverrideFiringErrorOffsetWithCrosshairOffset: Boolean,
-            OverrideAllPrimaryCrosshairWithMyPrimaryCrosshair: Boolean,
+            OverrideFiringErrorOffsetWithCrosshairOffset: boolean,
+            OverrideAllPrimaryCrosshairWithMyPrimaryCrosshair: boolean,
         }
-        InnerLines: CrosshairLines,
-        OuterLines: CrosshairLines,
+        InnerLines: Crosshair.Lines,
+        OuterLines: Crosshair.Lines,
     };
     AimDownSights: {
-        CopyPrimaryCrosshair: Boolean,
+        CopyPrimaryCrosshair: boolean,
         Crosshair: {
-            CrosshairColor: number,
+            isHexCrosshairColor: boolean,
+            CrosshairColor: string,
             OutLine: {
-                isEnable: Boolean, // Not in Valorant settings
+                isEnable: boolean,
                 Opacity: number,
                 Thickness: number,
             },
             CenterDot: {
-                isEnable: Boolean, // Not in Valorant settings
+                isEnable: boolean,
                 Opacity: number,
                 Thickness: number,
             },
-            OverrideFiringErrorOffsetWithCrosshairOffset: Boolean,
+            OverrideFiringErrorOffsetWithCrosshairOffset: boolean,
         }
-        InnerLines: CrosshairLines,
-        OuterLines: CrosshairLines,
+        InnerLines: Crosshair.Lines,
+        OuterLines: Crosshair.Lines,
     };
     General: {
         Crosshair: {
-            UseAdvancedOptions: Boolean,
+            UseAdvancedOptions: boolean,
         },
         Other: {
-            ShowSpectatedPlayerCrosshair: Boolean,
-            FadeCrosshairWithFiringError: Boolean,
-            DisableCrosshair?: Boolean, // Not Usable
+            ShowSpectatedPlayerCrosshair: boolean,
+            FadeCrosshairWithFiringError: boolean,
+            DisableCrosshair?: boolean, // Not Usable
         },
     };
     SniperScope: {
         CenterDot: {
-            Color: number,
-            isEnable: Boolean, // Not in Valorant settings
+            isHexColor: boolean,
+            Color: string,
+            isEnable: boolean,
             Opacity: number,
             Thickness: number,
         },

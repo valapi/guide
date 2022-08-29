@@ -13,6 +13,8 @@ import {
 
     Region,
 
+    CrosshairColor
+
 }
 from '@valapi/lib';
 ```
