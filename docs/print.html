@@ -730,7 +730,7 @@ Region.Asia_Pacific             // return &quot;ap&quot;
 <tr><td></td><td>GetStorefront</td><td>puuid</td></tr>
 <tr><td></td><td>GetWallet</td><td>puuid</td></tr>
 <tr><td></td><td>RevealNightMarketOffers</td><td>puuid</td></tr>
-<tr><td><strong>Client</strong></td><td>FetchContent</td><td></td></tr>
+<tr><td><strong>App</strong></td><td>FetchContent</td><td></td></tr>
 <tr><td></td><td>FetchConfig</td><td></td></tr>
 <tr><td><strong>Match</strong></td><td>FetchMatchDetails</td><td>matchId</td></tr>
 <tr><td></td><td>FetchMatchHistory</td><td>puuid, queueId?, startIndex?, endIndex?</td></tr>
@@ -1008,22 +1008,6 @@ console.log(_data.data);
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         <script type="text/javascript">
             window.playground_copyable = true;
         </script>
