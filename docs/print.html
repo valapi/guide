@@ -163,14 +163,15 @@
 <div style="break-before: page; page-break-before: always;"></div><h1 id="contributors"><a class="header" href="#contributors">Contributors</a></h1>
 <hr />
 <p>list of the contributors who helped me improve this module</p>
-<h2 id="developers-team"><a class="header" href="#developers-team">Developers Team</a></h2>
+<h2 id="developers"><a class="header" href="#developers">Developers</a></h2>
 <ul>
-<li><a href="https://github.com/KTNG-3">ING3_</a> (INg3_#9509)</li>
+<li><a href="https://github.com/KTNG-3">ING3_</a></li>
+<li><a href="https://github.com/mateie">Stealth</a> (Error Handling)</li>
 </ul>
 <h2 id="report-bugs"><a class="header" href="#report-bugs">Report Bugs</a></h2>
 <ul>
 <li><a href="https://github.com/SpatzlHD">SpatzlHD</a></li>
-<li>teyd#8766</li>
+<li>teyd</li>
 <li><a href="https://github.com/Drysque">Drysque</a></li>
 <li><a href="https://github.com/Lunac-dev">Lunac</a></li>
 </ul>
@@ -368,7 +369,7 @@ from '@valapi/lib';
 </code></pre>
 <h2 id="error"><a class="header" href="#error">Error</a></h2>
 <pre><code class="language-typescript">interface Error {
-    errorCode: string;
+    name: string;
     message: string;
     data: any;
 }
@@ -550,7 +551,9 @@ Region.Asia_Pacific             // return &quot;ap&quot;
 </code></pre>
 <h2 id="config"><a class="header" href="#config">Config</a></h2>
 <pre><code class="language-typescript">interface Config {
-    // Client Settings
+    /**
+     * Client Config
+     */
     client?: {
         version?: string,
         platform?: {
@@ -561,10 +564,16 @@ Region.Asia_Pacific             // return &quot;ap&quot;
         },
     };
 
-    // Config for RequestClient (Axios)
+    /**
+     * Request Config
+     * Config for RequestClient (Axios)
+     */
     axiosConfig?: AxiosRequestConfig;
 
-    // The time in milliseconds that data will be refreshed.
+    /**
+     * Expire time
+     * The time in milliseconds that data will be refreshed.
+     */
     expiresIn?: {
         cookie: number,
         token?: number,
@@ -641,28 +650,43 @@ Region.Asia_Pacific             // return &quot;ap&quot;
 </code></pre>
 <h2 id="config-1"><a class="header" href="#config-1">Config</a></h2>
 <pre><code class="language-typescript">interface Config {
-    // Region
+    /**
+     * Region
+     */
     region?: string;
 
-    // Client Settings
+    /**
+     * Client Config
+     */
     client?: {
-        version?: string,
+        version?: string;
         platform?: {
-            &quot;platformType&quot;: string,
-            &quot;platformOS&quot;: string,
-            &quot;platformOSVersion&quot;: string,
-            &quot;platformChipset&quot;: string,
-        },
+            &quot;platformType&quot;: string;
+            &quot;platformOS&quot;: string;
+            &quot;platformOSVersion&quot;: string;
+            &quot;platformChipset&quot;: string;
+        };
     };
 
-    // Config for RequestClient (Axios)
+    /**
+     * Request Config
+     * Config for RequestClient (Axios)
+     */
     axiosConfig?: AxiosRequestConfig;
 
-    // The time in milliseconds that data will be refreshed.
+    /**
+     * Expire time
+     * The time in milliseconds that data will be refreshed.
+     */
     expiresIn?: {
-        cookie: number,
-        token?: number,
+        cookie: number;
+        token?: number;
     };
+
+    /**
+     * Throw the Error?
+     */
+    throwOnError?: boolean;
 }
 </code></pre>
 <h2 id="client-3"><a class="header" href="#client-3">Client</a></h2>
@@ -691,69 +715,69 @@ Region.Asia_Pacific             // return &quot;ap&quot;
 <hr />
 <p><a href="https://github.com/techchrism/valorant-api-docs">https://github.com/techchrism/valorant-api-docs</a></p>
 <div class="table-wrapper"><table><thead><tr><th>Service</th><th>Function</th><th>...Args</th></tr></thead><tbody>
-<tr><td><strong>Contract</strong></td><td>DefinitionsFetch</td><td></td></tr>
-<tr><td></td><td>FetchActiveStory</td><td>puuid</td></tr>
-<tr><td></td><td>Fetch</td><td>puuid</td></tr>
-<tr><td></td><td>Active</td><td>puuid, contractId</td></tr>
-<tr><td><strong>CurrentGame</strong></td><td>FetchAllChatMUCToken</td><td>matchId</td></tr>
-<tr><td></td><td>FetchMatch</td><td>matchId</td></tr>
-<tr><td></td><td>FetchMatchLoadouts</td><td>matchId</td></tr>
-<tr><td></td><td>FetchPlayer</td><td>puuid</td></tr>
-<tr><td></td><td>FetchTeamChatMUCToken</td><td>matchId</td></tr>
-<tr><td></td><td>DisassociatePlayer</td><td>puuid, matchId</td></tr>
-<tr><td><strong>Party</strong></td><td>RemovePlayer</td><td>puuid</td></tr>
-<tr><td></td><td>FetchCustomGameConfigs</td><td></td></tr>
-<tr><td></td><td>FetchMUCToken</td><td>partyId</td></tr>
-<tr><td></td><td>FetchParty</td><td>partyId</td></tr>
-<tr><td></td><td>FetchPlayer</td><td>puuid</td></tr>
-<tr><td></td><td>FetchVoiceToken</td><td>partyId</td></tr>
-<tr><td></td><td>ChangeQueue</td><td>partyId, queue</td></tr>
-<tr><td></td><td>DeclineRequest</td><td>partyId, requestId</td></tr>
-<tr><td></td><td>EnterMatchmakingQueue</td><td>partyId</td></tr>
-<tr><td></td><td>InviteToPartyByDisplayName</td><td>partyId, gameName, tagLine</td></tr>
-<tr><td></td><td>LeaveMatchmakingQueue</td><td>partyId</td></tr>
-<tr><td></td><td>RefreshCompetitiveTier</td><td>puuid, partyId</td></tr>
-<tr><td></td><td>RefreshPings</td><td>puuid, partyId</td></tr>
-<tr><td></td><td>RefreshPlayerIdentity</td><td>puuid, partyId</td></tr>
-<tr><td></td><td>SetAccessibility</td><td>partyId, accessibility</td></tr>
-<tr><td></td><td>SetCustomGameSettings</td><td>partyId, settings</td></tr>
-<tr><td></td><td>SetMemberReady</td><td>partyId, puuid, isReady</td></tr>
-<tr><td></td><td>StartCustomGame</td><td>partyId</td></tr>
-<tr><td></td><td>LeaveParty</td><td>puuid, partyId</td></tr>
-<tr><td></td><td>AutoBalance</td><td>partyId</td></tr>
-<tr><td></td><td>ChangeTeamInCustomGame</td><td>partyId, team, puuid</td></tr>
-<tr><td></td><td>StartSoloExperience</td><td>partyId</td></tr>
-<tr><td></td><td>TransferOwner</td><td>puuid, partyId</td></tr>
-<tr><td><strong>PreGame</strong></td><td>FetchChatToken</td><td>matchId</td></tr>
-<tr><td></td><td>FetchVoiceToken</td><td>matchId</td></tr>
-<tr><td></td><td>GetMatch</td><td>matchId</td></tr>
-<tr><td></td><td>GetMatchLoadouts</td><td>matchId</td></tr>
-<tr><td></td><td>GetPlayer</td><td>puuid</td></tr>
-<tr><td></td><td>LockCharacter</td><td>matchId, agentId</td></tr>
-<tr><td></td><td>QuitMatch</td><td>matchId</td></tr>
-<tr><td></td><td>SelectCharacter</td><td>matchId, agentId</td></tr>
-<tr><td><strong>Session</strong></td><td>Get</td><td>puuid</td></tr>
-<tr><td></td><td>ReConnect</td><td>puuid</td></tr>
-<tr><td><strong>Store</strong></td><td>GetEntitlements</td><td>puuid, itemTypeId</td></tr>
-<tr><td></td><td>GetOffers</td><td></td></tr>
-<tr><td></td><td>GetStorefront</td><td>puuid</td></tr>
-<tr><td></td><td>GetWallet</td><td>puuid</td></tr>
-<tr><td></td><td>RevealNightMarketOffers</td><td>puuid</td></tr>
-<tr><td><strong>App</strong></td><td>FetchContent</td><td></td></tr>
-<tr><td></td><td>FetchConfig</td><td></td></tr>
-<tr><td><strong>Match</strong></td><td>FetchMatchDetails</td><td>matchId</td></tr>
-<tr><td></td><td>FetchMatchHistory</td><td>puuid, queueId?, startIndex?, endIndex?</td></tr>
-<tr><td><strong>MMR</strong></td><td>FetchCompetitiveUpdates</td><td>puuid, queueId?, startIndex?, endIndex?</td></tr>
-<tr><td></td><td>FetchLeaderboard</td><td>seasonId, startIndex?, size?, serachUsername?</td></tr>
-<tr><td></td><td>FetchPlayer</td><td>puuid</td></tr>
-<tr><td></td><td>HideActRankBadge</td><td>puuid</td></tr>
-<tr><td><strong>Player</strong></td><td>GetUsername</td><td>puuid</td></tr>
-<tr><td></td><td>GetUserInfo</td><td></td></tr>
-<tr><td></td><td>AccountXP</td><td>puuid</td></tr>
-<tr><td></td><td>Loadout</td><td>puuid</td></tr>
-<tr><td></td><td>LoadoutUpdate</td><td>puuid</td></tr>
-<tr><td></td><td>FetchPlayerRestrictions</td><td></td></tr>
-<tr><td></td><td>MassRewards</td><td>puuid</td></tr>
+<tr><td><strong>Contract</strong></td><td>definitionsFetch</td><td></td></tr>
+<tr><td></td><td>fetchActiveStory</td><td>puuid</td></tr>
+<tr><td></td><td>fetch</td><td>puuid</td></tr>
+<tr><td></td><td>active</td><td>puuid, contractId</td></tr>
+<tr><td><strong>CurrentGame</strong></td><td>fetchAllChatMUCToken</td><td>matchId</td></tr>
+<tr><td></td><td>fetchMatch</td><td>matchId</td></tr>
+<tr><td></td><td>fetchMatchLoadouts</td><td>matchId</td></tr>
+<tr><td></td><td>fetchPlayer</td><td>puuid</td></tr>
+<tr><td></td><td>fetchTeamChatMUCToken</td><td>matchId</td></tr>
+<tr><td></td><td>disassociatePlayer</td><td>puuid, matchId</td></tr>
+<tr><td><strong>Party</strong></td><td>removePlayer</td><td>puuid</td></tr>
+<tr><td></td><td>fetchCustomGameConfigs</td><td></td></tr>
+<tr><td></td><td>fetchMUCToken</td><td>partyId</td></tr>
+<tr><td></td><td>fetchParty</td><td>partyId</td></tr>
+<tr><td></td><td>fetchPlayer</td><td>puuid</td></tr>
+<tr><td></td><td>fetchVoiceToken</td><td>partyId</td></tr>
+<tr><td></td><td>changeQueue</td><td>partyId, queue</td></tr>
+<tr><td></td><td>declineRequest</td><td>partyId, requestId</td></tr>
+<tr><td></td><td>enterMatchmakingQueue</td><td>partyId</td></tr>
+<tr><td></td><td>inviteToPartyByDisplayName</td><td>partyId, gameName, tagLine</td></tr>
+<tr><td></td><td>leaveMatchmakingQueue</td><td>partyId</td></tr>
+<tr><td></td><td>refreshCompetitiveTier</td><td>puuid, partyId</td></tr>
+<tr><td></td><td>refreshPings</td><td>puuid, partyId</td></tr>
+<tr><td></td><td>refreshPlayerIdentity</td><td>puuid, partyId</td></tr>
+<tr><td></td><td>setAccessibility</td><td>partyId, accessibility</td></tr>
+<tr><td></td><td>setCustomGameSettings</td><td>partyId, settings</td></tr>
+<tr><td></td><td>setMemberReady</td><td>partyId, puuid, isReady</td></tr>
+<tr><td></td><td>startCustomGame</td><td>partyId</td></tr>
+<tr><td></td><td>leaveParty</td><td>puuid, partyId</td></tr>
+<tr><td></td><td>autoBalance</td><td>partyId</td></tr>
+<tr><td></td><td>changeTeamInCustomGame</td><td>partyId, team, puuid</td></tr>
+<tr><td></td><td>startSoloExperience</td><td>partyId</td></tr>
+<tr><td></td><td>transferOwner</td><td>puuid, partyId</td></tr>
+<tr><td><strong>PreGame</strong></td><td>getchChatToken</td><td>matchId</td></tr>
+<tr><td></td><td>fetchVoiceToken</td><td>matchId</td></tr>
+<tr><td></td><td>getMatch</td><td>matchId</td></tr>
+<tr><td></td><td>getMatchLoadouts</td><td>matchId</td></tr>
+<tr><td></td><td>getPlayer</td><td>puuid</td></tr>
+<tr><td></td><td>lockCharacter</td><td>matchId, agentId</td></tr>
+<tr><td></td><td>quitMatch</td><td>matchId</td></tr>
+<tr><td></td><td>selectCharacter</td><td>matchId, agentId</td></tr>
+<tr><td><strong>Session</strong></td><td>get</td><td>puuid</td></tr>
+<tr><td></td><td>reConnect</td><td>puuid</td></tr>
+<tr><td><strong>Store</strong></td><td>getEntitlements</td><td>puuid, itemTypeId</td></tr>
+<tr><td></td><td>getOffers</td><td></td></tr>
+<tr><td></td><td>getStorefront</td><td>puuid</td></tr>
+<tr><td></td><td>getWallet</td><td>puuid</td></tr>
+<tr><td></td><td>revealNightMarketOffers</td><td>puuid</td></tr>
+<tr><td><strong>App</strong></td><td>fetchContent</td><td></td></tr>
+<tr><td></td><td>fetchConfig</td><td></td></tr>
+<tr><td><strong>Match</strong></td><td>fetchMatchDetails</td><td>matchId</td></tr>
+<tr><td></td><td>fetchMatchHistory</td><td>puuid, queueId?, startIndex?, endIndex?</td></tr>
+<tr><td><strong>MMR</strong></td><td>fetchCompetitiveUpdates</td><td>puuid, queueId?, startIndex?, endIndex?</td></tr>
+<tr><td></td><td>fetchLeaderboard</td><td>seasonId, startIndex?, size?, serachUsername?</td></tr>
+<tr><td></td><td>fetchPlayer</td><td>puuid</td></tr>
+<tr><td></td><td>hideActRankBadge</td><td>puuid</td></tr>
+<tr><td><strong>Player</strong></td><td>getUsername</td><td>puuid</td></tr>
+<tr><td></td><td>getUserInfo</td><td></td></tr>
+<tr><td></td><td>accountXP</td><td>puuid</td></tr>
+<tr><td></td><td>loadout</td><td>puuid</td></tr>
+<tr><td></td><td>loadoutUpdate</td><td>puuid</td></tr>
+<tr><td></td><td>fetchPlayerRestrictions</td><td></td></tr>
+<tr><td></td><td>massRewards</td><td>puuid</td></tr>
 </tbody></table>
 </div>
 <h2 id="usage-6"><a class="header" href="#usage-6">Usage</a></h2>
@@ -778,7 +802,7 @@ Region.Asia_Pacific             // return &quot;ap&quot;
 }
 </code></pre>
 <h2 id="api-2"><a class="header" href="#api-2"><a href="API/web-client/./API.html#usage">API</a></a></h2>
-<pre><code class="language-typescript">const _data = await ApiClient.PreGame.GetMatch('MATCH-ID-1234567890');
+<pre><code class="language-typescript">const _data = await ApiClient.PreGame.getMatch('MATCH-ID-1234567890');
 
 console.log(_data.data);
 </code></pre>
@@ -799,10 +823,32 @@ console.log(_data.data);
 </code></pre>
 <h2 id="config-2"><a class="header" href="#config-2">Config</a></h2>
 <pre><code class="language-typescript">interface Config {
+    /**
+     * API Key
+     */
     apiKey: string;
+
+    /**
+     * Region
+     */
     region: string;
+
+    /**
+     * Expire time
+     * The time in milliseconds that data will be refreshed.
+     */
     expiresIn?: number;
+
+    /**
+     * Request Config
+     * Config for RequestClient (Axios)
+     */
     axiosConfig?: AxiosRequestConfig;
+
+    /**
+     * Throw the Error?
+     */
+    throwOnError?: boolean;
 }
 </code></pre>
 <h2 id="client-5"><a class="header" href="#client-5">Client</a></h2>
@@ -822,15 +868,15 @@ console.log(_data.data);
 <div style="break-before: page; page-break-before: always;"></div><h1 id="api-3"><a class="header" href="#api-3">API</a></h1>
 <hr />
 <div class="table-wrapper"><table><thead><tr><th>Service</th><th>Function</th><th>...Args</th></tr></thead><tbody>
-<tr><td><strong>AccountV1</strong></td><td>ByPuuid</td><td>puuid</td></tr>
-<tr><td></td><td>ByRiotId</td><td>gameName, tagLine</td></tr>
-<tr><td></td><td>ActiveShardsByGameAndPuuid</td><td>puuid, game?</td></tr>
-<tr><td><strong>ContentV1</strong></td><td>Contents</td><td>locale?</td></tr>
-<tr><td><strong>MatchV1</strong></td><td>ByMatchId</td><td>matchId</td></tr>
-<tr><td></td><td>ListByPuuid</td><td>puuid</td></tr>
-<tr><td></td><td>RecentByQueue</td><td>queueId</td></tr>
-<tr><td><strong>RankedV1</strong></td><td>LeaderboardsByAct</td><td>actId, size?, startIndex?</td></tr>
-<tr><td><strong>StatusV1</strong></td><td>PlatformData</td><td></td></tr>
+<tr><td><strong>AccountV1</strong></td><td>byPuuid</td><td>puuid</td></tr>
+<tr><td></td><td>byRiotId</td><td>gameName, tagLine</td></tr>
+<tr><td></td><td>activeShardsByGameAndPuuid</td><td>puuid, game?</td></tr>
+<tr><td><strong>ContentV1</strong></td><td>contents</td><td>locale?</td></tr>
+<tr><td><strong>MatchV1</strong></td><td>byMatchId</td><td>matchId</td></tr>
+<tr><td></td><td>listByPuuid</td><td>puuid</td></tr>
+<tr><td></td><td>recentByQueue</td><td>queueId</td></tr>
+<tr><td><strong>RankedV1</strong></td><td>leaderboardsByAct</td><td>actId, size?, startIndex?</td></tr>
+<tr><td><strong>StatusV1</strong></td><td>platformData</td><td></td></tr>
 </tbody></table>
 </div>
 <h2 id="usage-8"><a class="header" href="#usage-8">Usage</a></h2>
@@ -848,7 +894,7 @@ console.log(_data.data);
 
 </code></pre>
 <h2 id="api-4"><a class="header" href="#api-4"><a href="API/riot-api/./API.html#usage">API</a></a></h2>
-<pre><code class="language-typescript">const _data = await ApiClient.AccountV1.ByRiotId('PRX f0rsakeN', 'Huh');
+<pre><code class="language-typescript">const _data = await ApiClient.AccountV1.byRiotId('PRX f0rsakeN', 'Huh');
 
 console.log(_data.data);
 </code></pre>
@@ -873,8 +919,21 @@ console.log(_data.data);
 </code></pre>
 <h2 id="config-3"><a class="header" href="#config-3">Config</a></h2>
 <pre><code class="language-typescript">interface Config {
+    /**
+     * Language
+     */
     language?: string;
+
+    /**
+     * Request Config
+     * Config for RequestClient (Axios)
+     */
     axiosConfig?: AxiosRequestConfig;
+
+    /**
+     * Throw the Error?
+     */
+    throwOnError?: boolean;
 }
 </code></pre>
 <h2 id="client-7"><a class="header" href="#client-7">Client</a></h2>

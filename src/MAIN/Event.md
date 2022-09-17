@@ -26,7 +26,7 @@ interface Error {
 
 ```typescript
 interface Error {
-    errorCode: string;
+    name: string;
     message: string;
     data: any;
 }

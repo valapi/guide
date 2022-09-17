@@ -10,7 +10,9 @@ import { Client } from '@valapi/auth';
 
 ```typescript
 interface Config {
-    // Client Settings
+    /**
+     * Client Config
+     */
     client?: {
         version?: string,
         platform?: {
@@ -21,10 +23,16 @@ interface Config {
         },
     };
 
-    // Config for RequestClient (Axios)
+    /**
+     * Request Config
+     * Config for RequestClient (Axios)
+     */
     axiosConfig?: AxiosRequestConfig;
 
-    // The time in milliseconds that data will be refreshed.
+    /**
+     * Expire time
+     * The time in milliseconds that data will be refreshed.
+     */
     expiresIn?: {
         cookie: number,
         token?: number,

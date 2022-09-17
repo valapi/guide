@@ -143,69 +143,69 @@
 <hr />
 <p><a href="https://github.com/techchrism/valorant-api-docs">https://github.com/techchrism/valorant-api-docs</a></p>
 <div class="table-wrapper"><table><thead><tr><th>Service</th><th>Function</th><th>...Args</th></tr></thead><tbody>
-<tr><td><strong>Contract</strong></td><td>DefinitionsFetch</td><td></td></tr>
-<tr><td></td><td>FetchActiveStory</td><td>puuid</td></tr>
-<tr><td></td><td>Fetch</td><td>puuid</td></tr>
-<tr><td></td><td>Active</td><td>puuid, contractId</td></tr>
-<tr><td><strong>CurrentGame</strong></td><td>FetchAllChatMUCToken</td><td>matchId</td></tr>
-<tr><td></td><td>FetchMatch</td><td>matchId</td></tr>
-<tr><td></td><td>FetchMatchLoadouts</td><td>matchId</td></tr>
-<tr><td></td><td>FetchPlayer</td><td>puuid</td></tr>
-<tr><td></td><td>FetchTeamChatMUCToken</td><td>matchId</td></tr>
-<tr><td></td><td>DisassociatePlayer</td><td>puuid, matchId</td></tr>
-<tr><td><strong>Party</strong></td><td>RemovePlayer</td><td>puuid</td></tr>
-<tr><td></td><td>FetchCustomGameConfigs</td><td></td></tr>
-<tr><td></td><td>FetchMUCToken</td><td>partyId</td></tr>
-<tr><td></td><td>FetchParty</td><td>partyId</td></tr>
-<tr><td></td><td>FetchPlayer</td><td>puuid</td></tr>
-<tr><td></td><td>FetchVoiceToken</td><td>partyId</td></tr>
-<tr><td></td><td>ChangeQueue</td><td>partyId, queue</td></tr>
-<tr><td></td><td>DeclineRequest</td><td>partyId, requestId</td></tr>
-<tr><td></td><td>EnterMatchmakingQueue</td><td>partyId</td></tr>
-<tr><td></td><td>InviteToPartyByDisplayName</td><td>partyId, gameName, tagLine</td></tr>
-<tr><td></td><td>LeaveMatchmakingQueue</td><td>partyId</td></tr>
-<tr><td></td><td>RefreshCompetitiveTier</td><td>puuid, partyId</td></tr>
-<tr><td></td><td>RefreshPings</td><td>puuid, partyId</td></tr>
-<tr><td></td><td>RefreshPlayerIdentity</td><td>puuid, partyId</td></tr>
-<tr><td></td><td>SetAccessibility</td><td>partyId, accessibility</td></tr>
-<tr><td></td><td>SetCustomGameSettings</td><td>partyId, settings</td></tr>
-<tr><td></td><td>SetMemberReady</td><td>partyId, puuid, isReady</td></tr>
-<tr><td></td><td>StartCustomGame</td><td>partyId</td></tr>
-<tr><td></td><td>LeaveParty</td><td>puuid, partyId</td></tr>
-<tr><td></td><td>AutoBalance</td><td>partyId</td></tr>
-<tr><td></td><td>ChangeTeamInCustomGame</td><td>partyId, team, puuid</td></tr>
-<tr><td></td><td>StartSoloExperience</td><td>partyId</td></tr>
-<tr><td></td><td>TransferOwner</td><td>puuid, partyId</td></tr>
-<tr><td><strong>PreGame</strong></td><td>FetchChatToken</td><td>matchId</td></tr>
-<tr><td></td><td>FetchVoiceToken</td><td>matchId</td></tr>
-<tr><td></td><td>GetMatch</td><td>matchId</td></tr>
-<tr><td></td><td>GetMatchLoadouts</td><td>matchId</td></tr>
-<tr><td></td><td>GetPlayer</td><td>puuid</td></tr>
-<tr><td></td><td>LockCharacter</td><td>matchId, agentId</td></tr>
-<tr><td></td><td>QuitMatch</td><td>matchId</td></tr>
-<tr><td></td><td>SelectCharacter</td><td>matchId, agentId</td></tr>
-<tr><td><strong>Session</strong></td><td>Get</td><td>puuid</td></tr>
-<tr><td></td><td>ReConnect</td><td>puuid</td></tr>
-<tr><td><strong>Store</strong></td><td>GetEntitlements</td><td>puuid, itemTypeId</td></tr>
-<tr><td></td><td>GetOffers</td><td></td></tr>
-<tr><td></td><td>GetStorefront</td><td>puuid</td></tr>
-<tr><td></td><td>GetWallet</td><td>puuid</td></tr>
-<tr><td></td><td>RevealNightMarketOffers</td><td>puuid</td></tr>
-<tr><td><strong>App</strong></td><td>FetchContent</td><td></td></tr>
-<tr><td></td><td>FetchConfig</td><td></td></tr>
-<tr><td><strong>Match</strong></td><td>FetchMatchDetails</td><td>matchId</td></tr>
-<tr><td></td><td>FetchMatchHistory</td><td>puuid, queueId?, startIndex?, endIndex?</td></tr>
-<tr><td><strong>MMR</strong></td><td>FetchCompetitiveUpdates</td><td>puuid, queueId?, startIndex?, endIndex?</td></tr>
-<tr><td></td><td>FetchLeaderboard</td><td>seasonId, startIndex?, size?, serachUsername?</td></tr>
-<tr><td></td><td>FetchPlayer</td><td>puuid</td></tr>
-<tr><td></td><td>HideActRankBadge</td><td>puuid</td></tr>
-<tr><td><strong>Player</strong></td><td>GetUsername</td><td>puuid</td></tr>
-<tr><td></td><td>GetUserInfo</td><td></td></tr>
-<tr><td></td><td>AccountXP</td><td>puuid</td></tr>
-<tr><td></td><td>Loadout</td><td>puuid</td></tr>
-<tr><td></td><td>LoadoutUpdate</td><td>puuid</td></tr>
-<tr><td></td><td>FetchPlayerRestrictions</td><td></td></tr>
-<tr><td></td><td>MassRewards</td><td>puuid</td></tr>
+<tr><td><strong>Contract</strong></td><td>definitionsFetch</td><td></td></tr>
+<tr><td></td><td>fetchActiveStory</td><td>puuid</td></tr>
+<tr><td></td><td>fetch</td><td>puuid</td></tr>
+<tr><td></td><td>active</td><td>puuid, contractId</td></tr>
+<tr><td><strong>CurrentGame</strong></td><td>fetchAllChatMUCToken</td><td>matchId</td></tr>
+<tr><td></td><td>fetchMatch</td><td>matchId</td></tr>
+<tr><td></td><td>fetchMatchLoadouts</td><td>matchId</td></tr>
+<tr><td></td><td>fetchPlayer</td><td>puuid</td></tr>
+<tr><td></td><td>fetchTeamChatMUCToken</td><td>matchId</td></tr>
+<tr><td></td><td>disassociatePlayer</td><td>puuid, matchId</td></tr>
+<tr><td><strong>Party</strong></td><td>removePlayer</td><td>puuid</td></tr>
+<tr><td></td><td>fetchCustomGameConfigs</td><td></td></tr>
+<tr><td></td><td>fetchMUCToken</td><td>partyId</td></tr>
+<tr><td></td><td>fetchParty</td><td>partyId</td></tr>
+<tr><td></td><td>fetchPlayer</td><td>puuid</td></tr>
+<tr><td></td><td>fetchVoiceToken</td><td>partyId</td></tr>
+<tr><td></td><td>changeQueue</td><td>partyId, queue</td></tr>
+<tr><td></td><td>declineRequest</td><td>partyId, requestId</td></tr>
+<tr><td></td><td>enterMatchmakingQueue</td><td>partyId</td></tr>
+<tr><td></td><td>inviteToPartyByDisplayName</td><td>partyId, gameName, tagLine</td></tr>
+<tr><td></td><td>leaveMatchmakingQueue</td><td>partyId</td></tr>
+<tr><td></td><td>refreshCompetitiveTier</td><td>puuid, partyId</td></tr>
+<tr><td></td><td>refreshPings</td><td>puuid, partyId</td></tr>
+<tr><td></td><td>refreshPlayerIdentity</td><td>puuid, partyId</td></tr>
+<tr><td></td><td>setAccessibility</td><td>partyId, accessibility</td></tr>
+<tr><td></td><td>setCustomGameSettings</td><td>partyId, settings</td></tr>
+<tr><td></td><td>setMemberReady</td><td>partyId, puuid, isReady</td></tr>
+<tr><td></td><td>startCustomGame</td><td>partyId</td></tr>
+<tr><td></td><td>leaveParty</td><td>puuid, partyId</td></tr>
+<tr><td></td><td>autoBalance</td><td>partyId</td></tr>
+<tr><td></td><td>changeTeamInCustomGame</td><td>partyId, team, puuid</td></tr>
+<tr><td></td><td>startSoloExperience</td><td>partyId</td></tr>
+<tr><td></td><td>transferOwner</td><td>puuid, partyId</td></tr>
+<tr><td><strong>PreGame</strong></td><td>getchChatToken</td><td>matchId</td></tr>
+<tr><td></td><td>fetchVoiceToken</td><td>matchId</td></tr>
+<tr><td></td><td>getMatch</td><td>matchId</td></tr>
+<tr><td></td><td>getMatchLoadouts</td><td>matchId</td></tr>
+<tr><td></td><td>getPlayer</td><td>puuid</td></tr>
+<tr><td></td><td>lockCharacter</td><td>matchId, agentId</td></tr>
+<tr><td></td><td>quitMatch</td><td>matchId</td></tr>
+<tr><td></td><td>selectCharacter</td><td>matchId, agentId</td></tr>
+<tr><td><strong>Session</strong></td><td>get</td><td>puuid</td></tr>
+<tr><td></td><td>reConnect</td><td>puuid</td></tr>
+<tr><td><strong>Store</strong></td><td>getEntitlements</td><td>puuid, itemTypeId</td></tr>
+<tr><td></td><td>getOffers</td><td></td></tr>
+<tr><td></td><td>getStorefront</td><td>puuid</td></tr>
+<tr><td></td><td>getWallet</td><td>puuid</td></tr>
+<tr><td></td><td>revealNightMarketOffers</td><td>puuid</td></tr>
+<tr><td><strong>App</strong></td><td>fetchContent</td><td></td></tr>
+<tr><td></td><td>fetchConfig</td><td></td></tr>
+<tr><td><strong>Match</strong></td><td>fetchMatchDetails</td><td>matchId</td></tr>
+<tr><td></td><td>fetchMatchHistory</td><td>puuid, queueId?, startIndex?, endIndex?</td></tr>
+<tr><td><strong>MMR</strong></td><td>fetchCompetitiveUpdates</td><td>puuid, queueId?, startIndex?, endIndex?</td></tr>
+<tr><td></td><td>fetchLeaderboard</td><td>seasonId, startIndex?, size?, serachUsername?</td></tr>
+<tr><td></td><td>fetchPlayer</td><td>puuid</td></tr>
+<tr><td></td><td>hideActRankBadge</td><td>puuid</td></tr>
+<tr><td><strong>Player</strong></td><td>getUsername</td><td>puuid</td></tr>
+<tr><td></td><td>getUserInfo</td><td></td></tr>
+<tr><td></td><td>accountXP</td><td>puuid</td></tr>
+<tr><td></td><td>loadout</td><td>puuid</td></tr>
+<tr><td></td><td>loadoutUpdate</td><td>puuid</td></tr>
+<tr><td></td><td>fetchPlayerRestrictions</td><td></td></tr>
+<tr><td></td><td>massRewards</td><td>puuid</td></tr>
 </tbody></table>
 </div>
 <h2 id="usage"><a class="header" href="#usage">Usage</a></h2>

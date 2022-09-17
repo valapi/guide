@@ -10,8 +10,21 @@ import { Client } from '@valapi/riot-api';
 
 ```typescript
 interface Config {
+    /**
+     * Language
+     */
     language?: string;
+
+    /**
+     * Request Config
+     * Config for RequestClient (Axios)
+     */
     axiosConfig?: AxiosRequestConfig;
+
+    /**
+     * Throw the Error?
+     */
+    throwOnError?: boolean;
 }
 ```
 

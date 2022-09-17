@@ -6,69 +6,69 @@
 
 | Service         | Function                   | ...Args                                       |
 | --------------- | -------------------------- | --------------------------------------------- |
-| **Contract**    | DefinitionsFetch           |                                               |
-|                 | FetchActiveStory           | puuid                                         |
-|                 | Fetch                      | puuid                                         |
-|                 | Active                     | puuid, contractId                             |
-| **CurrentGame** | FetchAllChatMUCToken       | matchId                                       |
-|                 | FetchMatch                 | matchId                                       |
-|                 | FetchMatchLoadouts         | matchId                                       |
-|                 | FetchPlayer                | puuid                                         |
-|                 | FetchTeamChatMUCToken      | matchId                                       |
-|                 | DisassociatePlayer         | puuid, matchId                                |
-| **Party**       | RemovePlayer               | puuid                                         |
-|                 | FetchCustomGameConfigs     |                                               |
-|                 | FetchMUCToken              | partyId                                       |
-|                 | FetchParty                 | partyId                                       |
-|                 | FetchPlayer                | puuid                                         |
-|                 | FetchVoiceToken            | partyId                                       |
-|                 | ChangeQueue                | partyId, queue                                |
-|                 | DeclineRequest             | partyId, requestId                            |
-|                 | EnterMatchmakingQueue      | partyId                                       |
-|                 | InviteToPartyByDisplayName | partyId, gameName, tagLine                    |
-|                 | LeaveMatchmakingQueue      | partyId                                       |
-|                 | RefreshCompetitiveTier     | puuid, partyId                                |
-|                 | RefreshPings               | puuid, partyId                                |
-|                 | RefreshPlayerIdentity      | puuid, partyId                                |
-|                 | SetAccessibility           | partyId, accessibility                        |
-|                 | SetCustomGameSettings      | partyId, settings                             |
-|                 | SetMemberReady             | partyId, puuid, isReady                       |
-|                 | StartCustomGame            | partyId                                       |
-|                 | LeaveParty                 | puuid, partyId                                |
-|                 | AutoBalance                | partyId                                       |
-|                 | ChangeTeamInCustomGame     | partyId, team, puuid                          |
-|                 | StartSoloExperience        | partyId                                       |
-|                 | TransferOwner              | puuid, partyId                                |
-| **PreGame**     | FetchChatToken             | matchId                                       |
-|                 | FetchVoiceToken            | matchId                                       |
-|                 | GetMatch                   | matchId                                       |
-|                 | GetMatchLoadouts           | matchId                                       |
-|                 | GetPlayer                  | puuid                                         |
-|                 | LockCharacter              | matchId, agentId                              |
-|                 | QuitMatch                  | matchId                                       |
-|                 | SelectCharacter            | matchId, agentId                              |
-| **Session**     | Get                        | puuid                                         |
-|                 | ReConnect                  | puuid                                         |
-| **Store**       | GetEntitlements            | puuid, itemTypeId                             |
-|                 | GetOffers                  |                                               |
-|                 | GetStorefront              | puuid                                         |
-|                 | GetWallet                  | puuid                                         |
-|                 | RevealNightMarketOffers    | puuid                                         |
-| **App**         | FetchContent               |                                               |
-|                 | FetchConfig                |                                               |
-| **Match**       | FetchMatchDetails          | matchId                                       |
-|                 | FetchMatchHistory          | puuid, queueId?, startIndex?, endIndex?       |
-| **MMR**         | FetchCompetitiveUpdates    | puuid, queueId?, startIndex?, endIndex?       |
-|                 | FetchLeaderboard           | seasonId, startIndex?, size?, serachUsername? |
-|                 | FetchPlayer                | puuid                                         |
-|                 | HideActRankBadge           | puuid                                         |
-| **Player**      | GetUsername                | puuid                                         |
-|                 | GetUserInfo                |                                               |
-|                 | AccountXP                  | puuid                                         |
-|                 | Loadout                    | puuid                                         |
-|                 | LoadoutUpdate              | puuid                                         |
-|                 | FetchPlayerRestrictions    |                                               |
-|                 | MassRewards                | puuid                                         |
+| **Contract**    | definitionsFetch           |                                               |
+|                 | fetchActiveStory           | puuid                                         |
+|                 | fetch                      | puuid                                         |
+|                 | active                     | puuid, contractId                             |
+| **CurrentGame** | fetchAllChatMUCToken       | matchId                                       |
+|                 | fetchMatch                 | matchId                                       |
+|                 | fetchMatchLoadouts         | matchId                                       |
+|                 | fetchPlayer                | puuid                                         |
+|                 | fetchTeamChatMUCToken      | matchId                                       |
+|                 | disassociatePlayer         | puuid, matchId                                |
+| **Party**       | removePlayer               | puuid                                         |
+|                 | fetchCustomGameConfigs     |                                               |
+|                 | fetchMUCToken              | partyId                                       |
+|                 | fetchParty                 | partyId                                       |
+|                 | fetchPlayer                | puuid                                         |
+|                 | fetchVoiceToken            | partyId                                       |
+|                 | changeQueue                | partyId, queue                                |
+|                 | declineRequest             | partyId, requestId                            |
+|                 | enterMatchmakingQueue      | partyId                                       |
+|                 | inviteToPartyByDisplayName | partyId, gameName, tagLine                    |
+|                 | leaveMatchmakingQueue      | partyId                                       |
+|                 | refreshCompetitiveTier     | puuid, partyId                                |
+|                 | refreshPings               | puuid, partyId                                |
+|                 | refreshPlayerIdentity      | puuid, partyId                                |
+|                 | setAccessibility           | partyId, accessibility                        |
+|                 | setCustomGameSettings      | partyId, settings                             |
+|                 | setMemberReady             | partyId, puuid, isReady                       |
+|                 | startCustomGame            | partyId                                       |
+|                 | leaveParty                 | puuid, partyId                                |
+|                 | autoBalance                | partyId                                       |
+|                 | changeTeamInCustomGame     | partyId, team, puuid                          |
+|                 | startSoloExperience        | partyId                                       |
+|                 | transferOwner              | puuid, partyId                                |
+| **PreGame**     | getchChatToken             | matchId                                       |
+|                 | fetchVoiceToken            | matchId                                       |
+|                 | getMatch                   | matchId                                       |
+|                 | getMatchLoadouts           | matchId                                       |
+|                 | getPlayer                  | puuid                                         |
+|                 | lockCharacter              | matchId, agentId                              |
+|                 | quitMatch                  | matchId                                       |
+|                 | selectCharacter            | matchId, agentId                              |
+| **Session**     | get                        | puuid                                         |
+|                 | reConnect                  | puuid                                         |
+| **Store**       | getEntitlements            | puuid, itemTypeId                             |
+|                 | getOffers                  |                                               |
+|                 | getStorefront              | puuid                                         |
+|                 | getWallet                  | puuid                                         |
+|                 | revealNightMarketOffers    | puuid                                         |
+| **App**         | fetchContent               |                                               |
+|                 | fetchConfig                |                                               |
+| **Match**       | fetchMatchDetails          | matchId                                       |
+|                 | fetchMatchHistory          | puuid, queueId?, startIndex?, endIndex?       |
+| **MMR**         | fetchCompetitiveUpdates    | puuid, queueId?, startIndex?, endIndex?       |
+|                 | fetchLeaderboard           | seasonId, startIndex?, size?, serachUsername? |
+|                 | fetchPlayer                | puuid                                         |
+|                 | hideActRankBadge           | puuid                                         |
+| **Player**      | getUsername                | puuid                                         |
+|                 | getUserInfo                |                                               |
+|                 | accountXP                  | puuid                                         |
+|                 | loadout                    | puuid                                         |
+|                 | loadoutUpdate              | puuid                                         |
+|                 | fetchPlayerRestrictions    |                                               |
+|                 | massRewards                | puuid                                         |
 
 ## Usage
 

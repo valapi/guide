@@ -10,28 +10,43 @@ import { Client } from '@valapi/web-client';
 
 ```typescript
 interface Config {
-    // Region
+    /**
+     * Region
+     */
     region?: string;
 
-    // Client Settings
+    /**
+     * Client Config
+     */
     client?: {
-        version?: string,
+        version?: string;
         platform?: {
-            "platformType": string,
-            "platformOS": string,
-            "platformOSVersion": string,
-            "platformChipset": string,
-        },
+            "platformType": string;
+            "platformOS": string;
+            "platformOSVersion": string;
+            "platformChipset": string;
+        };
     };
 
-    // Config for RequestClient (Axios)
+    /**
+     * Request Config
+     * Config for RequestClient (Axios)
+     */
     axiosConfig?: AxiosRequestConfig;
 
-    // The time in milliseconds that data will be refreshed.
+    /**
+     * Expire time
+     * The time in milliseconds that data will be refreshed.
+     */
     expiresIn?: {
-        cookie: number,
-        token?: number,
+        cookie: number;
+        token?: number;
     };
+
+    /**
+     * Throw the Error?
+     */
+    throwOnError?: boolean;
 }
 ```
 

@@ -4,14 +4,15 @@
 
 list of the contributors who helped me improve this module
 
-## Developers Team
+## Developers
 
-- [ING3_](https://github.com/KTNG-3) (INg3_#9509)
+- [ING3_](https://github.com/KTNG-3)
+- [Stealth](https://github.com/mateie) (Error Handling)
 
 ## Report Bugs
 
 - [SpatzlHD](https://github.com/SpatzlHD)
-- teyd#8766
+- teyd
 - [Drysque](https://github.com/Drysque)
 - [Lunac](https://github.com/Lunac-dev)
 

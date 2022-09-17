@@ -4,15 +4,15 @@
 
 | Service       | Function                   | ...Args                   |
 | ------------- | -------------------------- | ------------------------- |
-| **AccountV1** | ByPuuid                    | puuid                     |
-|               | ByRiotId                   | gameName, tagLine         |
-|               | ActiveShardsByGameAndPuuid | puuid, game?              |
-| **ContentV1** | Contents                   | locale?                   |
-| **MatchV1**   | ByMatchId                  | matchId                   |
-|               | ListByPuuid                | puuid                     |
-|               | RecentByQueue              | queueId                   |
-| **RankedV1**  | LeaderboardsByAct          | actId, size?, startIndex? |
-| **StatusV1**  | PlatformData               |                           |
+| **AccountV1** | byPuuid                    | puuid                     |
+|               | byRiotId                   | gameName, tagLine         |
+|               | activeShardsByGameAndPuuid | puuid, game?              |
+| **ContentV1** | contents                   | locale?                   |
+| **MatchV1**   | byMatchId                  | matchId                   |
+|               | listByPuuid                | puuid                     |
+|               | recentByQueue              | queueId                   |
+| **RankedV1**  | leaderboardsByAct          | actId, size?, startIndex? |
+| **StatusV1**  | platformData               |                           |
 
 ## Usage
 

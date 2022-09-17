@@ -10,10 +10,32 @@ import { Client } from '@valapi/riot-api';
 
 ```typescript
 interface Config {
+    /**
+     * API Key
+     */
     apiKey: string;
+
+    /**
+     * Region
+     */
     region: string;
+
+    /**
+     * Expire time
+     * The time in milliseconds that data will be refreshed.
+     */
     expiresIn?: number;
+
+    /**
+     * Request Config
+     * Config for RequestClient (Axios)
+     */
     axiosConfig?: AxiosRequestConfig;
+
+    /**
+     * Throw the Error?
+     */
+    throwOnError?: boolean;
 }
 ```
 

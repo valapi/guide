@@ -145,10 +145,32 @@
 </code></pre>
 <h2 id="config"><a class="header" href="#config">Config</a></h2>
 <pre><code class="language-typescript">interface Config {
+    /**
+     * API Key
+     */
     apiKey: string;
+
+    /**
+     * Region
+     */
     region: string;
+
+    /**
+     * Expire time
+     * The time in milliseconds that data will be refreshed.
+     */
     expiresIn?: number;
+
+    /**
+     * Request Config
+     * Config for RequestClient (Axios)
+     */
     axiosConfig?: AxiosRequestConfig;
+
+    /**
+     * Throw the Error?
+     */
+    throwOnError?: boolean;
 }
 </code></pre>
 <h2 id="client"><a class="header" href="#client">Client</a></h2>
