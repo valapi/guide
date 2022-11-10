@@ -1,3 +1,7 @@
+# THIS DOC IS FOR 1.x.x
+
+-----------
+
 # @valapi Documentation
 
 [![NPM](https://nodei.co/npm/valorant.ts.png)](https://nodei.co/npm/valorant.ts)
