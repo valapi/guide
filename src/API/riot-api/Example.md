@@ -19,7 +19,7 @@ const ApiClient = new Client({
 ## [API](./API.md#usage)
 
 ```typescript
-const _data = await ApiClient.AccountV1.byRiotId('PRX f0rsakeN', 'Huh');
+const data = await ApiClient.AccountV1.byRiotId('PRX f0rsakeN', 'Huh');
 
-console.log(_data.data);
+console.log(data.data);
 ```

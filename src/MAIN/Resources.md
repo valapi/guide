@@ -5,31 +5,19 @@
 ```typescript
 import {
 
+    CrosshairColor,
+
     ItemTypeId,
 
     Locale,
 
     QueueId,
 
-    Region,
-
-    CrosshairColor
+    Region
 
 }
 from '@valapi/lib';
 ```
-
-## Region
-
-| Region | Full Name               |
-| ------ | ----------------------- |
-| na     | North_America           |
-| latam  | Latin_America           |
-| br     | Brazil                  |
-| pbe    | Public_Beta_Environment |
-| eu     | Europe                  |
-| kr     | Korea                   |
-| ap     | Asia_Pacific            |
 
 # Usage
 
@@ -37,10 +25,9 @@ from '@valapi/lib';
 
 ```typescript
 
-[Resources].from. // string
-[Resources].to. // readable
+[Resources].Default.[Name] // identify
 
-[Resources].toString('North_America'); // change readable to string
-[Resources].fromString('na'); // change string to readable
+[Resources].fromName('North_America'); // change name to identify
+[Resources].fromString('na'); // change identify to name
 
 ```

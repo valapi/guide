@@ -15,6 +15,7 @@ list of the contributors who helped me improve this module
 - teyd
 - [Drysque](https://github.com/Drysque)
 - [Lunac](https://github.com/Lunac-dev)
+- [JUd9in](https://github.com/JUd9in)
 
 ## Special Thanks
 

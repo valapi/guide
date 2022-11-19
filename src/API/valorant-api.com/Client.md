@@ -3,7 +3,7 @@
 -----------
 
 ```typescript
-import { Client } from '@valapi/riot-api';
+import { Client } from '@valapi/valorant-api.com';
 ```
 
 ## Config
@@ -17,7 +17,6 @@ interface Config {
 
     /**
      * Request Config
-     * Config for RequestClient (Axios)
      */
     axiosConfig?: AxiosRequestConfig;
 
@@ -32,18 +31,4 @@ interface Config {
 
 ```typescript
 const ApiClient = new Client( config? );
-```
-
-# Settings
-
------------
-
-| Set      | Function    | ...Args  |
-| -------- | ----------- | -------- |
-| Language | setLanguage | language |
-
-## Usage
-
-```javascript
-    ApiClient.{Function(...Args)};
 ```

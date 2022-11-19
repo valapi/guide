@@ -7,6 +7,7 @@
 | **AccountV1** | byPuuid                    | puuid                     |
 |               | byRiotId                   | gameName, tagLine         |
 |               | activeShardsByGameAndPuuid | puuid, game?              |
+|               | byAccessToken | authorization              |
 | **ContentV1** | contents                   | locale?                   |
 | **MatchV1**   | byMatchId                  | matchId                   |
 |               | listByPuuid                | puuid                     |
@@ -17,5 +18,5 @@
 ## Usage
 
 ```typescript
-    const _data = await ApiClient.{Service}.{Function(...Args)};
+    const data = await ApiClient.{Service}.{Function(...Args)};
 ```

@@ -28,12 +28,12 @@ await AuthClient.verify(SixDigitNumber);
 
 ## Reconnection
 
-its will reconnection if the token is expired
+reconnection for getting a new token
 
 **we recommend running this after creating *AuthClient***
 
 ```typescript
-await AuthClient.refresh(isForce?);
+await AuthClient.refresh();
 ```
 
 ## Cookie

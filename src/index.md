@@ -1,7 +1,3 @@
-# THIS DOC IS FOR 1.x.x
-
------------
-
 # @valapi Documentation
 
 [![NPM](https://nodei.co/npm/valorant.ts.png)](https://nodei.co/npm/valorant.ts)
@@ -15,7 +11,7 @@ Generate by [mdBook](https://github.com/rust-lang/mdBook)
 [![Discord](https://badgen.net/badge/icon/discord?icon=discord&label)](https://discord.gg/pbyWbUYjyt)
 
 > - **@valapi** isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.
-> - **@valapi** was created under [Riot Games' "Legal Jibber Jabber"](https://www.riotgames.com/en/legal)
+> - **@valapi** was created under [Riot Games' "Legal Jibber Jabber"](https://www.riotgames.com/en/legal) policy using assets owned by Riot Games.  Riot Games does not endorse or sponsor this project.
 > - [MIT License](https://github.com/valapi/.github/blob/main/LICENSE)
 
 # Getting Started

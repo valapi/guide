@@ -14,7 +14,14 @@ interface Config {
      * Client Config
      */
     client?: {
+        /**
+         * Client Version
+         */
         version?: string,
+        
+        /**
+         * Client Platform
+         */
         platform?: {
             "platformType": string,
             "platformOS": string,
@@ -25,18 +32,18 @@ interface Config {
 
     /**
      * Request Config
-     * Config for RequestClient (Axios)
      */
     axiosConfig?: AxiosRequestConfig;
 
     /**
-     * Expire time
-     * The time in milliseconds that data will be refreshed.
+     * Throw the Error?
      */
-    expiresIn?: {
-        cookie: number,
-        token?: number,
-    };
+    throwOnError?: boolean;
+
+    /**
+     * Region
+     */
+    region?: string;
 }
 ```
 

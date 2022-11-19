@@ -2,14 +2,13 @@
 
 -----------
 
-```typescript
-ApiClient.on('EVENT_NAME', callback());
-```
-
 - **ready** => `void`
 - **request** => [`Request`](#request)
-- **changeSettings** => `{ name:string, data:any }`
 - **error** => [`Error`](#error)
+
+```typescript
+ApiClient.on('EVENT_NAME', lListenerFunction());
+```
 
 ## Request
 

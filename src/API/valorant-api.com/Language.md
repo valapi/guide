@@ -45,7 +45,7 @@ const Datas: Array<string> = [
 but when you want to, we recommend doing this:
 
 ```typescript
-const NotError: any = MyRequest.data.data[0].displayName;
+const NoError: any = MyRequest.data.data[0].displayName;
 
 const TypesError: string = MyRequest.data.data[0].displayName;
 ```

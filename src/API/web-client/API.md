@@ -2,76 +2,93 @@
 
 -----------
 
-<https://github.com/techchrism/valorant-api-docs>
-
-| Service         | Function                   | ...Args                                       |
-| --------------- | -------------------------- | --------------------------------------------- |
-| **Contract**    | definitionsFetch           |                                               |
-|                 | fetchActiveStory           | puuid                                         |
-|                 | fetch                      | puuid                                         |
-|                 | active                     | puuid, contractId                             |
-| **CurrentGame** | fetchAllChatMUCToken       | matchId                                       |
-|                 | fetchMatch                 | matchId                                       |
-|                 | fetchMatchLoadouts         | matchId                                       |
-|                 | fetchPlayer                | puuid                                         |
-|                 | fetchTeamChatMUCToken      | matchId                                       |
-|                 | disassociatePlayer         | puuid, matchId                                |
-| **Party**       | removePlayer               | puuid                                         |
-|                 | fetchCustomGameConfigs     |                                               |
-|                 | fetchMUCToken              | partyId                                       |
-|                 | fetchParty                 | partyId                                       |
-|                 | fetchPlayer                | puuid                                         |
-|                 | fetchVoiceToken            | partyId                                       |
-|                 | changeQueue                | partyId, queue                                |
-|                 | declineRequest             | partyId, requestId                            |
-|                 | enterMatchmakingQueue      | partyId                                       |
-|                 | inviteToPartyByDisplayName | partyId, gameName, tagLine                    |
-|                 | leaveMatchmakingQueue      | partyId                                       |
-|                 | refreshCompetitiveTier     | puuid, partyId                                |
-|                 | refreshPings               | puuid, partyId                                |
-|                 | refreshPlayerIdentity      | puuid, partyId                                |
-|                 | setAccessibility           | partyId, accessibility                        |
-|                 | setCustomGameSettings      | partyId, settings                             |
-|                 | setMemberReady             | partyId, puuid, isReady                       |
-|                 | startCustomGame            | partyId                                       |
-|                 | leaveParty                 | puuid, partyId                                |
-|                 | autoBalance                | partyId                                       |
-|                 | changeTeamInCustomGame     | partyId, team, puuid                          |
-|                 | startSoloExperience        | partyId                                       |
-|                 | transferOwner              | puuid, partyId                                |
-| **PreGame**     | getchChatToken             | matchId                                       |
-|                 | fetchVoiceToken            | matchId                                       |
-|                 | getMatch                   | matchId                                       |
-|                 | getMatchLoadouts           | matchId                                       |
-|                 | getPlayer                  | puuid                                         |
-|                 | lockCharacter              | matchId, agentId                              |
-|                 | quitMatch                  | matchId                                       |
-|                 | selectCharacter            | matchId, agentId                              |
-| **Session**     | get                        | puuid                                         |
-|                 | reConnect                  | puuid                                         |
-| **Store**       | getEntitlements            | puuid, itemTypeId                             |
-|                 | getOffers                  |                                               |
-|                 | getStorefront              | puuid                                         |
-|                 | getWallet                  | puuid                                         |
-|                 | revealNightMarketOffers    | puuid                                         |
-| **App**         | fetchContent               |                                               |
-|                 | fetchConfig                |                                               |
-| **Match**       | fetchMatchDetails          | matchId                                       |
-|                 | fetchMatchHistory          | puuid, queueId?, startIndex?, endIndex?       |
-| **MMR**         | fetchCompetitiveUpdates    | puuid, queueId?, startIndex?, endIndex?       |
-|                 | fetchLeaderboard           | seasonId, startIndex?, size?, serachUsername? |
-|                 | fetchPlayer                | puuid                                         |
-|                 | hideActRankBadge           | puuid                                         |
-| **Player**      | getUsername                | puuid                                         |
-|                 | getUserInfo                |                                               |
-|                 | accountXP                  | puuid                                         |
-|                 | loadout                    | puuid                                         |
-|                 | loadoutUpdate              | puuid                                         |
-|                 | fetchPlayerRestrictions    |                                               |
-|                 | massRewards                | puuid                                         |
+| Service                 | Function      | ...Args      |
+| ----------------------- | ------------- | ------------ |
+| **AccountXP**           | getPlayer | subject |
+| **Config**              | fetchConfig |  |
+| **Content**             | fetchContent |  |
+| **ContractDefinitions** | fetchActiveStory |  |
+|                         | fetch |  |
+|                         | fetchItemProgression |  |
+| **Contracts**           | fetch | subject |
+|                         | activate | subject, contractId |
+|                         | unlockItemProgress | subject, definitionId |
+|                         | unlockContractProgression | subject, contractId |
+|                         | unlockItemSidegrade | subject, definitionId, sidegradeId, optionId |
+|                         | Upgrade | subject, contractId |
+| **CoreGame**            | fetchPlayer | subject |
+|                         | fetchMatch | matchId |
+|                         | fetchMatchLoadouts | matchId |
+|                         | disassociatePlayer | subject, matchId |
+|                         | fetchAllChatMUCToken | matchId |
+|                         | fetchTeamChatMUCToken | matchId |
+|                         | fetchVoiceToken | matchId |
+| **DisplayNameService**  | fetchPlayers | subject |
+| **Favorites**           | get | subject |
+|                         | add | subject, itemId |
+|                         | remove | subject, itemId |
+| **Latency**             | fetchStats |  |
+|                         | fetchStat |  |
+| **MassRewards**         | reconcilePlayer | subject |
+| **Match**               | fetchMatchDetails | matchId |
+|                         | fetchMatchHistory | subject, queueId?, startIndex?, endIndex? |
+|                         | fetchQueueData |  |
+| **MMR**                 | fetchPlayer | subject |
+|                         | hideActRankBadge | subject |
+|                         | fetchLeaderboard | seasonId, startIndex?, size?, serachUsername? |
+|                         | fetchCompetitiveUpdates | subject, queueId?, startIndex?, endIndex? |
+| **Party**               | fetchPlayer | subject |
+|                         | removePlayer | subject |
+|                         | joinParty | subject, partyId |
+|                         | leaveParty | subject, partyId |
+|                         | setMemberReady | subject, partyId, isReady |
+|                         | refreshCompetitiveTier | subject, partyId |
+|                         | refreshPlayerIdentity | subject, partyId |
+|                         | refreshPings | subject, partyId |
+|                         | fetchParty | partyId |
+|                         | leaveFromParty | subject, partyId |
+|                         | fetchMUCToken | partyId |
+|                         | fetchVoiceToken | partyId |
+|                         | makeIntoCustomGame | partyId |
+|                         | changeQueue | partyId, queueId |
+|                         | makeDefault | partyId, queueId |
+|                         | startCustomGame | partyId |
+|                         | startSoloExperience | subject |
+|                         | setCustomGameSettings | partyId, settings |
+|                         | changeTeamInCustomGame | partyId, team, subject |
+|                         | enterMatchmakingQueue | partyId |
+|                         | leaveMatchmakingQueue | partyId |
+|                         | setAccessibility | partyId, accessibility |
+|                         | inviteToPartyByDisplayName | partyId, gameName, tagLine |
+|                         | declineRequest | partyId, requestId |
+|                         | setBalance | partyId |
+|                         | fetchCustomGameConfigs |  |
+|                         | transferOwner | subject, partyId |
+| **Personalization**     | getPlayerLoadout | subject |
+|                         | playerLoadoutUpdate | subject |
+| **PreGame**             | getPlayer | subject |
+|                         | getMatch | matchId |
+|                         | getMatchLoadouts | matchId |
+|                         | selectCharacter | matchId, agentId |
+|                         | lockCharacter | matchId, agentId |
+|                         | fetchVoiceToken | matchId |
+|                         | fetchChatToken | matchId |
+|                         | quitMatch | matchId |
+| **Restrictions**        | fetchPlayerReportToken | matchId, offenderSubject |
+|                         | fetchPlayerRestrictions |  |
+| **Session**             | connect | subject |
+|                         | heartbeat | subject |
+|                         | disconnect | subject |
+|                         | get | subject |
+|                         | reconnect | subject |
+| **Store**               | getWallet | subject |
+|                         | getStorefront | subject |
+|                         | getOffers |  |
+|                         | getEntitlements | subject, itemTypeId |
+|                         | revealNightMarketOffers | subject |
 
 ## Usage
 
 ```typescript
-    const _data = await ApiClient.{Service}.{Function(...Args)};
+    const data = await ApiClient.{Service}.{Function(...Args)};
 ```

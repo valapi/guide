@@ -3,7 +3,7 @@
 -----------
 
 ```typescript
-import { Client } from '@valapi/riot-api';
+import { Client } from '@valapi/valorant-api.com';
 ```
 
 ## [Client](./Client.md#config)
@@ -18,7 +18,7 @@ const ApiClient = new Client({
 ## [API](./API.md#usage)
 
 ```typescript
-const _data = await ApiClient.Events.get();
+const data = await ApiClient.Events.get();
 
-console.log(_data.data);
+console.log(data.data);
 ```

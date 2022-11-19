@@ -5,17 +5,29 @@
 ## Usage
 
 ```typescript
-import { Region } from "valorant.ts";
+import { Region } from "@valapi/lib";
 ```
 
+## Usage
+
+| Region | Full Name               |
+| ------ | ----------------------- |
+| na     | North_America           |
+| latam  | Latin_America           |
+| br     | Brazil                  |
+| pbe    | Public_Beta_Environment |
+| eu     | Europe                  |
+| kr     | Korea                   |
+| ap     | Asia_Pacific            |
+
 ```typescript
-Region.North_America            // return "na"
-Region.Latin_America            // return "latam"
-Region.Brazil                   // return "br"
-Region.Public_Beta_Environment  // return "pbe"
-Region.Europe                   // return "eu"
-Region.Korea                    // return "kr"
-Region.Asia_Pacific             // return "ap"
+Region.Default.North_America            // return "na"
+Region.Default.Latin_America            // return "latam"
+Region.Default.Brazil                   // return "br"
+Region.Default.Public_Beta_Environment  // return "pbe"
+Region.Default.Europe                   // return "eu"
+Region.Default.Korea                    // return "kr"
+Region.Default.Asia_Pacific             // return "ap"
 ```
 
 *Example*
@@ -23,7 +35,7 @@ Region.Asia_Pacific             // return "ap"
 ```typescript
 new Client({
 
-    region: Region.Asia_Pacific,
+    region: Region.Default.Asia_Pacific,
 
 });
 ```

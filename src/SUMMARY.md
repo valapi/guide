@@ -29,7 +29,7 @@
 -----------
 <!-- Web Client -->
 - [Web Client](./API/web-client/Intro.md)
-  - [Client](./API/web-client/Client.md)
+  - [Client](./PACKAGE/auth/Client.md)
   - [Endpoints](./API/web-client/API.md)
   - [Example](./API/web-client/Example.md)
 
