@@ -51,6 +51,8 @@ You must post the following text to your product in a location that is readily v
 
 ---
 
+[MIT License](https://github.com/valapi/.github/blob/main/LICENSE)
+
 ## Terms of Use
 
 -   We allow you to use **valorant.ts** for free

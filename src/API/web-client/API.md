@@ -15,7 +15,7 @@
 |                         | unlockItemProgress         | subject, definitionId                         |
 |                         | unlockContractProgression  | subject, contractId                           |
 |                         | unlockItemSidegrade        | subject, definitionId, sidegradeId, optionId  |
-|                         | Upgrade                    | subject, contractId                           |
+|                         | upgrade                    | subject, contractId                           |
 | **CoreGame**            | fetchPlayer                | subject                                       |
 |                         | fetchMatch                 | matchId                                       |
 |                         | fetchMatchLoadouts         | matchId                                       |
