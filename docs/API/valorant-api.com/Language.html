@@ -151,7 +151,7 @@
 }
 </code></pre>
 <p>but if you aren't using <code>all</code> language, you can use <code>en-US</code>, <code>th-TH</code>, and more, but it will return only one language you choose.</p>
-<pre><code class="language-typescript">'フェイド' // ja-JP (japanese)
+<pre><code class="language-typescript">&quot;フェイド&quot;; // ja-JP (japanese)
 </code></pre>
 <h2 id="typescript"><a class="header" href="#typescript">Typescript</a></h2>
 <hr />
@@ -159,14 +159,9 @@
 for typescript users, we recommend using <code>all</code> language.</p>
 <pre><code class="language-typescript">// const MyRequest = await ApiClient.Weapons.get();
 </code></pre>
-<pre><code class="language-typescript">const Data: string = MyRequest.data.data[0].displayName['ko-KR']
+<pre><code class="language-typescript">const Data: string = MyRequest.data.data[0].displayName[&quot;ko-KR&quot;];
 
-const Datas: Array&lt;string&gt; = [
-
-    MyRequest.data.data[2].displayName['en-US'],
-    MyRequest.data.data.at(3).displayName['ja-JP'],
-
-];
+const Datas: Array&lt;string&gt; = [MyRequest.data.data[2].displayName[&quot;en-US&quot;], MyRequest.data.data.at(3).displayName[&quot;ja-JP&quot;]];
 </code></pre>
 <p>but when you want to, we recommend doing this:</p>
 <pre><code class="language-typescript">const NoError: any = MyRequest.data.data[0].displayName;

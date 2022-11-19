@@ -10,5 +10,5 @@ npm install @valapi/web-client
 
 ## Contents
 
-- [Endpoints](./API.md)
-- [Example](./Example.md)
+-   [Endpoints](./API.md)
+-   [Example](./Example.md)

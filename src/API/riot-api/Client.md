@@ -1,12 +1,14 @@
 # Introduced
 
------------
+---
 
 ```typescript
-import { Client } from '@valapi/riot-api';
+import { Client } from "@valapi/riot-api";
 ```
 
 ## Config
+
+You Can Get Api Key From [developer.riotgames.com](https://developer.riotgames.com)
 
 ```typescript
 interface Config {
@@ -37,5 +39,3 @@ interface Config {
 ```typescript
 const ApiClient = new Client( config? );
 ```
-
-You Can Get Api Key From [developer.riotgames.com](https://developer.riotgames.com)

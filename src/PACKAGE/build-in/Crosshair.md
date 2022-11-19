@@ -1,8 +1,8 @@
 # Crosshair Compiler
 
-*beta*
+_beta_
 
------------
+---
 
 ## Client
 
@@ -39,9 +39,10 @@ interface LinesError {
 
 ```typescript
 interface Lines {
-    isEnable: boolean,
+    isEnable: boolean;
     Opacity: number;
-    Length: { // base on valorant settings
+    Length: {
+        // base on valorant settings
         Value: number;
         isChain: boolean;
         SecondValue: number;
@@ -57,67 +58,67 @@ interface Lines {
 interface Crosshair {
     Primary: {
         Crosshair: {
-            isHexCrosshairColor: boolean,
-            CrosshairColor: string,
+            isHexCrosshairColor: boolean;
+            CrosshairColor: string;
             OutLine: {
-                isEnable: boolean,
-                Opacity: number,
-                Thickness: number,
-            },
+                isEnable: boolean;
+                Opacity: number;
+                Thickness: number;
+            };
             CenterDot: {
-                isEnable: boolean,
-                Opacity: number,
-                Thickness: number,
-            },
-            OverrideFiringErrorOffsetWithCrosshairOffset: boolean,
-            OverrideAllPrimaryCrosshairWithMyPrimaryCrosshair: boolean,
-        }
-        InnerLines: Crosshair.Lines,
-        OuterLines: Crosshair.Lines,
+                isEnable: boolean;
+                Opacity: number;
+                Thickness: number;
+            };
+            OverrideFiringErrorOffsetWithCrosshairOffset: boolean;
+            OverrideAllPrimaryCrosshairWithMyPrimaryCrosshair: boolean;
+        };
+        InnerLines: Crosshair.Lines;
+        OuterLines: Crosshair.Lines;
     };
     AimDownSights: {
-        CopyPrimaryCrosshair: boolean,
+        CopyPrimaryCrosshair: boolean;
         Crosshair: {
-            isHexCrosshairColor: boolean,
-            CrosshairColor: string,
+            isHexCrosshairColor: boolean;
+            CrosshairColor: string;
             OutLine: {
-                isEnable: boolean,
-                Opacity: number,
-                Thickness: number,
-            },
+                isEnable: boolean;
+                Opacity: number;
+                Thickness: number;
+            };
             CenterDot: {
-                isEnable: boolean,
-                Opacity: number,
-                Thickness: number,
-            },
-            OverrideFiringErrorOffsetWithCrosshairOffset: boolean,
-        }
-        InnerLines: Crosshair.Lines,
-        OuterLines: Crosshair.Lines,
+                isEnable: boolean;
+                Opacity: number;
+                Thickness: number;
+            };
+            OverrideFiringErrorOffsetWithCrosshairOffset: boolean;
+        };
+        InnerLines: Crosshair.Lines;
+        OuterLines: Crosshair.Lines;
     };
     General: {
         Crosshair: {
-            UseAdvancedOptions: boolean,
-        },
+            UseAdvancedOptions: boolean;
+        };
         Other: {
-            ShowSpectatedPlayerCrosshair: boolean,
-            FadeCrosshairWithFiringError: boolean,
-            DisableCrosshair?: boolean, // Not Usable
-        },
+            ShowSpectatedPlayerCrosshair: boolean;
+            FadeCrosshairWithFiringError: boolean;
+            DisableCrosshair?: boolean; // Not Usable
+        };
     };
     SniperScope: {
         CenterDot: {
-            isHexColor: boolean,
-            Color: string,
-            isEnable: boolean,
-            Opacity: number,
-            Thickness: number,
-        },
+            isHexColor: boolean;
+            Color: string;
+            isEnable: boolean;
+            Opacity: number;
+            Thickness: number;
+        };
     };
 }
 ```
 
-*Example*
+_Example_
 
 ```typescript
 MyCrosshair.Primary.InnerLines.Thickness = 2;

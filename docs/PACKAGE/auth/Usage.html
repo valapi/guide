@@ -141,18 +141,16 @@
                     <main>
                         <h1 id="usage"><a class="header" href="#usage">Usage</a></h1>
 <hr />
-<pre><code class="language-typescript">import { Client } from '@valapi/auth';
+<pre><code class="language-typescript">import { Client } from &quot;@valapi/auth&quot;;
 </code></pre>
 <h2 id="client"><a class="header" href="#client"><a href="./Client.html#client">Client</a></a></h2>
 <pre><code class="language-typescript">const AuthClient = new Client();
 </code></pre>
 <h2 id="auth"><a class="header" href="#auth"><a href="./Auth.html#basic-authentication">Auth</a></a></h2>
-<pre><code class="language-typescript">await AuthClient.login('BestUsername', 'SuperSecretPassword');
+<pre><code class="language-typescript">await AuthClient.login(&quot;BestUsername&quot;, &quot;SuperSecretPassword&quot;);
 </code></pre>
 <pre><code class="language-typescript">if (AuthClient.isMultifactorAccount === true) {
-
     await AuthClient.verify(428793 /* &lt;--- Verification Code */);
-    
 }
 </code></pre>
 <h2 id="subject-playeruuid"><a class="header" href="#subject-playeruuid">Subject (PlayerUUID)</a></h2>

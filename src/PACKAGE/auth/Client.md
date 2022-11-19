@@ -1,9 +1,9 @@
 # Introduced
 
------------
+---
 
 ```typescript
-import { Client } from '@valapi/auth';
+import { Client } from "@valapi/auth";
 ```
 
 ## Config
@@ -17,17 +17,17 @@ interface Config {
         /**
          * Client Version
          */
-        version?: string,
-        
+        version?: string;
+
         /**
          * Client Platform
          */
         platform?: {
-            "platformType": string,
-            "platformOS": string,
-            "platformOSVersion": string,
-            "platformChipset": string,
-        },
+            platformType: string;
+            platformOS: string;
+            platformOSVersion: string;
+            platformChipset: string;
+        };
     };
 
     /**
@@ -55,7 +55,7 @@ const AuthClient = new Client( config? );
 
 # Save
 
------------
+---
 
 ## Client --> Save
 

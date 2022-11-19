@@ -1,27 +1,14 @@
 # Resources
 
------------
+---
 
 ```typescript
-import {
-
-    CrosshairColor,
-
-    ItemTypeId,
-
-    Locale,
-
-    QueueId,
-
-    Region
-
-}
-from '@valapi/lib';
+import { CrosshairColor, ItemTypeId, Locale, QueueId, Region } from "@valapi/lib";
 ```
 
 # Usage
 
------------
+---
 
 ```typescript
 

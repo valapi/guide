@@ -1,13 +1,13 @@
 # API
 
------------
+---
 
 | Service       | Function                   | ...Args                   |
 | ------------- | -------------------------- | ------------------------- |
 | **AccountV1** | byPuuid                    | puuid                     |
 |               | byRiotId                   | gameName, tagLine         |
 |               | activeShardsByGameAndPuuid | puuid, game?              |
-|               | byAccessToken | authorization              |
+|               | byAccessToken              | authorization             |
 | **ContentV1** | contents                   | locale?                   |
 | **MatchV1**   | byMatchId                  | matchId                   |
 |               | listByPuuid                | puuid                     |

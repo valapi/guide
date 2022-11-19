@@ -1,9 +1,9 @@
 # Introduced
 
------------
+---
 
 ```typescript
-import { Client } from '@valapi/valorant-api.com';
+import { Client } from "@valapi/valorant-api.com";
 ```
 
 ## Config

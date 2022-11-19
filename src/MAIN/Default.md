@@ -4,12 +4,12 @@ Default imports are recommended for javascript
 
 because javascript cannot use type definition then we can only use client
 
------------
+---
 
 ## Import
 
 ```javascript
-const { Auth, WebClient, RiotAPI, ValorantApiCom } = require('valorant.ts').default
+const { Auth, WebClient, RiotAPI, ValorantApiCom } = require("valorant.ts").default;
 ```
 
 ## Usage

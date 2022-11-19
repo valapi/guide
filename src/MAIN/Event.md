@@ -1,13 +1,13 @@
 # Event
 
------------
+---
 
-- **ready** => `void`
-- **request** => [`Request`](#request)
-- **error** => [`Error`](#error)
+-   **ready** => `void`
+-   **request** => [`Request`](#request)
+-   **error** => [`Error`](#error)
 
 ```typescript
-ApiClient.on('EVENT_NAME', lListenerFunction());
+ApiClient.on("EVENT_NAME", lListenerFunction());
 ```
 
 ## Request
@@ -33,20 +33,20 @@ interface Error {
 
 # Example
 
------------
+---
 
-*Ready*
+_Ready_
 
 ```typescript
-ApiClient.on('ready', (() => {
-    console.log('Client is ready!');
-}));
+ApiClient.on("ready", () => {
+    console.log("Client is ready!");
+});
 ```
 
-*Error*
+_Error_
 
 ```typescript
-ApiClient.on('error', ((data: Error) => {
+ApiClient.on("error", (data: Error) => {
     console.log(data);
-}));
+});
 ```

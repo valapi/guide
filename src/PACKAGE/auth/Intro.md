@@ -10,6 +10,6 @@ npm install @valapi/auth
 
 ## Contents
 
-- [Client](./Client.md)
-- [Auth](./Auth.md)
-- [Usage](./Usage.md)
+-   [Client](./Client.md)
+-   [Auth](./Auth.md)
+-   [Usage](./Usage.md)

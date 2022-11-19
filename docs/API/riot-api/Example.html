@@ -141,17 +141,16 @@
                     <main>
                         <h1 id="example"><a class="header" href="#example">Example</a></h1>
 <hr />
-<pre><code class="language-typescript">import { Client } from '@valapi/riot-api';
+<pre><code class="language-typescript">import { Client } from &quot;@valapi/riot-api&quot;;
 </code></pre>
 <h2 id="client"><a class="header" href="#client"><a href="./Client.html#config">Client</a></a></h2>
 <pre><code class="language-typescript">const ApiClient = new Client({
-    apiKey: 'LoooooongApiKey_123456789',
-    region: 'ap',
+    apiKey: &quot;LoooooongApiKey_123456789&quot;,
+    region: &quot;ap&quot;
 });
-
 </code></pre>
 <h2 id="api"><a class="header" href="#api"><a href="./API.html#usage">API</a></a></h2>
-<pre><code class="language-typescript">const data = await ApiClient.AccountV1.byRiotId('PRX f0rsakeN', 'Huh');
+<pre><code class="language-typescript">const data = await ApiClient.AccountV1.byRiotId(&quot;PRX f0rsakeN&quot;, &quot;Huh&quot;);
 
 console.log(data.data);
 </code></pre>

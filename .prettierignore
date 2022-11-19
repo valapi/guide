@@ -1,0 +1,10 @@
+.github/
+node_modules/
+dist/
+test/
+docs/
+theme/
+.eslintrc.json
+package-lock.json
+package.json
+tsconfig.json

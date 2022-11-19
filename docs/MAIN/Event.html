@@ -146,7 +146,7 @@
 <li><strong>request</strong> =&gt; <a href="#request"><code>Request</code></a></li>
 <li><strong>error</strong> =&gt; <a href="#error"><code>Error</code></a></li>
 </ul>
-<pre><code class="language-typescript">ApiClient.on('EVENT_NAME', lListenerFunction());
+<pre><code class="language-typescript">ApiClient.on(&quot;EVENT_NAME&quot;, lListenerFunction());
 </code></pre>
 <h2 id="request"><a class="header" href="#request">Request</a></h2>
 <pre><code class="language-typescript">interface Error {
@@ -166,14 +166,14 @@
 <h1 id="example"><a class="header" href="#example">Example</a></h1>
 <hr />
 <p><em>Ready</em></p>
-<pre><code class="language-typescript">ApiClient.on('ready', (() =&gt; {
-    console.log('Client is ready!');
-}));
+<pre><code class="language-typescript">ApiClient.on(&quot;ready&quot;, () =&gt; {
+    console.log(&quot;Client is ready!&quot;);
+});
 </code></pre>
 <p><em>Error</em></p>
-<pre><code class="language-typescript">ApiClient.on('error', ((data: Error) =&gt; {
+<pre><code class="language-typescript">ApiClient.on(&quot;error&quot;, (data: Error) =&gt; {
     console.log(data);
-}));
+});
 </code></pre>
 
                     </main>

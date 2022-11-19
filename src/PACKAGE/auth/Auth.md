@@ -1,17 +1,17 @@
 # Basic Authentication
 
------------
+---
 
 ## Login
 
 First We Need To **Login** To `Valorant Account`
 
 ```typescript
-await AuthClient.login('Username', 'Password');
+await AuthClient.login("Username", "Password");
 ```
 
-*But We Have 2 Type Of Account*
- 
+_But We Have 2 Type Of Account_
+
 ## Multi-Factor
 
 When The Account Have **Multifactor** You Can't Use Normal Method
@@ -24,13 +24,13 @@ await AuthClient.verify(SixDigitNumber);
 
 # Advanced Authentication
 
------------
+---
 
 ## Reconnection
 
 reconnection for getting a new token
 
-**we recommend running this after creating *AuthClient***
+**we recommend running this after creating _AuthClient_**
 
 ```typescript
 await AuthClient.refresh();
