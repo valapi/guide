@@ -19,7 +19,13 @@ list of the contributors who helped me improve this module
 
 ## Special Thanks
 
+Valorant API
+
 -   [ev3nvy](https://github.com/ev3nvy)
 -   [Officer](https://github.com/NotOfficer)
 -   [M1ke](https://github.com/HeyM1ke)
 -   [Techdoodle](https://github.com/techchrism)
+
+Types
+
+-    [Peter Repukat](https://behind.flatspot.pictures/advanced-typescript-cheatsheet-pt-1/#validpaths-validpathtuples)
