@@ -3,7 +3,7 @@
 ---
 
 ```typescript
-import { Client } from "@valapi/auth";
+import { AuthClient } from "@valapi/auth";
 ```
 
 ## Config
@@ -50,7 +50,7 @@ interface Config {
 ## Client
 
 ```typescript
-const AuthClient = new Client( config? );
+const authClient = new AuthClient( config? );
 ```
 
 # Save
@@ -60,11 +60,11 @@ const AuthClient = new Client( config? );
 ## Client --> Save
 
 ```typescript
-AuthClient.toJSON();
+authClient.toJSON();
 ```
 
 ## Save --> Client
 
 ```typescript
-Client.fromJSON(config, AuthClient.toJSON());
+AuthClient.fromJSON(config, authClient.toJSON());
 ```

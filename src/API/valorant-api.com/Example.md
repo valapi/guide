@@ -3,13 +3,13 @@
 ---
 
 ```typescript
-import { Client } from "@valapi/valorant-api.com";
+import { ValorantApiCom } from "@valapi/valorant-api.com";
 ```
 
 ## [Client](./Client.md#config)
 
 ```typescript
-const ApiClient = new Client({
+const valorantApiCom = new ValorantApiCom({
     language: "en-US"
 });
 ```
@@ -17,7 +17,7 @@ const ApiClient = new Client({
 ## [API](./API.md#usage)
 
 ```typescript
-const data = await ApiClient.Events.get();
+const data = await valorantApiCom.Events.get();
 
 console.log(data.data);
 ```

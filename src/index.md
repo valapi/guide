@@ -20,6 +20,6 @@ Generate by [mdBook](https://github.com/rust-lang/mdBook)
 
 -   [valorant.ts](./PACKAGE/build-in/Intro.md#contents)
 -   [@valapi/auth](./PACKAGE/auth/Intro.md#contents)
--   [@valapi/web-client](./API/web-client/Intro.md#contents)
 -   [@valapi/riot-api](./API/riot-api/Intro.md#contents)
 -   [@valapi/valorant-api.com](./API/valorant-api.com/Intro.md#contents)
+-   [@valapi/web-client](./API/web-client/Intro.md#contents)

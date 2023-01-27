@@ -65,5 +65,5 @@ All API base on [dash.valorant-api.com](https://dash.valorant-api.com)
 ## Usage
 
 ```typescript
-    const data = await ApiClient.{Service}.{Function(...Args)};
+    const data = await valorantApiCom.{Service}.{Function(...Args)};
 ```

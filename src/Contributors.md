@@ -16,6 +16,7 @@ list of the contributors who helped me improve this module
 -   [Drysque](https://github.com/Drysque)
 -   [Lunac](https://github.com/Lunac-dev)
 -   [JUd9in](https://github.com/JUd9in)
+-   [Cansiny0320](https://github.com/Cansiny0320)
 
 ## Special Thanks
 
@@ -25,7 +26,3 @@ Valorant API
 -   [Officer](https://github.com/NotOfficer)
 -   [M1ke](https://github.com/HeyM1ke)
 -   [Techdoodle](https://github.com/techchrism)
-
-Types
-
--    [Peter Repukat](https://behind.flatspot.pictures/advanced-typescript-cheatsheet-pt-1/#validpaths-validpathtuples)

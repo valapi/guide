@@ -18,7 +18,7 @@
 -   [Built-In](./PACKAGE/build-in/Intro.md)
 
     -   [Region](./PACKAGE/build-in/Region.md)
-    -   [Crosshair](./PACKAGE/build-in/Crosshair.md)
+    -   [Crosshair]()
 
 -   [Authentication](./PACKAGE/auth/Intro.md)
     -   [Client](./PACKAGE/auth/Client.md)
@@ -28,13 +28,6 @@
 # API
 
 ---
-
-<!-- Web Client -->
-
--   [Web Client](./API/web-client/Intro.md)
-    -   [Client](./PACKAGE/auth/Client.md)
-    -   [Endpoints](./API/web-client/API.md)
-    -   [Example](./API/web-client/Example.md)
 
 <!-- Riot API -->
 
@@ -50,3 +43,10 @@
     -   [Endpoints](./API/valorant-api.com/API.md)
         -   [Language](./API/valorant-api.com/Language.md)
     -   [Example](./API/valorant-api.com/Example.md)
+
+<!-- Web Client -->
+
+-   [Web Client](./API/web-client/Intro.md)
+    -   [Client](./PACKAGE/auth/Client.md)
+    -   [Endpoints](./API/web-client/API.md)
+    -   [Example](./API/web-client/Example.md)

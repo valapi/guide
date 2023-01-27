@@ -4,7 +4,7 @@
 
 ### Notes
 
-This page was created to understand the rules for using the Valorant API, this is just a summary of all the rules, and may contain inaccuracies, please read them all manually.
+> This page was created to understand the rules for using the Valorant API, this is just a summary of all the rules, and may contain inaccuracies, please read them all manually.
 
 ## [General Policies](https://developer.riotgames.com/policies/general)
 
@@ -17,7 +17,7 @@ This page was created to understand the rules for using the Valorant API, this i
     -   No **MMR** or **Elo** Culculators
 -   Don't create for economic or commercial reasons (All are Riot Games's Intellectual Property)
     -   Unless it is in the conditions or permission is granted
--   Don't use any of Riot Games' official logos
+-   Don't use any of Riot Games' official logos 
 -   Don't create anything that looks like Riot Games, both in-game and out
 
 ### Legal Boilerplate
@@ -60,15 +60,30 @@ You must post the following text to your product in a location that is readily v
 
 ## Data Source
 
--   [Valorant](https://playvalorant.com)
+-   [VALORANT](https://playvalorant.com)
 -   [Riot Developer Portal](https://developer.riotgames.com/apis)
--   [Valorant Community Developer Discord](https://discord.gg/sCgvpXJfEE)
--   [HeyM1ke/ValorantClientAPI](https://github.com/HeyM1ke/ValorantClientAPI)
--   [techchrism/valorant-api-docs](https://github.com/techchrism/valorant-api-docs)
--   [ev3nvy/valorant-reauth-script](https://github.com/ev3nvy/valorant-reauth-script)
--   [Kavan72/endpoints.txt](https://gist.github.com/Kavan72/b6e0bfdf21d610148f64df878b8a2cc5)
--   [soup061222/VALORANT-EXAMPLE](https://github.com/soup061222/VALORANT-EXAMPLE)
+-   [Valorant App Developers Discord](https://discord.gg/a9yzrw3KAm)
+
+[GitHub](https://github.com/)
+
+-   [HeyM1ke / ValorantClientAPI](https://github.com/HeyM1ke/ValorantClientAPI)
+-   [techchrism / valorant-api-docs](https://github.com/techchrism/valorant-api-docs)
+-   [ev3nvy / valorant-reauth-script](https://github.com/ev3nvy/valorant-reauth-script)
+-   [Kavan72 / endpoints.txt](https://gist.github.com/Kavan72/b6e0bfdf21d610148f64df878b8a2cc5)
+-   [soup061222 / VALORANT-EXAMPLE](https://github.com/soup061222/VALORANT-EXAMPLE)
 
 ## Third-Party
 
 -   [Valorant-API](https://valorant-api.com)
+
+## Dependency
+
+- [Node.js](https://nodejs.org)
+- [TypeScript](https://www.typescriptlang.org)
+
+Package *([NPM](https://npmjs.com))*
+
+- [axios](https://www.npmjs.com/package/axios)
+- [HTTP Cookie Agent](https://www.npmjs.com/package/http-cookie-agent)
+- [tough-cookie](https://www.npmjs.com/package/tough-cookie)
+- [tslib](https://www.npmjs.com/package/tslib)

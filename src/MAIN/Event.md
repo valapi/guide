@@ -2,7 +2,6 @@
 
 ---
 
--   **ready** => `void`
 -   **request** => [`Request`](#request)
 -   **error** => [`Error`](#error)
 
@@ -16,7 +15,7 @@ ApiClient.on("EVENT_NAME", lListenerFunction());
 interface Error {
     method: string;
     url: string;
-    body?: Object;
+    body: any;
     config: AxiosRequestConfig;
 }
 ```
@@ -27,6 +26,7 @@ interface Error {
 interface Error {
     name: string;
     message: string;
+    stack?: string;
     data: any;
 }
 ```
@@ -34,14 +34,6 @@ interface Error {
 # Example
 
 ---
-
-_Ready_
-
-```typescript
-ApiClient.on("ready", () => {
-    console.log("Client is ready!");
-});
-```
 
 _Error_
 

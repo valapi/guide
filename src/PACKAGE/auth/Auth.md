@@ -7,7 +7,7 @@
 First We Need To **Login** To `Valorant Account`
 
 ```typescript
-await AuthClient.login("Username", "Password");
+await authClient.login("Username", "Password");
 ```
 
 _But We Have 2 Type Of Account_
@@ -19,7 +19,7 @@ When The Account Have **Multifactor** You Can't Use Normal Method
 After Login The **Verify Code** Will Send To Mail
 
 ```typescript
-await AuthClient.verify(SixDigitNumber);
+await authClient.verify(SixDigitNumber);
 ```
 
 # Advanced Authentication
@@ -33,7 +33,7 @@ reconnection for getting a new token
 **we recommend running this after creating _AuthClient_**
 
 ```typescript
-await AuthClient.refresh();
+await authClient.refresh();
 ```
 
 ## Cookie
@@ -41,5 +41,7 @@ await AuthClient.refresh();
 you can save only SSID cookie for ~30 days.
 
 ```typescript
-const AuthClient = await ValAuth.fromCookie(cookie.ssid);
+const cookie = (authClient.toJSON()).cookie.ssid;
+
+const authClient = await AuthClient.fromCookie(cookie);
 ```

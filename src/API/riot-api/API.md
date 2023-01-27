@@ -18,5 +18,5 @@
 ## Usage
 
 ```typescript
-    const data = await ApiClient.{Service}.{Function(...Args)};
+    const data = await riotApi.{Service}.{Function(...Args)};
 ```

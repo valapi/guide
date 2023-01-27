@@ -3,7 +3,7 @@
 ---
 
 ```typescript
-import { Client } from "@valapi/riot-api";
+import { RiotApi } from "@valapi/riot-api";
 ```
 
 ## Config
@@ -37,5 +37,5 @@ interface Config {
 ## Client
 
 ```typescript
-const ApiClient = new Client( config? );
+const riotApi = new RiotApi( config? );
 ```

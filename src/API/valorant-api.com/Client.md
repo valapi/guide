@@ -3,7 +3,7 @@
 ---
 
 ```typescript
-import { Client } from "@valapi/valorant-api.com";
+import { ValorantApiCom } from "@valapi/valorant-api.com";
 ```
 
 ## Config
@@ -24,11 +24,21 @@ interface Config {
      * Throw the Error?
      */
     throwOnError?: boolean;
+
+    /**
+     * Response Option
+     */
+    responseOptions?: {
+        /**
+         * Delete properties that have a `null` value
+         */
+        ignore_null?: boolean;
+    };
 }
 ```
 
 ## Client
 
 ```typescript
-const ApiClient = new Client( config? );
+const valorantApiCom = new ValorantApiCom( config? );
 ```
