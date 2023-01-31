@@ -29,3 +29,19 @@ if (client.isMultifactorAccount === true) {
 ```typescript
 const subject = authClient.getSubject();
 ```
+
+## [Cookie](./Auth.md#cookie)
+
+```typescript
+const authClient = await AuthClient.fromCookie(cookie);
+```
+
+## [Save](./Client.md#save)
+
+```typescript
+const authClient = AuthClient.fromJSON(oldAuthClient.toJSON());
+
+if ((authClient.createAt + (60 * 60 * 1000)) <= Date.now()) {
+    await authClient.refresh();
+}
+```

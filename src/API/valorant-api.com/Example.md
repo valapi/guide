@@ -17,7 +17,14 @@ const valorantApiCom = new ValorantApiCom({
 ## [API](./API.md#usage)
 
 ```typescript
-const data = await valorantApiCom.Events.get();
+const versions = await valorantApiCom.Versions.get();
 
-console.log(data.data);
+console.log(versions.data);
+```
+
+```typescript
+const mapUuid = "7eaecc1b-4337-bbf6-6ab9-04b8f06b3319" /* Ascent */
+const map = await valorantApiCom.Maps.getByUuid(mapUuid);
+
+console.log(events.data);
 ```

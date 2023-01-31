@@ -18,7 +18,13 @@ const riotApi = new RiotApi({
 ## [API](./API.md#usage)
 
 ```typescript
-const data = await riotApi.AccountV1.byRiotId("PRX f0rsakeN", "Huh");
+const status = await riotApi.StatusV1.platformData();
 
-console.log(data.data);
+console.log(status.data);
+```
+
+```typescript
+const accountData = await riotApi.AccountV1.byRiotId("PRX f0rsakeN", "Huh");
+
+console.log(accountData.data);
 ```

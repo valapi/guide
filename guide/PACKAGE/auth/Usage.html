@@ -163,6 +163,16 @@
 <h2 id="subject-playeruuid"><a class="header" href="#subject-playeruuid">Subject (PlayerUUID)</a></h2>
 <pre><code class="language-typescript">const subject = authClient.getSubject();
 </code></pre>
+<h2 id="cookie"><a class="header" href="#cookie"><a href="./Auth.html#cookie">Cookie</a></a></h2>
+<pre><code class="language-typescript">const authClient = await AuthClient.fromCookie(cookie);
+</code></pre>
+<h2 id="save"><a class="header" href="#save"><a href="./Client.html#save">Save</a></a></h2>
+<pre><code class="language-typescript">const authClient = AuthClient.fromJSON(oldAuthClient.toJSON());
+
+if ((authClient.createAt + (60 * 60 * 1000)) &lt;= Date.now()) {
+    await authClient.refresh();
+}
+</code></pre>
 
                     </main>
 

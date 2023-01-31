@@ -513,7 +513,7 @@ Region.Default.Asia_Pacific; // return &quot;ap&quot;
 <hr />
 <h2 id="reconnection"><a class="header" href="#reconnection">Reconnection</a></h2>
 <p>reconnection for getting a new token</p>
-<p><strong>we recommend running this after creating <em>AuthClient</em></strong></p>
+<p><strong>we recommend running this after importing <em>AuthClient</em></strong></p>
 <pre><code class="language-typescript">await authClient.refresh();
 </code></pre>
 <h2 id="cookie"><a class="header" href="#cookie">Cookie</a></h2>
@@ -538,6 +538,16 @@ const authClient = await AuthClient.fromCookie(cookie);
 </code></pre>
 <h2 id="subject-playeruuid"><a class="header" href="#subject-playeruuid">Subject (PlayerUUID)</a></h2>
 <pre><code class="language-typescript">const subject = authClient.getSubject();
+</code></pre>
+<h2 id="cookie-1"><a class="header" href="#cookie-1"><a href="PACKAGE/auth/./Auth.html#cookie">Cookie</a></a></h2>
+<pre><code class="language-typescript">const authClient = await AuthClient.fromCookie(cookie);
+</code></pre>
+<h2 id="save-1"><a class="header" href="#save-1"><a href="PACKAGE/auth/./Client.html#save">Save</a></a></h2>
+<pre><code class="language-typescript">const authClient = AuthClient.fromJSON(oldAuthClient.toJSON());
+
+if ((authClient.createAt + (60 * 60 * 1000)) &lt;= Date.now()) {
+    await authClient.refresh();
+}
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="introduced-3"><a class="header" href="#introduced-3">Introduced</a></h1>
 <p>Official Api From Riot Games</p>
@@ -610,9 +620,13 @@ const authClient = await AuthClient.fromCookie(cookie);
 });
 </code></pre>
 <h2 id="api-2"><a class="header" href="#api-2"><a href="API/riot-api/./API.html#usage">API</a></a></h2>
-<pre><code class="language-typescript">const data = await riotApi.AccountV1.byRiotId(&quot;PRX f0rsakeN&quot;, &quot;Huh&quot;);
+<pre><code class="language-typescript">const status = await riotApi.StatusV1.platformData();
 
-console.log(data.data);
+console.log(status.data);
+</code></pre>
+<pre><code class="language-typescript">const accountData = await riotApi.AccountV1.byRiotId(&quot;PRX f0rsakeN&quot;, &quot;Huh&quot;);
+
+console.log(accountData.data);
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="introduced-5"><a class="header" href="#introduced-5">Introduced</a></h1>
 <p><strong>Third-Party API</strong> by Officer</p>
@@ -767,9 +781,14 @@ const TypesError: string = MyRequest.data.data[0].displayName;
 });
 </code></pre>
 <h2 id="api-4"><a class="header" href="#api-4"><a href="API/valorant-api.com/./API.html#usage">API</a></a></h2>
-<pre><code class="language-typescript">const data = await valorantApiCom.Events.get();
+<pre><code class="language-typescript">const versions = await valorantApiCom.Versions.get();
 
-console.log(data.data);
+console.log(versions.data);
+</code></pre>
+<pre><code class="language-typescript">const mapUuid = &quot;7eaecc1b-4337-bbf6-6ab9-04b8f06b3319&quot; /* Ascent */
+const map = await valorantApiCom.Maps.getByUuid(mapUuid);
+
+console.log(events.data);
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="introduced-7"><a class="header" href="#introduced-7">Introduced</a></h1>
 <p>API from Web Client</p>
@@ -826,7 +845,7 @@ console.log(data.data);
 <h2 id="client-6"><a class="header" href="#client-6">Client</a></h2>
 <pre><code class="language-typescript">const authClient = new AuthClient( config? );
 </code></pre>
-<h1 id="save-1"><a class="header" href="#save-1">Save</a></h1>
+<h1 id="save-2"><a class="header" href="#save-2">Save</a></h1>
 <hr />
 <h2 id="client----save-1"><a class="header" href="#client----save-1">Client --&gt; Save</a></h2>
 <pre><code class="language-typescript">authClient.toJSON();
@@ -930,9 +949,17 @@ console.log(data.data);
 <pre><code class="language-typescript">import { WebClient } from &quot;@valapi/web-client&quot;;
 </code></pre>
 <h2 id="api-6"><a class="header" href="#api-6"><a href="API/web-client/./API.html#usage">API</a></a></h2>
-<pre><code class="language-typescript">const data = await webClient.PreGame.getMatch(&quot;MATCH-ID-1234567890&quot;);
+<pre><code class="language-typescript">const userInfo = await webClient.getUserInfo();
 
-console.log(data.data);
+console.log(userInfo.data);
+</code></pre>
+<pre><code class="language-typescript">const matchDetails = await webClient.Match.fetchMatchDetails(&quot;match-id-1234567890&quot;);
+
+console.log(matchDetails.data);
+</code></pre>
+<pre><code class="language-typescript">const wallet = await webClient.Store.getWallet(subject);
+
+console.log(wallet.data);
 </code></pre>
 
                     </main>

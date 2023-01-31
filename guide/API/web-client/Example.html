@@ -152,9 +152,17 @@
 <pre><code class="language-typescript">import { WebClient } from &quot;@valapi/web-client&quot;;
 </code></pre>
 <h2 id="api"><a class="header" href="#api"><a href="./API.html#usage">API</a></a></h2>
-<pre><code class="language-typescript">const data = await webClient.PreGame.getMatch(&quot;MATCH-ID-1234567890&quot;);
+<pre><code class="language-typescript">const userInfo = await webClient.getUserInfo();
 
-console.log(data.data);
+console.log(userInfo.data);
+</code></pre>
+<pre><code class="language-typescript">const matchDetails = await webClient.Match.fetchMatchDetails(&quot;match-id-1234567890&quot;);
+
+console.log(matchDetails.data);
+</code></pre>
+<pre><code class="language-typescript">const wallet = await webClient.Store.getWallet(subject);
+
+console.log(wallet.data);
 </code></pre>
 
                     </main>

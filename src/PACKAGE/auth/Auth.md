@@ -30,7 +30,7 @@ await authClient.verify(SixDigitNumber);
 
 reconnection for getting a new token
 
-**we recommend running this after creating _AuthClient_**
+**we recommend running this after importing _AuthClient_**
 
 ```typescript
 await authClient.refresh();

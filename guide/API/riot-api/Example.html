@@ -157,9 +157,13 @@
 });
 </code></pre>
 <h2 id="api"><a class="header" href="#api"><a href="./API.html#usage">API</a></a></h2>
-<pre><code class="language-typescript">const data = await riotApi.AccountV1.byRiotId(&quot;PRX f0rsakeN&quot;, &quot;Huh&quot;);
+<pre><code class="language-typescript">const status = await riotApi.StatusV1.platformData();
 
-console.log(data.data);
+console.log(status.data);
+</code></pre>
+<pre><code class="language-typescript">const accountData = await riotApi.AccountV1.byRiotId(&quot;PRX f0rsakeN&quot;, &quot;Huh&quot;);
+
+console.log(accountData.data);
 </code></pre>
 
                     </main>

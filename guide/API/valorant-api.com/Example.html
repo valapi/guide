@@ -156,9 +156,14 @@
 });
 </code></pre>
 <h2 id="api"><a class="header" href="#api"><a href="./API.html#usage">API</a></a></h2>
-<pre><code class="language-typescript">const data = await valorantApiCom.Events.get();
+<pre><code class="language-typescript">const versions = await valorantApiCom.Versions.get();
 
-console.log(data.data);
+console.log(versions.data);
+</code></pre>
+<pre><code class="language-typescript">const mapUuid = &quot;7eaecc1b-4337-bbf6-6ab9-04b8f06b3319&quot; /* Ascent */
+const map = await valorantApiCom.Maps.getByUuid(mapUuid);
+
+console.log(events.data);
 </code></pre>
 
                     </main>
