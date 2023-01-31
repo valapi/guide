@@ -17,6 +17,7 @@ list of the contributors who helped me improve this module
 -   [Lunac](https://github.com/Lunac-dev)
 -   [JUd9in](https://github.com/JUd9in)
 -   [Cansiny0320](https://github.com/Cansiny0320)
+-   [Soneliem](https://github.com/Soneliem)
 
 ## Special Thanks
 

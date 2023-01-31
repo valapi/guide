@@ -1,0 +1,2 @@
+markdown book: mdbook serve --open
+prettier: prettier --config ./.prettierrc --ignore-path ./.prettierignore --write .

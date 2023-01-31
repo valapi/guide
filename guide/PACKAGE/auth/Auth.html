@@ -167,7 +167,7 @@
 </code></pre>
 <h2 id="cookie"><a class="header" href="#cookie">Cookie</a></h2>
 <p>you can save only SSID cookie for ~30 days.</p>
-<pre><code class="language-typescript">const cookie = (authClient.toJSON()).cookie.ssid;
+<pre><code class="language-typescript">const cookie = authClient.toJSON().cookie.ssid;
 
 const authClient = await AuthClient.fromCookie(cookie);
 </code></pre>

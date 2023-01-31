@@ -17,7 +17,7 @@
     -   No **MMR** or **Elo** Culculators
 -   Don't create for economic or commercial reasons (All are Riot Games's Intellectual Property)
     -   Unless it is in the conditions or permission is granted
--   Don't use any of Riot Games' official logos 
+-   Don't use any of Riot Games' official logos
 -   Don't create anything that looks like Riot Games, both in-game and out
 
 ### Legal Boilerplate
@@ -78,12 +78,12 @@ You must post the following text to your product in a location that is readily v
 
 ## Dependency
 
-- [Node.js](https://nodejs.org)
-- [TypeScript](https://www.typescriptlang.org)
+-   [Node.js](https://nodejs.org)
+-   [TypeScript](https://www.typescriptlang.org)
 
-Package *([NPM](https://npmjs.com))*
+Package _([NPM](https://npmjs.com))_
 
-- [axios](https://www.npmjs.com/package/axios)
-- [HTTP Cookie Agent](https://www.npmjs.com/package/http-cookie-agent)
-- [tough-cookie](https://www.npmjs.com/package/tough-cookie)
-- [tslib](https://www.npmjs.com/package/tslib)
+-   [axios](https://www.npmjs.com/package/axios)
+-   [HTTP Cookie Agent](https://www.npmjs.com/package/http-cookie-agent)
+-   [tough-cookie](https://www.npmjs.com/package/tough-cookie)
+-   [tslib](https://www.npmjs.com/package/tslib)

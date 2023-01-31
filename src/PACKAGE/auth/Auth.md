@@ -41,7 +41,7 @@ await authClient.refresh();
 you can save only SSID cookie for ~30 days.
 
 ```typescript
-const cookie = (authClient.toJSON()).cookie.ssid;
+const cookie = authClient.toJSON().cookie.ssid;
 
 const authClient = await AuthClient.fromCookie(cookie);
 ```

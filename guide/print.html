@@ -183,6 +183,7 @@
 <li><a href="https://github.com/Lunac-dev">Lunac</a></li>
 <li><a href="https://github.com/JUd9in">JUd9in</a></li>
 <li><a href="https://github.com/Cansiny0320">Cansiny0320</a></li>
+<li><a href="https://github.com/Soneliem">Soneliem</a></li>
 </ul>
 <h2 id="special-thanks"><a class="header" href="#special-thanks">Special Thanks</a></h2>
 <p>Valorant API</p>
@@ -259,7 +260,7 @@
 <li>Unless it is in the conditions or permission is granted</li>
 </ul>
 </li>
-<li>Don't use any of Riot Games' official logos </li>
+<li>Don't use any of Riot Games' official logos</li>
 <li>Don't create anything that looks like Riot Games, both in-game and out</li>
 </ul>
 <h3 id="legal-boilerplate"><a class="header" href="#legal-boilerplate">Legal Boilerplate</a></h3>
@@ -518,7 +519,7 @@ Region.Default.Asia_Pacific; // return &quot;ap&quot;
 </code></pre>
 <h2 id="cookie"><a class="header" href="#cookie">Cookie</a></h2>
 <p>you can save only SSID cookie for ~30 days.</p>
-<pre><code class="language-typescript">const cookie = (authClient.toJSON()).cookie.ssid;
+<pre><code class="language-typescript">const cookie = authClient.toJSON().cookie.ssid;
 
 const authClient = await AuthClient.fromCookie(cookie);
 </code></pre>
@@ -545,7 +546,7 @@ const authClient = await AuthClient.fromCookie(cookie);
 <h2 id="save-1"><a class="header" href="#save-1"><a href="PACKAGE/auth/./Client.html#save">Save</a></a></h2>
 <pre><code class="language-typescript">const authClient = AuthClient.fromJSON(oldAuthClient.toJSON());
 
-if ((authClient.createAt + (60 * 60 * 1000)) &lt;= Date.now()) {
+if (authClient.createAt + 60 * 60 * 1000 &lt;= Date.now()) {
     await authClient.refresh();
 }
 </code></pre>
@@ -785,7 +786,7 @@ const TypesError: string = MyRequest.data.data[0].displayName;
 
 console.log(versions.data);
 </code></pre>
-<pre><code class="language-typescript">const mapUuid = &quot;7eaecc1b-4337-bbf6-6ab9-04b8f06b3319&quot; /* Ascent */
+<pre><code class="language-typescript">const mapUuid = &quot;7eaecc1b-4337-bbf6-6ab9-04b8f06b3319&quot;; /* Ascent */
 const map = await valorantApiCom.Maps.getByUuid(mapUuid);
 
 console.log(events.data);
