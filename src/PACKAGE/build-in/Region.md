@@ -21,13 +21,13 @@ import { Region } from "@valapi/lib";
 | ap     | Asia_Pacific            |
 
 ```typescript
-Region.Default.North_America; // return "na"
-Region.Default.Latin_America; // return "latam"
-Region.Default.Brazil; // return "br"
-Region.Default.Public_Beta_Environment; // return "pbe"
-Region.Default.Europe; // return "eu"
-Region.Default.Korea; // return "kr"
-Region.Default.Asia_Pacific; // return "ap"
+Region.Default.North_America; // => "na"
+Region.Default.Latin_America; // => "latam"
+Region.Default.Brazil; // => "br"
+Region.Default.Public_Beta_Environment; // => "pbe"
+Region.Default.Europe; // => "eu"
+Region.Default.Korea; // => "kr"
+Region.Default.Asia_Pacific; // => "ap"
 ```
 
 _Example_

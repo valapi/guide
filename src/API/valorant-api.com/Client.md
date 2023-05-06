@@ -13,17 +13,12 @@ interface Config {
     /**
      * Language
      */
-    language?: string;
+    language?: ValorantApiCom.Language;
 
     /**
      * Request Config
      */
-    axiosConfig?: AxiosRequestConfig;
-
-    /**
-     * Throw the Error?
-     */
-    throwOnError?: boolean;
+    axiosConfig?: CreateAxiosDefaults;
 
     /**
      * Response Option

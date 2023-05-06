@@ -4,7 +4,7 @@
 
 All API base on [dash.valorant-api.com](https://dash.valorant-api.com)
 
-| Service              | Function                   | ...Args             |
+| Service              | Function                   | Arguments           |
 | -------------------- | -------------------------- | ------------------- |
 | **Agent**            | get                        | isPlayableCharacter |
 |                      | getByUuid                  | uuid                |
@@ -38,6 +38,10 @@ All API base on [dash.valorant-api.com](https://dash.valorant-api.com)
 |                      | getByUuid                  | uuid                |
 | **Maps**             | get                        |                     |
 |                      | getByUuid                  | uuid                |
+| **Missions**         | get                        |                     |
+|                      | getByUuid                  | uuid                |
+| **Objectives**       | get                        |                     |
+|                      | getByUuid                  | uuid                |
 | **PlayerCards**      | get                        |                     |
 |                      | getByUuid                  | uuid                |
 | **PlayerTitles**     | get                        |                     |
@@ -65,5 +69,5 @@ All API base on [dash.valorant-api.com](https://dash.valorant-api.com)
 ## Usage
 
 ```typescript
-    const data = await valorantApiCom.{Service}.{Function(...Args)};
+const data = await valorantApiCom.Service.Function(...Arguments);
 ```

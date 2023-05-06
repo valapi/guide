@@ -20,17 +20,12 @@ interface Config {
     /**
      * Region
      */
-    region: string;
+    region: Region.Identify;
 
     /**
      * Request Config
      */
-    axiosConfig?: AxiosRequestConfig;
-
-    /**
-     * Throw the Error?
-     */
-    throwOnError?: boolean;
+    axiosConfig?: CreateAxiosDefaults;
 }
 ```
 

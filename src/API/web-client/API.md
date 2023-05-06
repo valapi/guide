@@ -2,7 +2,7 @@
 
 ---
 
-| Service                 | Function                   | ...Args                                       |
+| Service                 | Function                   | Arguments                                     |
 | ----------------------- | -------------------------- | --------------------------------------------- |
 | **AccountXP**           | getPlayer                  | subject                                       |
 | **Config**              | fetchConfig                |                                               |
@@ -65,7 +65,7 @@
 |                         | fetchCustomGameConfigs     |                                               |
 |                         | transferOwner              | subject, partyId                              |
 | **Personalization**     | getPlayerLoadout           | subject                                       |
-|                         | playerLoadoutUpdate        | subject                                       |
+|                         | playerLoadoutUpdate        | subject, loadout                              |
 | **PreGame**             | getPlayer                  | subject                                       |
 |                         | getMatch                   | matchId                                       |
 |                         | getMatchLoadouts           | matchId                                       |
@@ -90,5 +90,5 @@
 ## Usage
 
 ```typescript
-    const data = await webClient.{Service}.{Function(...Args)};
+const data = await webClient.Service.Function(...Arguments);
 ```

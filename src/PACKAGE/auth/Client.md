@@ -18,32 +18,21 @@ interface Config {
          * Client Version
          */
         version?: string;
-
         /**
          * Client Platform
          */
-        platform?: {
-            platformType: string;
-            platformOS: string;
-            platformOSVersion: string;
-            platformChipset: string;
-        };
+        platform?: AuthCore.ClientPlatfrom;
     };
 
     /**
      * Request Config
      */
-    axiosConfig?: AxiosRequestConfig;
-
-    /**
-     * Throw the Error?
-     */
-    throwOnError?: boolean;
+    axiosConfig?: CreateAxiosDefaults;
 
     /**
      * Region
      */
-    region?: string;
+    region?: Region.Identify;
 }
 ```
 
@@ -66,5 +55,5 @@ authClient.toJSON();
 ## Save --> Client
 
 ```typescript
-AuthClient.fromJSON(config, authClient.toJSON());
+AuthClient.fromJSON( authClient.toJSON(), config? );
 ```

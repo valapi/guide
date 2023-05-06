@@ -7,9 +7,9 @@
 
 -   [Introduced](./MAIN/Intro.md)
     -   [Legal](./MAIN/Legal.md)
+        -   [Terms](./MAIN/Terms.md)
+        -   [Policy](./MAIN/Policy.md)
     -   [Resources](./MAIN/Resources.md)
-    -   [Event](./MAIN/Event.md)
-    -   [Default Import](./MAIN/Default.md)
 
 # Packages
 
@@ -18,7 +18,7 @@
 -   [Built-In](./PACKAGE/build-in/Intro.md)
 
     -   [Region](./PACKAGE/build-in/Region.md)
-    -   [Crosshair]()
+    -   [Crosshair](./PACKAGE/build-in/Crosshair.md)
 
 -   [Authentication](./PACKAGE/auth/Intro.md)
     -   [Client](./PACKAGE/auth/Client.md)
@@ -47,6 +47,6 @@
 <!-- Web Client -->
 
 -   [Web Client](./API/web-client/Intro.md)
-    -   [Client](./PACKAGE/auth/Client.md)
+    -   [Client](./API/web-client/Client.md)
     -   [Endpoints](./API/web-client/API.md)
     -   [Example](./API/web-client/Example.md)

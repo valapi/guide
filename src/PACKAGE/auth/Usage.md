@@ -39,9 +39,9 @@ const authClient = await AuthClient.fromCookie(cookie);
 ## [Save](./Client.md#save)
 
 ```typescript
-const authClient = AuthClient.fromJSON(oldAuthClient.toJSON());
+const authClient = AuthClient.fromJSON(_authClient.toJSON());
 
-if (authClient.createAt + 60 * 60 * 1000 <= Date.now()) {
+if (Date.now() >= client.getExpirationDate()) {
     await authClient.refresh();
 }
 ```

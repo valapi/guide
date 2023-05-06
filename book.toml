@@ -3,16 +3,16 @@ authors = ["KT_NG3"]
 language = "en"
 multilingual = false
 src = "src"
-title = "@valapi Documentation"
+title = "npmjs/@valapi"
 description = "Valorant API wrapper for nodejs"
 
 [build]
-build-dir = "guide"
+build-dir = "build"
 create-missing = false
 
 [output.html]
 default-theme = "ayu"
 preferred-dark-theme = "coal"
+copy-fonts = false
 git-repository-url = "https://github.com/valapi"
 edit-url-template = "https://github.com/valapi/valapi.github.io/edit/main/{path}"
-site-url = "/guide/"

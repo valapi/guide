@@ -2,7 +2,7 @@
 
 ---
 
-| Service       | Function                   | ...Args                   |
+| Service       | Function                   | Arguments                 |
 | ------------- | -------------------------- | ------------------------- |
 | **AccountV1** | byPuuid                    | puuid                     |
 |               | byRiotId                   | gameName, tagLine         |
@@ -18,5 +18,5 @@
 ## Usage
 
 ```typescript
-    const data = await riotApi.{Service}.{Function(...Args)};
+const data = await riotApi.Service.Function(...Arguments);
 ```

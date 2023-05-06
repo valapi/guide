@@ -4,19 +4,15 @@
 
 ## Login
 
-First We Need To **Login** To `Valorant Account`
+First, We need to log in to an account
 
 ```typescript
 await authClient.login("Username", "Password");
 ```
 
-_But We Have 2 Type Of Account_
-
 ## Multi-Factor
 
-When The Account Have **Multifactor** You Can't Use Normal Method
-
-After Login The **Verify Code** Will Send To Mail
+After login, the **Verification Code** will be sent to your mail if a multi-factor is enabled
 
 ```typescript
 await authClient.verify(SixDigitNumber);
@@ -28,9 +24,9 @@ await authClient.verify(SixDigitNumber);
 
 ## Reconnection
 
-reconnection for getting a new token
+Reconnection for getting a new token
 
-**we recommend running this after importing _AuthClient_**
+**we recommend running this after importing _AuthClient_ or every 1 hour**
 
 ```typescript
 await authClient.refresh();
@@ -38,10 +34,10 @@ await authClient.refresh();
 
 ## Cookie
 
-you can save only SSID cookie for ~30 days.
+You can save only cookies for ~30 days
 
 ```typescript
-const cookie = authClient.toJSON().cookie.ssid;
+const cookie = authClient.cookie;
 
 const authClient = await AuthClient.fromCookie(cookie);
 ```

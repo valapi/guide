@@ -1,18 +1,27 @@
+[npm_image]: https://nodei.co/npm/valorant.ts.png
+[npm_url]: https://nodei.co/npm/valorant.ts
+[license_image]: https://badgen.net/badge/license/MIT/blue
+[license_url]: https://github.com/valapi/.github/blob/main/LICENSE
+[github_image]: https://badgen.net/badge/icon/github?icon=github&label
+[github_url]: https://github.com/valapi/node-valapi
+[discord_image]: https://badgen.net/badge/icon/discord?icon=discord&label
+[discord_url]: https://discord.gg/pbyWbUYjyt
+
 # @valapi Documentation
 
-[![NPM](https://nodei.co/npm/valorant.ts.png)](https://nodei.co/npm/valorant.ts)
+[![NPM][npm_image]][npm_url]
 
 ---
 
 Generate by [mdBook](https://github.com/rust-lang/mdBook)
 
-[![LICENSE](https://badgen.net/badge/license/MIT/blue)](https://github.com/valapi/.github/blob/main/LICENSE)
-[![Github](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com/KTNG-3/valorant-api)
-[![Discord](https://badgen.net/badge/icon/discord?icon=discord&label)](https://discord.gg/pbyWbUYjyt)
+[![LICENSE][license_image]][license_url]
+[![Github][github_image]][github_url]
+[![Discord][discord_image]][discord_url]
 
-> -   **@valapi** isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.
-> -   **@valapi** was created under [Riot Games' "Legal Jibber Jabber"](https://www.riotgames.com/en/legal) policy using assets owned by Riot Games. Riot Games does not endorse or sponsor this project.
-> -   [MIT License](https://github.com/valapi/.github/blob/main/LICENSE)
+> -   **node-valapi** isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.
+> -   **node-valapi** was created under [Riot Games' "Legal Jibber Jabber"](https://www.riotgames.com/en/legal) policy using assets owned by Riot Games. Riot Games does not endorse or sponsor this project.
+> -   [MIT License][license_url]
 
 # Getting Started
 

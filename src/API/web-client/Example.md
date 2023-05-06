@@ -2,8 +2,6 @@
 
 ---
 
-**this client is based on an [Authentication Client](../../PACKAGE/auth/Usage.md)**
-
 ```typescript
 import { WebClient } from "@valapi/web-client";
 ```
@@ -17,7 +15,8 @@ console.log(userInfo.data);
 ```
 
 ```typescript
-const matchDetails = await webClient.Match.fetchMatchDetails("match-id-1234567890");
+const mapId = "match-id-1234567890";
+const matchDetails = await webClient.Match.fetchMatchDetails(mapId);
 
 console.log(matchDetails.data);
 ```

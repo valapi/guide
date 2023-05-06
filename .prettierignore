@@ -1,12 +1,13 @@
+.git/
 .github/
-node_modules/
-dist/
-test/
-.eslintrc.json
-package-lock.json
-package.json
-tsconfig.json
+
+# temp, cache
+.eslintcache
+*.tgz
+
+# project
+LICENSE
+tsconfig.tsbuildinfo
 
 theme/
-docs/
-guide/
+build/
