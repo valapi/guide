@@ -19,7 +19,7 @@ await authClient.login("BestUsername", "SuperSecretPassword");
 ```
 
 ```typescript
-if (client.isMultifactorAccount === true) {
+if (authClient.isMultifactorAccount === true) {
     await authClient.verify(428793 /* <--- Verification Code */);
 }
 ```
@@ -41,7 +41,7 @@ const authClient = await AuthClient.fromCookie(cookie);
 ```typescript
 const authClient = AuthClient.fromJSON(_authClient.toJSON());
 
-if (Date.now() >= client.getExpirationDate()) {
+if (Date.now() >= authClient.getExpirationDate()) {
     await authClient.refresh();
 }
 ```

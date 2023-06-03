@@ -10,8 +10,6 @@
 
 ---
 
--   [Terms and Conditions](./Terms.md)
--   [Privacy Policy](./Policy.md)
 -   [MIT License](https://github.com/valapi/.github/blob/main/LICENSE)
 
 ## Data Source

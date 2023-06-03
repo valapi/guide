@@ -7,8 +7,6 @@
 
 -   [Introduced](./MAIN/Intro.md)
     -   [Legal](./MAIN/Legal.md)
-        -   [Terms](./MAIN/Terms.md)
-        -   [Policy](./MAIN/Policy.md)
     -   [Resources](./MAIN/Resources.md)
 
 # Packages
