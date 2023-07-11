@@ -6,7 +6,7 @@
 import { ValorantApiCom } from "@valapi/valorant-api.com";
 ```
 
-## [Client](./Client.md#config)
+## [Client](./Client.md#client)
 
 ```typescript
 const valorantApiCom = new ValorantApiCom({
@@ -14,7 +14,7 @@ const valorantApiCom = new ValorantApiCom({
 });
 ```
 
-## [API](./API.md#usage)
+## [API](./API.md)
 
 ```typescript
 const versions = await valorantApiCom.Versions.get();

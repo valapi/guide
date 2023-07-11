@@ -6,7 +6,7 @@
 import { WebClient } from "@valapi/web-client";
 ```
 
-## [API](./API.md#usage)
+## [API](./API.md)
 
 ```typescript
 const userInfo = await webClient.getUserInfo();

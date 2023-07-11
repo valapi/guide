@@ -12,7 +12,7 @@ list of the contributors who helped me improve this module
 ## Report Bugs
 
 -   [SpatzlHD](https://github.com/SpatzlHD)
--   teyd
+-   @teyd
 -   [Drysque](https://github.com/Drysque)
 -   [Lunac](https://github.com/Lunac-dev)
 -   [JUd9in](https://github.com/JUd9in)

@@ -1,8 +1,8 @@
 # API
 
----
+> All API base on [dash.valorant-api.com](https://dash.valorant-api.com)
 
-All API base on [dash.valorant-api.com](https://dash.valorant-api.com)
+---
 
 | Service              | Function                   | Arguments           |
 | -------------------- | -------------------------- | ------------------- |

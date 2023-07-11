@@ -1,4 +1,4 @@
-# Usage
+# Example
 
 ---
 
@@ -12,15 +12,17 @@ import { AuthClient } from "@valapi/auth";
 const authClient = new AuthClient();
 ```
 
-## [Auth](./Auth.md#basic-authentication)
+## [Authentication](./Function.md#basic-authentication)
 
 ```typescript
 await authClient.login("BestUsername", "SuperSecretPassword");
 ```
 
 ```typescript
-if (authClient.isMultifactorAccount === true) {
-    await authClient.verify(428793 /* <--- Verification Code */);
+if (authClient.authenticationInfo.isMultifactor === true) {
+    const verificationCode = 428793;
+
+    await authClient.verify(verificationCode);
 }
 ```
 
@@ -30,7 +32,7 @@ if (authClient.isMultifactorAccount === true) {
 const subject = authClient.getSubject();
 ```
 
-## [Cookie](./Auth.md#cookie)
+## [Cookie](./Function.md#cookie)
 
 ```typescript
 const authClient = await AuthClient.fromCookie(cookie);

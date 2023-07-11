@@ -6,22 +6,21 @@
 ---
 
 -   [Introduced](./MAIN/Intro.md)
-    -   [Legal](./MAIN/Legal.md)
-    -   [Resources](./MAIN/Resources.md)
+-   [Legal](./MAIN/Legal.md)
 
 # Packages
 
 ---
 
 -   [Built-In](./PACKAGE/build-in/Intro.md)
-
-    -   [Region](./PACKAGE/build-in/Region.md)
+    -   [Resources](./PACKAGE/build-in/Resource.md)
+        -   [Region](./PACKAGE/build-in/Region.md)
     -   [Crosshair](./PACKAGE/build-in/Crosshair.md)
 
 -   [Authentication](./PACKAGE/auth/Intro.md)
     -   [Client](./PACKAGE/auth/Client.md)
-    -   [Auth](./PACKAGE/auth/Auth.md)
-    -   [Usage](./PACKAGE/auth/Usage.md)
+    -   [Functions](./PACKAGE/auth/Function.md)
+    -   [Example](./PACKAGE/auth/Example.md)
 
 # API
 

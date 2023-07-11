@@ -6,7 +6,7 @@
 import { RiotApi } from "@valapi/riot-api";
 ```
 
-## [Client](./Client.md#config)
+## [Client](./Client.md#client)
 
 ```typescript
 const riotApi = new RiotApi({
@@ -15,7 +15,7 @@ const riotApi = new RiotApi({
 });
 ```
 
-## [API](./API.md#usage)
+## [API](./API.md)
 
 ```typescript
 const status = await riotApi.StatusV1.platformData();

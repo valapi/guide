@@ -10,5 +10,6 @@ npm install valorant.ts
 
 ## Contents
 
--   [Region](./Region.md)
+-   [Resources](./Resource.md)
+    -   [Region](./Region.md)
 -   [Crosshair](./Crosshair.md)
