@@ -23,8 +23,8 @@
 |                         | fetchAllChatMUCToken       | matchId                                       |
 |                         | fetchTeamChatMUCToken      | matchId                                       |
 |                         | fetchVoiceToken            | matchId                                       |
-| **DailyTicket**            | get                | subject                                       |
-|                         | renew                 | subject                                       |
+| **DailyTicket**         | get                        | subject                                       |
+|                         | renew                      | subject                                       |
 | **DisplayNameService**  | fetchPlayers               | subject                                       |
 | **Favorites**           | get                        | subject                                       |
 |                         | add                        | subject, itemId                               |
@@ -88,7 +88,7 @@
 |                         | getOffers                  |                                               |
 |                         | getEntitlements            | subject, itemTypeId                           |
 |                         | revealNightMarketOffers    | subject                                       |
-|                         | getAgent    |                                        |
+|                         | getAgent                   |                                               |
 
 ## Usage
 

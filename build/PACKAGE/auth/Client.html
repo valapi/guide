@@ -156,18 +156,19 @@
 <h2 id="config"><a class="header" href="#config">Config</a></h2>
 <pre><code class="language-typescript">interface Config {
     /**
-     * Client Config
+     * User Agent
      */
-    client?: {
-        /**
-         * Client Version
-         */
-        version?: string;
-        /**
-         * Client Platform
-         */
-        platform?: AuthCore.ClientPlatfrom;
-    };
+    userAgent?: string;
+
+    /**
+     * Client Version
+     */
+    version?: string;
+
+    /**
+     * Client Platform
+     */
+    platform?: AuthCore.ClientPlatfrom;
 
     /**
      * Request Config

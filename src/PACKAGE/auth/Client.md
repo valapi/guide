@@ -11,18 +11,19 @@ import { AuthClient } from "@valapi/auth";
 ```typescript
 interface Config {
     /**
-     * Client Config
+     * User Agent
      */
-    client?: {
-        /**
-         * Client Version
-         */
-        version?: string;
-        /**
-         * Client Platform
-         */
-        platform?: AuthCore.ClientPlatfrom;
-    };
+    userAgent?: string;
+
+    /**
+     * Client Version
+     */
+    version?: string;
+
+    /**
+     * Client Platform
+     */
+    platform?: AuthCore.ClientPlatfrom;
 
     /**
      * Request Config
