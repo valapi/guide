@@ -1,13 +1,38 @@
 .git/
 .github/
 
+# env
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# vscode
+.vscode/
+
+# log
+logs
+*.log
+
 # temp, cache
-.eslintcache
 *.tgz
+
+*.cache
+cache/
+
+*.tmp
+*.temp
+temp/
 
 # project
 LICENSE
-tsconfig.tsbuildinfo
 
 theme/
-build/
+guide/
+
+# test
+test/
+tests/
+
+coverage/

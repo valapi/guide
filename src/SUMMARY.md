@@ -1,49 +1,47 @@
 [HOME](./index.md)
-[Contributors](./Contributors.md)
-
-# Main
-
----
-
--   [Introduced](./MAIN/Intro.md)
--   [Legal](./MAIN/Legal.md)
+[Contributors](./contributors.md)
+[Legal](./legal.md)
 
 # Packages
 
 ---
 
--   [Built-In](./PACKAGE/build-in/Intro.md)
-    -   [Resources](./PACKAGE/build-in/Resource.md)
-        -   [Region](./PACKAGE/build-in/Region.md)
-    -   [Crosshair](./PACKAGE/build-in/Crosshair.md)
+<!-- auth -->
 
--   [Authentication](./PACKAGE/auth/Intro.md)
-    -   [Client](./PACKAGE/auth/Client.md)
-    -   [Functions](./PACKAGE/auth/Function.md)
-    -   [Example](./PACKAGE/auth/Example.md)
+-   [Authentication](./packages/auth/intro.md)
+    -   [Client](./packages/auth/client.md)
+    -   [Functions](./packages/auth/function.md)
+    -   [Example](./packages/auth/example.md)
 
-# API
+<!-- crosshair -->
 
----
+-   [Crosshair](./packages/crosshair/intro.md)
+    -   [Client](./packages/crosshair/client.md)
 
-<!-- Riot API -->
+<!-- lib -->
 
--   [Riot API](./API/riot-api/Intro.md)
-    -   [Client](./API/riot-api/Client.md)
-    -   [Endpoints](./API/riot-api/API.md)
-    -   [Example](./API/riot-api/Example.md)
+-   [Library](./packages/lib/intro.md)
+    -   [Resources](./packages/lib/resource.md)
+        -   [Region](./packages/lib/region.md)
+
+<!-- riot-api -->
+
+-   [Riot API](./packages/riot-api/intro.md)
+    -   [Client](./packages/riot-api/client.md)
+    -   [Endpoints](./packages/riot-api/api.md)
+    -   [Example](./packages/riot-api/example.md)
 
 <!-- valorant-api.com -->
 
--   [valorant-api.com](./API/valorant-api.com/Intro.md)
-    -   [Client](./API/valorant-api.com/Client.md)
-    -   [Endpoints](./API/valorant-api.com/API.md)
-        -   [Language](./API/valorant-api.com/Language.md)
-    -   [Example](./API/valorant-api.com/Example.md)
+-   [valorant-api.com](./packages/valorant-api.com/intro.md)
+    -   [Client](./packages/valorant-api.com/client.md)
+    -   [Endpoints](./packages/valorant-api.com/api.md)
+        -   [Language](./packages/valorant-api.com/language.md)
+    -   [Example](./packages/valorant-api.com/example.md)
 
-<!-- Web Client -->
+<!-- web-client -->
 
--   [Web Client](./API/web-client/Intro.md)
-    -   [Client](./API/web-client/Client.md)
-    -   [Endpoints](./API/web-client/API.md)
-    -   [Example](./API/web-client/Example.md)
+-   [Web Client](./packages/web-client/intro.md)
+    -   [Client](./packages/web-client/client.md)
+    -   [Endpoints](./packages/web-client/api.md)
+    -   [Example](./packages/web-client/example.md)

@@ -1,5 +1,3 @@
-[npm_image]: https://nodei.co/npm/valorant.ts.png
-[npm_url]: https://nodei.co/npm/valorant.ts
 [license_image]: https://badgen.net/badge/license/MIT/blue
 [license_url]: https://github.com/valapi/.github/blob/main/LICENSE
 [github_image]: https://badgen.net/badge/icon/github?icon=github&label
@@ -8,8 +6,6 @@
 [discord_url]: https://discord.gg/pbyWbUYjyt
 
 # @valapi Documentation
-
-[![NPM][npm_image]][npm_url]
 
 ---
 
@@ -27,8 +23,29 @@ Generate by [mdBook](https://github.com/rust-lang/mdBook)
 
 ---
 
--   [valorant.ts](./PACKAGE/build-in/Intro.md#contents)
--   [@valapi/auth](./PACKAGE/auth/Intro.md#contents)
--   [@valapi/riot-api](./API/riot-api/Intro.md#contents)
--   [@valapi/valorant-api.com](./API/valorant-api.com/Intro.md#contents)
--   [@valapi/web-client](./API/web-client/Intro.md#contents)
+-   [@valapi/auth](./packages/auth/intro.md)
+-   [@valapi/crosshair](./packages/crosshair/intro.md)
+-   [@valapi/riot-api](./packages/riot-api/intro.md)
+-   [@valapi/valorant-api.com](./packages/valorant-api.com/intro.md)
+-   [@valapi/web-client](./packages/web-client/intro.md)
+
+# About
+
+---
+
+`valorant.ts` is a NodeJS package that make more easier to use Valorant API
+
+-   All-in-one package
+-   6 Packages:
+    -   auth
+    -   crosshair
+    -   lib
+    -   riot-api
+    -   valorant-api.com
+    -   web-client
+
+## Requirements
+
+---
+
+-   [Node.js](https://nodejs.org) (we recommend lastest version for best performance)

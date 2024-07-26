@@ -7,7 +7,7 @@ title = "npmjs/@valapi"
 description = "Valorant API wrapper for nodejs"
 
 [build]
-build-dir = "build"
+build-dir = "guide"
 create-missing = false
 
 [output.html]
@@ -16,3 +16,4 @@ preferred-dark-theme = "coal"
 copy-fonts = false
 git-repository-url = "https://github.com/valapi"
 edit-url-template = "https://github.com/valapi/valapi.github.io/edit/main/{path}"
+site-url = "/guide/"
