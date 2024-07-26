@@ -1,4 +1,4 @@
-[HOME](./index.md)
+[Home](./index.md)
 [Contributors](./contributors.md)
 [Legal](./legal.md)
 
