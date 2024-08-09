@@ -1,9 +1,4 @@
-[npm_image]: https://nodei.co/npm/@valapi/auth.png
-[npm_url]: https://nodei.co/npm/@valapi/auth
-
 # Introduced
-
-[![NPM][npm_image]][npm_url]
 
 Riot Authentication
 
@@ -13,8 +8,6 @@ Riot Authentication
 npm install @valapi/auth
 ```
 
-## Contents
+Peer Dependencies
 
--   [Client](./client.md)
--   [Functions](./function.md)
--   [Example](./example.md)
+- @valapi/lib

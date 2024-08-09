@@ -19,33 +19,34 @@ Generate by [mdBook](https://github.com/rust-lang/mdBook)
 > -   **node-valapi** was created under [Riot Games' "Legal Jibber Jabber"](https://www.riotgames.com/en/legal) policy using assets owned by Riot Games. Riot Games does not endorse or sponsor this project.
 > -   [MIT License][license_url]
 
-# Getting Started
-
----
-
--   [@valapi/auth](./packages/auth/intro.md)
--   [@valapi/crosshair](./packages/crosshair/intro.md)
--   [@valapi/riot-api](./packages/riot-api/intro.md)
--   [@valapi/valorant-api.com](./packages/valorant-api.com/intro.md)
--   [@valapi/web-client](./packages/web-client/intro.md)
-
 # About
 
 ---
 
 `valorant.ts` is a NodeJS package that make more easier to use Valorant API
 
--   All-in-one package
--   6 Packages:
-    -   auth
-    -   crosshair
-    -   lib
-    -   riot-api
+-   All-in-one:
+    -   Authentication
+        -   Two-Factor Authentication
+        -   Riot Identity
+        -   CAPTCHAs
+    -   Crosshair Serializer
+    -   Official API
+        -   Leaderboard
     -   valorant-api.com
-    -   web-client
+        -   ID
+        -   Information
+    -   Web Client
+        -   Daily Store
+        -   Personal Data
+-   Open-source
+-   Typescript Support
+-   Built-In API Endpoints
 
-## Requirements
+# Explanation
 
 ---
 
--   [Node.js](https://nodejs.org) (we recommend lastest version for best performance)
+**[NAME]**
+
+you need to replace something with it (in this case ex. John, Alex)

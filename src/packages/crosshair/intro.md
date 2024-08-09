@@ -1,9 +1,4 @@
-[npm_image]: https://nodei.co/npm/@valapi/crosshair.png
-[npm_url]: https://nodei.co/npm/@valapi/crosshair
-
 # Introduced
-
-[![NPM][npm_image]][npm_url]
 
 Crosshair Compiler
 
@@ -13,6 +8,6 @@ Crosshair Compiler
 npm install @valapi/crosshair
 ```
 
-## Contents
+Peer Dependencies
 
--   [Client](./client.md)
+- @valapi/lib

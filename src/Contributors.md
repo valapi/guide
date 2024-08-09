@@ -18,6 +18,8 @@ list of the contributors who helped me improve this module
 -   [JUd9in](https://github.com/JUd9in)
 -   [Cansiny0320](https://github.com/Cansiny0320)
 -   [Soneliem](https://github.com/Soneliem)
+-   @ninjasploit
+-   [PabloRNC](https://github.com/PabloRNC)
 
 ## Special Thanks
 

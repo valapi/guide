@@ -96,5 +96,5 @@
 ## Usage
 
 ```typescript
-const data = await webClient.Service.Function(...Arguments);
+const data = await webClient.[Service].[Function]([Arguments]);
 ```

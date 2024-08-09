@@ -1,9 +1,4 @@
-[npm_image]: https://nodei.co/npm/@valapi/web-client.png
-[npm_url]: https://nodei.co/npm/@valapi/web-client
-
 # Introduced
-
-[![NPM][npm_image]][npm_url]
 
 API from Web Client
 
@@ -13,8 +8,7 @@ API from Web Client
 npm install @valapi/web-client
 ```
 
-## Contents
+Peer Dependencies
 
--   [Client](./client.md)
--   [Endpoints](./api.md)
--   [Example](./example.md)
+- @valapi/lib
+- @valapi/auth

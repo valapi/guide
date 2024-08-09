@@ -32,5 +32,5 @@ interface Config {
 ## Client
 
 ```typescript
-const client = new RiotApi(config);
+const client = new RiotApi([config]);
 ```

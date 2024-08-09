@@ -18,5 +18,5 @@
 ## Usage
 
 ```typescript
-const data = await riotApi.Service.Function(...Arguments);
+const data = await riotApi.[Service].[Function]([Arguments]);
 ```

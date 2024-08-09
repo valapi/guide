@@ -33,11 +33,37 @@
 ## Dependency
 
 -   [Node.js](https://nodejs.org)
+    -   [Trademark](https://trademark-policy.openjsf.org/)
+    -   [Privacy Policy](https://privacy-policy.openjsf.org/)
+    -   [Security](https://github.com/nodejs/node/security/policy)
+    -   [License](https://github.com/nodejs/node/blob/main/LICENSE)
 -   [TypeScript](https://www.typescriptlang.org)
+    -   [Apache License 2.0](https://github.com/microsoft/TypeScript/blob/main/LICENSE.txt)
+    -   [Security](https://github.com/microsoft/TypeScript/blob/main/SECURITY.md)
+    -   [Third Party Notice](https://github.com/microsoft/TypeScript/blob/main/ThirdPartyNoticeText.txt)
+    -   [Terms of Use](https://www.microsoft.com/en-us/legal/terms-of-use)
 
 Package _([NPM](https://npmjs.com))_
 
 -   [axios](https://www.npmjs.com/package/axios)
--   [HTTP Cookie Agent](https://www.npmjs.com/package/http-cookie-agent)
+    -   [MIT License](https://github.com/axios/axios/blob/v1.x/LICENSE)
+    -   [Security](https://github.com/axios/axios/blob/v1.x/SECURITY.md)
+-   [http-cookie-agent](https://www.npmjs.com/package/http-cookie-agent)
+    -   [MIT License](https://github.com/3846masa/http-cookie-agent/blob/main/LICENSE)
+-   [selfsigned](https://www.npmjs.com/package/selfsigned)
+    -   [MIT License](https://github.com/jfromaniello/selfsigned/blob/master/LICENSE)
 -   [tough-cookie](https://www.npmjs.com/package/tough-cookie)
+    -   [BSD 2-Clause License](https://github.com/salesforce/tough-cookie/blob/master/LICENSE)
+    -   [Security](https://github.com/salesforce/tough-cookie/blob/master/SECURITY.md)
 -   [tslib](https://www.npmjs.com/package/tslib)
+    -   [BSD 2-Clause License](https://github.com/microsoft/tslib/blob/main/LICENSE.txt)
+    -   [Security](https://github.com/microsoft/tslib/blob/main/SECURITY.md)
+    -   [Copyright Notice](https://github.com/microsoft/tslib/blob/main/CopyrightNotice.txt)
+
+Mentioned
+
+-   [express](https://www.npmjs.com/package/express)
+    -   [Security](https://github.com/expressjs/express/security/policy)
+    -   [Terms of Use](https://terms-of-use.openjsf.org/)
+    -   [Privacy Policy](https://privacy-policy.openjsf.org/)
+    -   [Trademark](https://trademark-policy.openjsf.org/)

@@ -1,6 +1,6 @@
 # API
 
-> All API base on [dash.valorant-api.com](https://dash.valorant-api.com)
+> Some of API are base on [dash.valorant-api.com](https://dash.valorant-api.com)
 
 ---
 
@@ -34,6 +34,8 @@
 |                      | getEquippableByUuid        | uuid                 |
 | **Gear**             | get                        |                      |
 |                      | getByUuid                  | uuid                 |
+| **Internal**         | uuid                       |                      |
+|                      | riotClientVersion          |                      |
 | **LevelBorders**     | get                        |                      |
 |                      | getByUuid                  | uuid                 |
 | **Maps**             | get                        |                      |
@@ -69,5 +71,5 @@
 ## Usage
 
 ```typescript
-const data = await valorantApiCom.Service.Function(...Arguments);
+const data = await valorantApiCom.[Service].[Function]([Arguments]);
 ```

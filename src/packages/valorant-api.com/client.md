@@ -35,5 +35,5 @@ interface Config {
 ## Client
 
 ```typescript
-const client = new ValorantApiCom( config? );
+const client = new ValorantApiCom([config?]);
 ```

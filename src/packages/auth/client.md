@@ -1,9 +1,9 @@
-# Introduced
+# Client
 
 ---
 
 ```typescript
-import { AuthClient } from "@valapi/auth";
+import { Auth } from "@valapi/auth";
 ```
 
 ## Config
@@ -11,22 +11,35 @@ import { AuthClient } from "@valapi/auth";
 ```typescript
 interface Config {
     /**
-     * User
+     * Authenticated User
      */
     user?: AuthUserInfo;
 
     /**
-     * User Agent
+     * Riot Client SDK Version
+     * 
+     * ValorantApiCom.Internal.riotClientVersion() [riotGamesApiInfo.VS_FIXEDFILEINFO.FileVersion]
      */
-    userAgent?: string;
+    sdk?: 
 
     /**
-     * Client Version
+     * Riot Client Build
+     * 
+     * ValorantApiCom.Version.get() [riotClientBuild]
+     */
+    build?: string;
+
+    /**
+     * Riot Client Version
+     * 
+     * ValorantApiCom.Version.get() [riotClientVersion]
      */
     version?: string;
 
     /**
-     * Client Platform
+     * Riot Client Platform
+     * 
+     * Where is Riot Client run on?
      */
     platform?: ClientPlatfrom;
 
@@ -36,24 +49,30 @@ interface Config {
     axiosConfig?: AxiosRequestConfig;
 
     /**
-     * HTTP Agent Config
+     * HTTPS Agent Config
      */
     agentConfig?: AgentOptions & CookieAgentOptions;
 }
 ```
 
-## Client
+## Constructor
 
 ```typescript
 const auth = new Auth( config? );
 ```
 
-# Save
+# Serialize
 
 ---
 
-## Client --> Save
+JSON
 
 ```typescript
-auth.toJSON();
+const serializeJson = auth.toJSON();
+```
+
+Cookie
+
+```typescript
+const serializeCookie = auth.cookie.serializeSync();
 ```

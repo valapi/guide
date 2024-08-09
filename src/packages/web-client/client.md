@@ -25,5 +25,5 @@ interface Config {
 ## Client
 
 ```typescript
-const client = new WebClient(config);
+const client = new WebClient([config]);
 ```
