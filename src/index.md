@@ -19,6 +19,8 @@ Generate by [mdBook](https://github.com/rust-lang/mdBook)
 > -   **node-valapi** was created under [Riot Games' "Legal Jibber Jabber"](https://www.riotgames.com/en/legal) policy using assets owned by Riot Games. Riot Games does not endorse or sponsor this project.
 > -   [MIT License][license_url]
 
+This project is unmaintained. Please consider an alternative
+
 # About
 
 ---
